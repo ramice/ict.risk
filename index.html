@@ -208,12 +208,26 @@ footer .footer-links a:hover{background:var(--panel-3);border-color:var(--brand)
 
 #printArea{display:none}
 @media print{
+  @page{size:landscape;margin:12mm}
   body.printing header, body.printing main, body.printing footer, body.printing .overlay, body.printing #loginOv, body.printing .storagebar, body.printing .toast{display:none!important}
   body.printing #printArea{display:block!important}
   #printArea{font-size:11px;color:#000}
-  #printArea .phead{display:flex;align-items:center;gap:14px;border-bottom:2px solid #2F6FE0;padding-bottom:8px;margin-bottom:12px}
+  #printArea .phead{display:flex;align-items:center;gap:14px;border-bottom:2px solid #2F6FE0;padding-bottom:8px;margin-bottom:6px}
+  #printArea .phead .spacer{flex:1}
+  #printArea .pclass{border:1.5px solid #C23B3B;color:#C23B3B;font-weight:700;font-size:10px;letter-spacing:.5px;padding:3px 10px;border-radius:3px;text-transform:uppercase;white-space:nowrap}
+  #printArea .pfoot .pclass-inline{color:#C23B3B;font-weight:700}
   #printArea h1{font-size:15px;color:#2F6FE0}
-  #printArea .pmeta{font-size:10px;color:#444;margin-bottom:10px}
+  #printArea .paudience{font-size:12.5px;font-weight:700;color:#14110A;margin:2px 0 6px}
+  #printArea .pmeta{font-size:9.5px;color:#555;margin-bottom:12px;line-height:1.5}
+  #printArea .psummary{display:flex;gap:8px;margin-bottom:10px;flex-wrap:wrap}
+  #printArea .pstat{border:1px solid #C9D8F5;border-radius:5px;padding:6px 12px;text-align:center;min-width:78px;background:#F7FAFF}
+  #printArea .pstat .n{font-size:16px;font-weight:700;color:#2F6FE0;line-height:1.1}
+  #printArea .pstat.warn .n{color:#B8860B}
+  #printArea .pstat.alert .n{color:#C23B3B}
+  #printArea .pstat .l{font-size:7.5px;color:#555;text-transform:uppercase;letter-spacing:.3px;margin-top:2px}
+  #printArea .plevels{font-size:9.5px;color:#333;margin-bottom:12px;padding:6px 10px;background:#F7F7F7;border-radius:5px}
+  #printArea .plevels b{margin-right:4px}
+  #printArea .plevels span{margin-right:14px}
   #printArea table{width:100%;border-collapse:collapse;margin-bottom:14px}
   #printArea th{background:#EAF0FD;color:#2F6FE0;text-align:left;padding:5px 6px;font-size:9px;border:1px solid #C9D8F5}
   #printArea td{padding:5px 6px;border:1px solid #DDD;font-size:9px;vertical-align:top}
@@ -638,6 +652,14 @@ const I18N = {
   print_audience_line:{en:"Prepared for: {audience}",bs:"Priprema se za: {audience}"},
   report_generate:{en:"Generate",bs:"Generiši"},
   print_period_summary:{en:"In this period: {i} risks identified, {c} risks closed.",bs:"U ovom periodu: {i} identifikovanih rizika, {c} zatvorenih rizika."},
+  pstat_total:{en:"Total risks",bs:"Ukupno rizika"},
+  pstat_open:{en:"Currently open",bs:"Trenutno otvoreno"},
+  pstat_nodecision:{en:"No decision",bs:"Bez odluke"},
+  pstat_cif:{en:"Open CIF",bs:"Otvoreni CIF"},
+  pstat_overdue_review:{en:"Overdue reviews",bs:"Istekli pregledi"},
+  pstat_overdue_treat:{en:"Overdue measures",bs:"Prekoračeni rokovi mjera"},
+  print_levels_line:{en:"Risk levels across the full register:",bs:"Nivoi rizika kroz cijeli registar:"},
+  print_level_unscored:{en:"not yet scored",bs:"bez ocjene"},
   nav_logout:{en:"Sign out",bs:"Odjava"},
   storage_no_localstorage:{en:"This browser does not allow local storage. Data only lives while this tab is open.",bs:"Preglednik ne dozvoljava lokalno snimanje. Podaci žive samo dok je stranica otvorena."},
   privacy_note:{en:"All data stays in your browser, or in a local file you choose to connect. Nothing is sent to any server.",bs:"Svi podaci ostaju u vašem pregledniku ili u lokalnom fajlu koji sami povežete. Ništa se ne šalje na server."},
@@ -849,10 +871,12 @@ const I18N = {
   warn_closed_future_review:{en:"Status is 'Closed' but the next review date is in the future.",bs:"Status je 'Zatvoren', a rok sljedećeg pregleda je u budućnosti."},
   export_filtered_confirm:{en:"A filter is active ({f} of {d} records).\n\nOK = export filtered records only\nCancel = export all records",
     bs:"Aktivan je filter ({f} od {d} zapisa).\n\nOK = izvezi samo filtrirane\nCancel = izvezi sve zapise"},
-  print_title:{en:"ICT Risk Register: report for risk committee",bs:"Registar IKT rizika: pregled za komitet"},
+  print_title:{en:"ICT Risk Register: report",bs:"Registar IKT rizika: izvještaj"},
   print_meta:{en:"Generated: {dt} · User: {u} · Open risks: {n} (of {total} total) · CIF risks in red",bs:"Generisano: {dt} · Korisnik: {u} · Otvorenih rizika: {n} (od ukupno {total}) · CIF rizici crveno"},
   print_no_open:{en:"No open risks.",bs:"Nema otvorenih rizika."},
-  print_footer:{en:"Template / demonstration ICT Risk Register, for internal risk committee use",bs:"Template / demonstracioni registar IKT rizika, interno za potrebe komiteta za rizike"},
+  print_footer:{en:"Template / demonstration ICT Risk Register, for internal use",bs:"Template / demonstracioni registar IKT rizika, za internu upotrebu"},
+  print_classification:{en:"Confidential",bs:"Povjerljivo"},
+  print_footer_generated:{en:"Generated on {dt}",bs:"Generisano {dt}"},
   th_lastreview_date:{en:"Last review date",bs:"Datum posljednjeg pregleda"},
   th_lastreview_user:{en:"Last review user",bs:"Korisnik posljednjeg pregleda"},
   th_roi:{en:"Vendor register / ROI ref",bs:"Registar dobavljača / ROI ref"},
@@ -2165,6 +2189,14 @@ $("btnReportGenerate").addEventListener("click", () => {
   const open = data.filter(r => r.status !== "closed").sort((a,b) => (b.cif === "yes") - (a.cif === "yes") || (a.id||"").localeCompare(b.id||"", undefined, {numeric:true}));
   const identifiedInPeriod = data.filter(r => r.datident && (!from || r.datident >= from) && (!to || r.datident <= to)).length;
   const closedInPeriod = data.filter(r => r.datclosed && (!from || r.datclosed >= from) && (!to || r.datclosed <= to)).length;
+  const noDecisionCount = open.filter(r => r.status === "active" && !r.odluka).length;
+  const cifOpenCount = open.filter(r => r.cif === "yes").length;
+  const overdueReviewCount = open.filter(isOverdue).length;
+  const overdueTreatCount = open.filter(isTreatmentOverdue).length;
+  const levelCounts = {low:0,medium:0,high:0,critical:0,unscored:0};
+  data.forEach(r => { const b = riskBand(riskScore(r.likelihood, r.impact)); if(b) levelCounts[b.key]++; else levelCounts.unscored++; });
+  const levelLine = ["critical","high","medium","low"].map(k => `<span><b>${levelCounts[k]}</b> ${esc(elabel("band",k))}</span>`).join("")
+    + `<span><b>${levelCounts.unscored}</b> ${esc(t("print_level_unscored"))}</span>`;
   const rows = open.map(r => {
     const score = riskScore(r.likelihood, r.impact);
     const band = riskBand(score);
@@ -2175,12 +2207,23 @@ $("btnReportGenerate").addEventListener("click", () => {
     <td>${esc(elabel("status",r.status))}</td><td>${fmtD(r.datpregled)}</td>
     <td>${[r.incident,r.preporuka,r.procjena,r.roi].filter(Boolean).map(esc).join("; ")}</td></tr>`;
   }).join("");
+  const genDt = new Date().toISOString();
   $("printArea").innerHTML = `
-    <div class="phead"><svg width="30" height="30"><use href="#brandmark"/></svg><h1>${esc(t("print_title"))}</h1></div>
-    <div class="pmeta">${esc(tf("print_audience_line", {audience: elabel("audience", audience)}))}<br>${esc(tf("print_meta", {dt:fmtDT(new Date().toISOString()), u:(currentUser?currentUser.u:"guest"), n:open.length, total:data.length}))}<br>${esc(fmtD(from))} - ${esc(fmtD(to))}: ${esc(tf("print_period_summary", {i:identifiedInPeriod, c:closedInPeriod}))}</div>
+    <div class="phead"><svg width="30" height="30"><use href="#brandmark"/></svg><h1>${esc(t("print_title"))}</h1><div class="spacer"></div><div class="pclass">${esc(t("print_classification"))}</div></div>
+    <div class="paudience">${esc(tf("print_audience_line", {audience: elabel("audience", audience)}))}</div>
+    <div class="pmeta">${esc(tf("print_meta", {dt:fmtDT(genDt), u:(currentUser?currentUser.u:"guest"), n:open.length, total:data.length}))}<br>${esc(fmtD(from))} - ${esc(fmtD(to))}: ${esc(tf("print_period_summary", {i:identifiedInPeriod, c:closedInPeriod}))}</div>
+    <div class="psummary">
+      <div class="pstat"><div class="n">${data.length}</div><div class="l">${esc(t("pstat_total"))}</div></div>
+      <div class="pstat"><div class="n">${open.length}</div><div class="l">${esc(t("pstat_open"))}</div></div>
+      <div class="pstat ${noDecisionCount?"warn":""}"><div class="n">${noDecisionCount}</div><div class="l">${esc(t("pstat_nodecision"))}</div></div>
+      <div class="pstat ${cifOpenCount?"warn":""}"><div class="n">${cifOpenCount}</div><div class="l">${esc(t("pstat_cif"))}</div></div>
+      <div class="pstat ${overdueReviewCount?"alert":""}"><div class="n">${overdueReviewCount}</div><div class="l">${esc(t("pstat_overdue_review"))}</div></div>
+      <div class="pstat ${overdueTreatCount?"alert":""}"><div class="n">${overdueTreatCount}</div><div class="l">${esc(t("pstat_overdue_treat"))}</div></div>
+    </div>
+    <div class="plevels">${esc(t("print_levels_line"))} ${levelLine}</div>
     <table><thead><tr><th>${esc(t("th_id"))}</th><th>${esc(t("th_name"))}</th><th>${esc(t("print_level"))}</th><th>${esc(t("th_category"))}</th><th>${esc(t("th_cif"))}</th><th>${esc(t("th_owner"))}</th><th>${esc(t("th_source"))}</th><th>${esc(t("th_decision"))}</th><th>${esc(t("f_declevel"))}</th><th>${esc(t("th_status"))}</th><th>${esc(t("th_nextreview"))}</th><th>${esc(t("th_links"))}</th></tr></thead>
     <tbody>${rows || `<tr><td colspan="12">${esc(t("print_no_open"))}</td></tr>`}</tbody></table>
-    <div class="pfoot">${esc(t("print_footer"))}</div>`;
+    <div class="pfoot"><span class="pclass-inline">${esc(t("print_classification"))}</span> &middot; ${esc(tf("print_footer_generated", {dt: fmtDT(genDt)}))} &middot; ${esc(t("print_footer"))}</div>`;
   document.body.classList.add("printing");
   window.print();
 });
