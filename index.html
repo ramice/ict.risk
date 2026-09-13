@@ -1,0 +1,2213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data:; base-uri 'none'; form-action 'none'">
+<title>ICT Risk Register Template</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MCA0MCI+CjxwYXRoIGQ9Ik0yMCAzIEwzNCAxMSBMMzQgMjkgTDIwIDM3IEw2IDI5IEw2IDExIFoiIGZpbGw9IiNENEFGMzciLz4KPHJlY3QgeD0iMTIuNiIgeT0iMjMiIHdpZHRoPSI0LjIiIGhlaWdodD0iOSIgcng9IjEiIGZpbGw9IiMxNzEyMDMiLz4KPHJlY3QgeD0iMTcuOSIgeT0iMTciIHdpZHRoPSI0LjIiIGhlaWdodD0iMTUiIHJ4PSIxIiBmaWxsPSIjMTcxMjAzIi8+CjxyZWN0IHg9IjIzLjIiIHk9IjEwLjUiIHdpZHRoPSI0LjIiIGhlaWdodD0iMjEuNSIgcng9IjEiIGZpbGw9IiMxNzEyMDMiLz4KPC9zdmc+">
+<style>
+:root{
+  --brand:#5B93F0; --brand-dark:#3D7ADB; --brand-deep:#0A0E1A; --brand-accent:#D4AF37; --brand-accent-dark:#B8962E;
+  --brand-mid:#5B93F0; --brand-light:#8FB0F5; --brand-pale:#33406B;
+  --brand-tint:rgba(91,147,240,.10); --brand-line:#242C48; --canvas:#0A0E1A;
+  --panel:#10152A; --panel-2:#171D36; --panel-3:#1E2542;
+  --ink:#E7EAF3; --gray:#98A1BD; --green:#34D399; --orange:#F5A524; --yellow:#E8C845;
+  --red:#F0555F; --red-bg:rgba(240,85,95,.14); --ok-bg:rgba(52,211,153,.14);
+  --radius:12px; --pill:999px; --btnr:9px;
+  --font:'Segoe UI','Trebuchet MS',-apple-system,BlinkMacSystemFont,Roboto,Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font);color:var(--ink);background-color:var(--canvas);font-size:14px;background-image:radial-gradient(1100px 850px at right -40px bottom -60px, rgba(60,90,160,.22) 0%, rgba(10,14,26,0) 62%),url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgNDAwIj4KPGRlZnM+PGZpbHRlciBpZD0iYiIgeD0iLTUwJSIgeT0iLTUwJSIgd2lkdGg9IjIwMCUiIGhlaWdodD0iMjAwJSI+PGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iNi4wNzUiLz48L2ZpbHRlcj48L2RlZnM+CjxnIGZpbHRlcj0idXJsKCNiKSI+CjxwYXRoIGQ9Ik0yMDAgNDQgTDMyOCAxMTggTDMyOCAyODIgTDIwMCAzNTYgTDcyIDI4MiBMNzIgMTE4IFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzZGQTBGNSIgc3Ryb2tlLXdpZHRoPSIyIiBvcGFjaXR5PSIwLjA3IiB0cmFuc2Zvcm09InJvdGF0ZSg2IDIwMCAyMDApIi8+CjxwYXRoIGQ9Ik0yMDAgNjQgTDMxMiAxMjggTDMxMiAyNzIgTDIwMCAzMzYgTDg4IDI3MiBMODggMTI4IFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzZGQTBGNSIgc3Ryb2tlLXdpZHRoPSIyLjUiIG9wYWNpdHk9IjAuMTMiLz4KPHJlY3QgeD0iMTQxIiB5PSIyMjQiIHdpZHRoPSIzNCIgaGVpZ2h0PSI3MiIgcng9IjYiIGZpbGw9IiNENEFGMzciIG9wYWNpdHk9IjAuMTUiLz4KPHJlY3QgeD0iMTgzIiB5PSIxNzYiIHdpZHRoPSIzNCIgaGVpZ2h0PSIxMjAiIHJ4PSI2IiBmaWxsPSIjRDRBRjM3IiBvcGFjaXR5PSIwLjE1Ii8+CjxyZWN0IHg9IjIyNiIgeT0iMTI0IiB3aWR0aD0iMzQiIGhlaWdodD0iMTcyIiByeD0iNiIgZmlsbD0iI0Q0QUYzNyIgb3BhY2l0eT0iMC4xNSIvPgo8L2c+Cjwvc3ZnPg==");background-repeat:no-repeat,no-repeat;background-position:0 0,right -70px bottom -90px;background-size:auto,640px 640px;background-attachment:fixed,fixed}
+button{font-family:inherit;cursor:pointer}
+input,select,textarea{font-family:inherit;font-size:13px;color:var(--ink)}
+
+header{display:flex;align-items:center;gap:10px;padding:12px 24px;border-bottom:1px solid var(--brand-line);position:sticky;top:0;background:var(--brand-deep);z-index:20;flex-wrap:wrap}
+header .brandmark{flex:0 0 auto}
+header .apptitle{font-size:16px;font-weight:700;color:var(--ink);letter-spacing:.2px}
+header .apptitle small{display:block;font-size:11px;font-weight:400;color:var(--gray);letter-spacing:.3px}
+header .spacer{flex:1}
+.langtoggle{display:flex;border:1.5px solid var(--brand-line);border-radius:var(--pill);overflow:hidden}
+.langtoggle button{border:none;background:transparent;color:var(--gray);padding:7px 12px;font-size:12px;font-weight:700;transition:background .15s,color .15s}
+.langtoggle button.active{background:var(--brand-accent);color:#14110A}
+.hdiv{width:1px;height:26px;background:var(--brand-line);margin:0 4px}
+.userchip{font-size:12px;color:var(--gray);background:var(--panel-2);border:1px solid var(--brand-line);border-radius:var(--pill);padding:6px 14px}
+.userchip b{color:var(--ink)}
+.btn{border:none;border-radius:var(--btnr);padding:10px 18px;font-size:13px;font-weight:600;transition:background .15s,color .15s,border-color .15s,transform .12s,box-shadow .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:var(--brand-accent);color:#171203}
+.btn-primary:hover{background:var(--brand-accent-dark);box-shadow:0 4px 14px rgba(212,175,55,.25)}
+.btn-ghost{background:var(--panel-2);color:var(--ink);border:1.5px solid var(--brand-line)}
+.btn-ghost:hover{border-color:var(--brand);background:var(--panel-3)}
+.btn-danger{background:var(--panel-2);color:var(--red);border:1.5px solid rgba(240,85,95,.35)}
+.btn-danger:hover{background:var(--red-bg)}
+.btn-sm{padding:6px 13px;font-size:12px}
+.btn:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--brand-accent);outline-offset:1px}
+header .btn-ghost{background:rgba(255,255,255,.05);color:var(--ink);border:1.5px solid var(--brand-line)}
+header .btn-ghost:hover{background:rgba(255,255,255,.09);border-color:var(--brand)}
+header .navtab.active{background:var(--brand-tint);border-color:var(--brand);color:var(--brand)}
+::-webkit-scrollbar{height:9px;width:9px}
+::-webkit-scrollbar-thumb{background:var(--brand-pale);border-radius:8px}
+::-webkit-scrollbar-track{background:transparent}
+
+main{max-width:1480px;margin:0 auto;padding:16px 24px 60px}
+
+.privacybar{background:var(--ok-bg);color:var(--green);border:1px solid rgba(52,211,153,.25);border-radius:var(--radius);padding:9px 16px;font-size:12px;margin-bottom:12px}
+
+.about-body{font-size:12.5px;color:var(--gray);line-height:1.55}
+.about-body h4{font-size:11.5px;color:var(--brand);letter-spacing:.4px;text-transform:uppercase;margin:12px 0 4px}
+.about-body h4:first-child{margin-top:0}
+.about-body p{margin-bottom:2px}
+
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:18px}
+.stat{background:var(--panel);border:1px solid var(--brand-line);border-left:3px solid var(--brand-mid);border-radius:var(--radius);padding:11px 14px;transition:transform .12s,box-shadow .12s}
+.stat.clickable{cursor:pointer}
+.stat.clickable:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(0,0,0,.35)}
+.stat.activef{outline:2px solid var(--brand-accent);outline-offset:-1px}
+.stat .num{font-size:22px;font-weight:700;color:var(--ink);line-height:1.1}
+.stat .lbl{font-size:11.5px;color:var(--gray);margin-top:3px;letter-spacing:.2px}
+.stat.warn{border-left-color:var(--orange)}
+.stat.warn .num{color:var(--orange)}
+.stat.alert{border-left-color:var(--red)}
+.stat.alert .num{color:var(--red)}
+
+.toolbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:14px}
+.toolbar input[type=search]{flex:1;min-width:220px;padding:9px 16px;border:1.5px solid var(--brand-line);border-radius:var(--btnr);outline:none;background:var(--panel);color:var(--ink)}
+.toolbar input[type=search]::placeholder{color:var(--gray)}
+.toolbar input[type=search]:focus{border-color:var(--brand)}
+.toolbar select{padding:9px 12px;border:1.5px solid var(--brand-line);border-radius:var(--btnr);background:var(--panel);color:var(--ink);outline:none}
+.toolbar select:focus{border-color:var(--brand)}
+.qfchip{display:inline-flex;align-items:center;gap:6px;background:var(--brand-tint);color:var(--brand);border:1px solid var(--brand-line);border-radius:var(--pill);padding:6px 8px 6px 14px;font-size:12px;font-weight:600}
+.qfchip button{border:none;background:var(--brand);color:#0A0E1A;width:18px;height:18px;border-radius:50%;font-size:11px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center}
+
+.tablewrap{border:1px solid var(--brand-line);border-radius:var(--radius);overflow:auto;background:var(--panel)}
+table{width:100%;border-collapse:collapse;min-width:1350px}
+thead th{position:sticky;top:0;background:var(--panel-2);color:var(--gray);font-size:11px;font-weight:700;text-align:left;padding:10px 12px;letter-spacing:.4px;text-transform:uppercase;white-space:nowrap;border-bottom:1px solid var(--brand-line)}
+thead th[data-sort]{cursor:pointer;user-select:none}
+thead th .arr{font-size:9px;margin-left:3px;display:inline-block;width:9px;color:var(--brand)}
+tbody td{padding:10px 12px;border-bottom:1px solid var(--brand-line);font-size:13px;vertical-align:top;color:var(--ink)}
+.tablewrap tbody tr{cursor:pointer;transition:background .1s}
+.tablewrap tbody tr:nth-child(even){background:var(--panel-2)}
+.tablewrap tbody tr:hover{background:var(--panel-3)}
+td.idcell{font-weight:700;color:var(--brand);white-space:nowrap}
+td .sub{display:block;font-size:11px;color:var(--gray);margin-top:2px}
+.chip{display:inline-block;border-radius:var(--pill);padding:3px 11px;font-size:11.5px;font-weight:600;white-space:nowrap}
+.chip-active{background:var(--orange-tint,rgba(245,165,36,.16));color:var(--orange)}
+.chip-in_treatment{background:rgba(232,200,69,.16);color:var(--yellow)}
+.chip-accepted{background:var(--brand-tint);color:var(--brand)}
+.chip-closed{background:var(--ok-bg);color:var(--green)}
+.cif-yes{color:var(--red);font-weight:700}
+.overdue{color:var(--red);font-weight:700}
+.linktag{display:inline-block;background:var(--panel-3);color:var(--brand);border:1px solid var(--brand-line);border-radius:6px;padding:2px 7px;font-size:11px;font-weight:600;margin:1px 2px 1px 0;white-space:nowrap}
+.emptystate{text-align:center;padding:60px 20px;color:var(--gray)}
+.emptystate .big{font-size:16px;font-weight:600;color:var(--ink);margin-bottom:6px}
+.count-note{font-size:12px;color:var(--gray);margin:10px 2px 0}
+
+#viewDashboard{display:none}
+.dashgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.dashcard{border:1px solid var(--brand-line);border-radius:var(--radius);padding:13px 15px;background:var(--panel)}
+.dashcard.wide{grid-column:span 2}
+.dashcard h3{font-size:11.5px;color:var(--gray);letter-spacing:.4px;text-transform:uppercase;margin-bottom:8px;font-weight:700}
+.dashcard svg{width:100%;height:auto;display:block}
+#chHeatmap svg{width:40%;min-width:210px;margin:0 auto;display:block}
+#f_matrixMini svg{width:120px;height:auto;display:block}
+.dseg,.bseg,.tpoint,.hseg{cursor:pointer;transition:opacity .1s}
+.hseg:hover{opacity:1!important}
+.dseg:hover,.bseg:hover,.tpoint:hover{opacity:.72}
+.blabel,.dleg{cursor:pointer}
+.blabel:hover{fill:var(--brand)}
+.dleg:hover{text-decoration:underline}
+.legend{display:flex;flex-wrap:wrap;gap:5px 13px;margin-top:8px;font-size:11px;color:var(--gray)}
+.legend .sw{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:5px;vertical-align:-1px}
+@media (max-width:1150px){ .dashgrid{grid-template-columns:1fr 1fr} }
+@media (max-width:820px){ .dashgrid{grid-template-columns:1fr} .dashcard.wide{grid-column:auto} }
+
+.overlay{position:fixed;inset:0;background:rgba(4,6,14,.65);display:none;align-items:center;justify-content:center;z-index:50;padding:22px 16px}
+#resetConfirmOv{z-index:60}
+.overlay.open{display:flex}
+.modal{background:var(--panel);border:1px solid var(--brand-line);border-radius:16px;width:100%;max-width:960px;padding:22px 26px 18px;margin:auto;box-shadow:0 30px 80px rgba(0,0,0,.55);animation:pop .18s ease-out;max-height:calc(100vh - 44px);display:flex;flex-direction:column}
+.mbody{overflow-y:auto;padding-right:8px;margin-right:-6px;flex:1;min-height:0}
+.modal.narrow{max-width:520px}
+.modal h2{font-size:18px;color:var(--ink);margin-bottom:2px}
+.modal .modalsub{font-size:12px;color:var(--gray);margin-bottom:16px}
+@keyframes pop{from{transform:translateY(10px);opacity:0}to{transform:none;opacity:1}}
+.fgroup{border:1px solid var(--brand-line);border-radius:var(--radius);padding:11px 14px 3px;margin-bottom:11px}
+.fgroup>legend{font-size:11.5px;font-weight:700;letter-spacing:.6px;color:var(--brand);padding:0 8px;text-transform:uppercase}
+.fgroup.g-decision>legend{color:var(--orange)}
+.fgroup.g-treatment>legend{color:var(--yellow)}
+.fgroup.g-veze>legend{color:var(--brand)}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:6px 12px}
+.field{display:flex;flex-direction:column;gap:3px;margin-bottom:7px}
+.field label{font-size:11.5px;font-weight:600;color:var(--gray)}
+.field input,.field select,.field textarea{padding:8px 11px;border:1.5px solid var(--brand-line);border-radius:9px;outline:none;background:var(--panel-2);color:var(--ink)}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--brand)}
+.field input:disabled,.field select:disabled,.field textarea:disabled{background:var(--panel);color:var(--gray)}
+.field textarea{resize:vertical;min-height:44px}
+.c2{grid-column:span 2}.c3{grid-column:span 3}.c4{grid-column:span 4}.c6{grid-column:span 6}.c9{grid-column:span 9}.c12{grid-column:span 12}
+.modal .actions{display:flex;gap:10px;margin-top:12px;padding-top:12px;border-top:1px solid var(--brand-line);flex-wrap:wrap}
+.modal .actions .spacer{flex:1}
+.formerr{color:var(--red);font-size:12.5px;margin:2px 0 8px;display:none}
+.reviewline{font-size:12.5px;color:var(--gray);margin:0 0 12px;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.reviewline b{color:var(--brand)}
+.history{border:1px solid var(--brand-line);border-radius:var(--radius);margin-bottom:14px;overflow:hidden}
+.history summary{list-style:none;padding:10px 14px;font-size:12px;font-weight:700;color:var(--brand);cursor:pointer;letter-spacing:.4px;text-transform:uppercase}
+.history summary::-webkit-details-marker{display:none}
+.histrows{max-height:220px;overflow:auto;border-top:1px solid var(--brand-line)}
+.histrow{padding:8px 14px;font-size:12px;border-bottom:1px solid var(--brand-line);color:var(--gray)}
+.histrow .when{color:var(--brand);font-weight:600}
+.histrow .who{color:var(--gray)}
+.histrow ul{margin:4px 0 0 18px;color:var(--ink)}
+
+.usertable{width:100%;border-collapse:collapse;margin-bottom:16px}
+.usertable th{font-size:11px;text-transform:uppercase;letter-spacing:.4px;color:var(--gray);text-align:left;padding:6px 8px;border-bottom:1.5px solid var(--brand-line)}
+.usertable td{padding:8px;border-bottom:1px solid var(--brand-line);font-size:13px;vertical-align:middle;color:var(--ink)}
+.usertable th:nth-child(2),.usertable td:nth-child(2){width:170px}
+.usertable th:nth-child(3),.usertable td:nth-child(3){width:190px;text-align:center}
+.usertable th:nth-child(4),.usertable td:nth-child(4){width:230px;text-align:right}
+.usertable td:nth-child(4) .btn{margin-left:6px}
+.usertable select{padding:5px 8px;border:1.5px solid var(--brand-line);border-radius:8px;background:var(--panel-2);color:var(--ink)}
+.tagbuiltin{font-size:10.5px;background:var(--brand-tint);color:var(--brand);border-radius:var(--pill);padding:2px 8px;font-weight:700;margin-left:6px}
+.authtoggle{display:flex;align-items:flex-start;gap:12px;border:1px solid var(--brand-line);border-radius:var(--radius);padding:14px 16px;margin-bottom:14px}
+.datarow{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:10px;font-size:12.5px;color:var(--gray)}
+.datarow:last-child{margin-bottom:0}
+.restrictnote{border:1px solid var(--brand-line);border-radius:var(--radius);padding:14px 16px;margin-bottom:14px;font-size:12.5px;color:var(--gray)}
+.authtoggle input{margin-top:3px}
+.authtoggle .t{font-size:13px;font-weight:600;color:var(--ink)}
+.authtoggle .h{font-size:12px;color:var(--gray);margin-top:3px}
+
+#loginOv{position:fixed;inset:0;background-color:var(--brand-deep);background-image:radial-gradient(900px 700px at right -40px bottom -40px, rgba(60,90,160,.26) 0%, rgba(10,14,26,0) 62%),url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgNDAwIj4KPGRlZnM+PGZpbHRlciBpZD0iYiIgeD0iLTUwJSIgeT0iLTUwJSIgd2lkdGg9IjIwMCUiIGhlaWdodD0iMjAwJSI+PGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iNi4wNzUiLz48L2ZpbHRlcj48L2RlZnM+CjxnIGZpbHRlcj0idXJsKCNiKSI+CjxwYXRoIGQ9Ik0yMDAgNDQgTDMyOCAxMTggTDMyOCAyODIgTDIwMCAzNTYgTDcyIDI4MiBMNzIgMTE4IFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzZGQTBGNSIgc3Ryb2tlLXdpZHRoPSIyIiBvcGFjaXR5PSIwLjA3IiB0cmFuc2Zvcm09InJvdGF0ZSg2IDIwMCAyMDApIi8+CjxwYXRoIGQ9Ik0yMDAgNjQgTDMxMiAxMjggTDMxMiAyNzIgTDIwMCAzMzYgTDg4IDI3MiBMODggMTI4IFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzZGQTBGNSIgc3Ryb2tlLXdpZHRoPSIyLjUiIG9wYWNpdHk9IjAuMTMiLz4KPHJlY3QgeD0iMTQxIiB5PSIyMjQiIHdpZHRoPSIzNCIgaGVpZ2h0PSI3MiIgcng9IjYiIGZpbGw9IiNENEFGMzciIG9wYWNpdHk9IjAuMTUiLz4KPHJlY3QgeD0iMTgzIiB5PSIxNzYiIHdpZHRoPSIzNCIgaGVpZ2h0PSIxMjAiIHJ4PSI2IiBmaWxsPSIjRDRBRjM3IiBvcGFjaXR5PSIwLjE1Ii8+CjxyZWN0IHg9IjIyNiIgeT0iMTI0IiB3aWR0aD0iMzQiIGhlaWdodD0iMTcyIiByeD0iNiIgZmlsbD0iI0Q0QUYzNyIgb3BhY2l0eT0iMC4xNSIvPgo8L2c+Cjwvc3ZnPg==");background-repeat:no-repeat,no-repeat;background-position:0 0,right -60px bottom -70px;background-size:auto,560px 560px;display:none;align-items:center;justify-content:center;z-index:100}
+#loginOv.open{display:flex}
+.logincard{background:var(--panel);border:1px solid var(--brand-line);border-radius:16px;padding:36px 40px;width:100%;max-width:400px;text-align:center;box-shadow:0 30px 80px rgba(0,0,0,.5);animation:pop .25s ease-out}
+.logincard h1{font-size:17px;color:var(--ink);margin:10px 0 2px}
+.logincard .sub{font-size:12px;color:var(--gray);margin-bottom:22px}
+.logincard input{width:100%;padding:11px 14px;border:1.5px solid var(--brand-line);border-radius:9px;margin-bottom:10px;outline:none;font-size:14px;background:var(--panel-2);color:var(--ink)}
+.logincard input:focus{border-color:var(--brand)}
+.logincard .btn{width:100%;padding:12px;margin-top:6px}
+.loginerr{color:var(--red);font-size:12.5px;min-height:18px;margin-bottom:4px}
+
+.storagebar{max-width:1480px;margin:0 auto;padding:10px 24px 26px;font-size:11.5px;color:var(--gray);display:flex;gap:8px;align-items:center;flex-wrap:wrap;opacity:.85}
+.storagebar .btn-sm{padding:4px 11px;font-size:11px}
+#dbStatus b{color:var(--ink)}
+.db-ok{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--green);margin-right:2px}
+.db-off{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--orange);margin-right:2px}
+.warnbar{background:var(--orange-tint,rgba(245,165,36,.14));color:var(--orange);border:1px solid rgba(245,165,36,.3);border-radius:var(--radius);padding:10px 16px;font-size:12.5px;margin-bottom:14px;display:none}
+.tablewrap tbody tr.vincomplete{background:rgba(245,165,36,.09)}
+.tablewrap tbody tr.vincomplete:hover{background:rgba(245,165,36,.16)}
+.chip-incomplete{display:inline-block;border-radius:var(--pill);padding:2px 9px;font-size:10.5px;font-weight:700;background:rgba(245,165,36,.16);color:var(--orange);margin-left:6px}
+.chip-overdue{display:inline-block;border-radius:var(--pill);padding:2px 9px;font-size:10.5px;font-weight:700;background:rgba(240,85,95,.16);color:var(--red);margin-top:3px}
+footer{border-top:1px solid var(--brand-line);margin-top:16px;padding:16px 24px;font-size:11.5px;color:var(--gray);max-width:1480px;margin-left:auto;margin-right:auto}
+footer .footer-links{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+footer .footer-links .fl-lbl{font-size:11px;color:var(--gray);margin-right:2px}
+footer .footer-links a{display:inline-flex;align-items:center;gap:5px;color:var(--brand);text-decoration:none;font-size:11.5px;font-weight:600;padding:4px 11px;border-radius:var(--pill);background:var(--panel-2);border:1px solid var(--brand-line);transition:background .15s,border-color .15s}
+footer .footer-links a:hover{background:var(--panel-3);border-color:var(--brand)}
+.toast{position:fixed;right:18px;bottom:18px;background:var(--panel-3);border:1px solid var(--brand-line);color:var(--ink);padding:10px 18px;border-radius:var(--pill);font-size:12.5px;box-shadow:0 8px 24px rgba(0,0,0,.4);opacity:0;transform:translateY(8px);transition:.25s;pointer-events:none;z-index:200}
+.toast.show{opacity:1;transform:none}
+.toast.err{background:var(--red-bg);border-color:rgba(240,85,95,.4);color:var(--red)}
+
+@media (max-width:760px){ .c3,.c4,.c6{grid-column:span 12} header{padding:12px 14px} main{padding:14px} header .spacer{flex-basis:100%;height:0} }
+
+#printArea{display:none}
+@media print{
+  body.printing header, body.printing main, body.printing footer, body.printing .overlay, body.printing #loginOv, body.printing .storagebar, body.printing .toast{display:none!important}
+  body.printing #printArea{display:block!important}
+  #printArea{font-size:11px;color:#000}
+  #printArea .phead{display:flex;align-items:center;gap:14px;border-bottom:2px solid #2F6FE0;padding-bottom:8px;margin-bottom:12px}
+  #printArea h1{font-size:15px;color:#2F6FE0}
+  #printArea .pmeta{font-size:10px;color:#444;margin-bottom:10px}
+  #printArea table{width:100%;border-collapse:collapse;margin-bottom:14px}
+  #printArea th{background:#EAF0FD;color:#2F6FE0;text-align:left;padding:5px 6px;font-size:9px;border:1px solid #C9D8F5}
+  #printArea td{padding:5px 6px;border:1px solid #DDD;font-size:9px;vertical-align:top}
+  #printArea .pcif{color:#C23B3B;font-weight:700}
+  #printArea h2{font-size:12px;color:#2F6FE0;margin:12px 0 6px}
+  #printArea .pfoot{margin-top:14px;font-size:9px;color:#666;border-top:1px solid #CCC;padding-top:6px}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute">
+  <symbol id="brandmark" viewBox="0 0 40 40">
+    <path d="M20 3 L34 11 L34 29 L20 37 L6 29 L6 11 Z" fill="var(--brand-accent)"/>
+    <rect x="12.6" y="23" width="4.2" height="9" rx="1" fill="#171203"/>
+    <rect x="17.9" y="17" width="4.2" height="15" rx="1" fill="#171203"/>
+    <rect x="23.2" y="10.5" width="4.2" height="21.5" rx="1" fill="#171203"/>
+  </symbol>
+</svg>
+
+<div id="loginOv">
+  <div class="logincard">
+    <svg class="brandmark" width="44" height="44"><use href="#brandmark"/></svg>
+    <h1 data-i18n="login_title">ICT Risk Register</h1>
+    <div class="sub" data-i18n="login_sub">Sign in to continue</div>
+    <div class="loginerr" id="loginErr"></div>
+    <input id="loginUser" autocomplete="username">
+    <input id="loginPass" type="password" autocomplete="current-password">
+    <button class="btn btn-primary" id="btnLogin" data-i18n="login_button">Sign in</button>
+  </div>
+</div>
+
+<header>
+  <svg class="brandmark" width="34" height="34"><use href="#brandmark"/></svg>
+  <div class="apptitle"><span data-i18n="app_title">ICT Risk Register</span><small data-i18n="app_subtitle">Evidence register template</small></div>
+  <div class="spacer"></div>
+  <div class="langtoggle"><button id="langEn">EN</button><button id="langBs">BS</button></div>
+  <button class="btn btn-ghost navtab" id="btnViewRegister" data-i18n="nav_register_view">Register</button>
+  <button class="btn btn-ghost navtab" id="btnViewVendors" data-i18n="nav_vendors">Vendors</button>
+  <button class="btn btn-ghost navtab" id="btnDash" data-i18n="nav_dashboard">Dashboard</button>
+  <button class="btn btn-ghost" id="btnPrint" data-i18n="nav_print">Report generator</button>
+  <button class="btn btn-ghost" id="btnExportCsv" data-i18n="nav_export_csv">Export CSV</button>
+  <button class="btn btn-primary" id="btnNew" data-i18n="nav_new_risk">+ New risk</button>
+  <button class="btn btn-ghost" id="btnHelp" data-i18n="nav_help">Help</button>
+  <span class="hdiv" id="hdivUser"></span>
+  <span class="userchip" id="userChip"></span>
+  <button class="btn btn-ghost btn-sm" id="btnMyPwd" data-i18n="nav_password" style="display:none">Password</button>
+  <button class="btn btn-ghost btn-sm" id="btnSettings" data-i18n="nav_settings">Settings</button>
+  <button class="btn btn-ghost btn-sm" id="btnLogout" data-i18n="nav_logout" style="display:none">Sign out</button>
+  <input type="file" id="fileImport" accept=".json" hidden>
+</header>
+
+<main>
+  <div class="warnbar" id="warnStorage" data-i18n="storage_no_localstorage">This browser does not allow local storage. Data only lives while this tab is open.</div>
+  <div class="privacybar" data-i18n="privacy_note">All data stays in your browser, or in a local file you choose to connect. Nothing is sent to any server.</div>
+
+  <div id="viewRegistar">
+    <div class="stats" id="stats"></div>
+
+    <div class="toolbar">
+      <input type="search" id="q" data-i18n-ph="toolbar_search">
+      <select id="fStatus"></select>
+      <select id="fKat"></select>
+      <select id="fIzvor"></select>
+      <select id="fOdluka"></select>
+      <button class="btn btn-ghost" id="btnClear" data-i18n="btn_clear_filters">Clear filters</button>
+      <span id="qfChip" class="qfchip" style="display:none"></span>
+    </div>
+
+    <div class="tablewrap">
+      <table>
+        <thead id="regHead"></thead>
+        <tbody id="tbody"></tbody>
+      </table>
+      <div class="emptystate" id="empty" style="display:none">
+        <div class="big" data-i18n="empty_title">The register is empty</div>
+        <div data-i18n="empty_text">Add the first risk, or load an existing backup.</div><br>
+        <button class="btn btn-primary" id="btnEmptyNew" data-i18n="empty_button">+ Add first risk</button>
+      </div>
+    </div>
+    <div class="count-note" id="countNote"></div>
+  </div>
+
+  <div id="viewVendors" style="display:none">
+    <div class="stats" id="vendorStats"></div>
+
+    <div class="toolbar">
+      <input type="search" id="vq" data-i18n-ph="toolbar_search_vendor">
+      <select id="vfType"></select>
+      <select id="vfCif"></select>
+      <select id="vfStatus"></select>
+      <select id="vfExit"></select>
+      <button class="btn btn-ghost" id="btnVClear" data-i18n="btn_clear_filters">Clear filters</button>
+    </div>
+
+    <div class="tablewrap">
+      <table>
+        <thead id="vendHead"></thead>
+        <tbody id="vtbody"></tbody>
+      </table>
+      <div class="emptystate" id="vempty" style="display:none">
+        <div class="big" data-i18n="vendor_empty_title">No vendors yet</div>
+        <div data-i18n="vendor_empty_text">Add the first ICT third-party vendor to this register.</div><br>
+        <button class="btn btn-primary" id="btnVEmptyNew" data-i18n="vendor_empty_button">+ Add first vendor</button>
+      </div>
+    </div>
+    <div class="count-note" id="vCountNote"></div>
+    <div class="warnbar" id="vIncompleteBar"></div>
+  </div>
+
+  <div id="viewDashboard">
+    <div class="stats" id="dashKpi"></div>
+    <div class="dashgrid">
+      <div class="dashcard"><h3 data-i18n="dash_status_title">Risks by status</h3><div id="chStatus"></div></div>
+      <div class="dashcard"><h3 data-i18n="dash_decision_title">Treatment decision</h3><div id="chOdluka"></div></div>
+      <div class="dashcard"><h3 data-i18n="dash_source_title">Identification source</h3><div id="chIzvor"></div></div>
+      <div class="dashcard wide"><h3 data-i18n="dash_category_title">Risks by category (by status)</h3><div id="chKat"></div></div>
+      <div class="dashcard"><h3 data-i18n="dash_trend_title">Trend: identified vs closed / month</h3><div id="chTrend"></div></div>
+      <div class="dashcard wide"><h3 data-i18n="dash_heatmap_title">Risk heat map (likelihood × impact)</h3><div id="chHeatmap"></div><div class="count-note" id="heatmapNote"></div></div>
+      <div class="dashcard"><h3 data-i18n="dash_level_title">Risks by level</h3><div id="chLevel"></div></div>
+    </div>
+  </div>
+
+</main>
+
+<div class="overlay" id="overlay">
+  <div class="modal">
+    <h2 id="mTitle">New risk</h2>
+    <div class="modalsub" data-i18n="modal_sub"></div>
+    <div class="reviewline" id="reviewLine" style="display:none"></div>
+    <div class="formerr" id="formErr"></div>
+    <form id="frm" onsubmit="return false" style="display:flex;flex-direction:column;min-height:0">
+     <div class="mbody">
+      <fieldset class="fgroup"><legend data-i18n="fs_identification">Identification</legend>
+        <div class="grid">
+          <div class="field c3"><label data-i18n="f_id">Risk ID *</label><input id="f_id" maxlength="40"></div>
+          <div class="field c6"><label data-i18n="f_name">Risk name *</label><input id="f_naziv" maxlength="150"></div>
+          <div class="field c3"><label data-i18n="f_category">Category *</label><select id="f_kat"></select></div>
+          <div class="field c12"><label data-i18n="f_desc">Risk description (scenario) *</label><textarea id="f_opis" maxlength="2000"></textarea></div>
+          <div class="field c4"><label data-i18n="f_process">Business process</label><input id="f_proces" maxlength="150"></div>
+          <div class="field c4"><label data-i18n="f_cif">Critical or important function (CIF)</label><select id="f_cif"></select></div>
+          <div class="field c4"><label data-i18n="f_legacy">Legacy / obsolete system</label><select id="f_legacy"></select></div>
+          <div class="field c6"><label data-i18n="f_asset">ICT asset</label><input id="f_resurs" maxlength="150"></div>
+          <div class="field c6"><label data-i18n="f_vendor">Vendor (if any)</label><input id="f_dobavljac" maxlength="150" list="vendorNamesList" data-i18n-ph="f_vendor_ph"><datalist id="vendorNamesList"></datalist></div>
+        </div>
+      </fieldset>
+
+      <fieldset class="fgroup"><legend data-i18n="fs_scoring">Risk scoring (reference)</legend>
+        <div class="grid">
+          <div class="field c3"><label data-i18n="f_likelihood">Likelihood (1-5)</label><select id="f_likelihood"></select></div>
+          <div class="field c3"><label data-i18n="f_impact">Impact (1-5)</label><select id="f_impact"></select></div>
+          <div class="field c6"><label data-i18n="f_matrix_position">Position on matrix</label><div id="f_matrixMini"></div></div>
+        </div>
+      </fieldset>
+
+      <fieldset class="fgroup"><legend data-i18n="fs_management">Management</legend>
+        <div class="grid">
+          <div class="field c4"><label data-i18n="f_owner">Risk owner (unit) *</label><input id="f_vlasnik" maxlength="150"></div>
+          <div class="field c4"><label data-i18n="f_dateid">Date identified *</label><input type="date" id="f_datident"></div>
+          <div class="field c4"><label data-i18n="f_source">Identification source *</label><select id="f_izvor"></select></div>
+        </div>
+      </fieldset>
+
+      <fieldset class="fgroup g-decision"><legend data-i18n="fs_decision">Treatment decision</legend>
+        <div class="grid">
+          <div class="field c3"><label data-i18n="f_decision">Decision</label><select id="f_odluka"></select></div>
+          <div class="field c3"><label data-i18n="f_decdate">Decision date</label><input type="date" id="f_datodluka"></div>
+          <div class="field c3"><label data-i18n="f_declevel">Decided at level</label><select id="f_declevel"></select></div>
+          <div class="field c3"><label data-i18n="f_acceptuntil">Accepted until</label><input type="date" id="f_acceptuntil"></div>
+          <div class="field c12"><label data-i18n="f_acceptjust">Acceptance justification</label><textarea id="f_acceptjust" maxlength="2000"></textarea></div>
+        </div>
+      </fieldset>
+
+      <fieldset class="fgroup g-treatment"><legend data-i18n="fs_treatment">Treatment measures</legend>
+        <div class="grid">
+          <div class="field c9"><label data-i18n="f_treatmeasures">Treatment measures</label><textarea id="f_treatmeasures" maxlength="2000"></textarea></div>
+          <div class="field c3"><label data-i18n="f_treatdue">Measures due date</label><input type="date" id="f_treatdue"></div>
+        </div>
+      </fieldset>
+
+      <fieldset class="fgroup g-veze"><legend data-i18n="fs_tracking">Tracking &amp; links</legend>
+        <div class="grid">
+          <div class="field c3"><label data-i18n="f_status">Status</label><select id="f_status"></select></div>
+          <div class="field c3"><label data-i18n="f_nextreview">Next review date</label><input type="date" id="f_datpregled"></div>
+          <div class="field c3"><label data-i18n="f_closeddate">Closed on</label><input type="date" id="f_datclosed"></div>
+          <div class="field c3"><label data-i18n="f_incident">Linked incident (ID)</label><input id="f_incident" maxlength="60"></div>
+          <div class="field c3"><label data-i18n="f_finding">Linked audit/finding (ID)</label><input id="f_preporuka" maxlength="60"></div>
+          <div class="field c3"><label data-i18n="f_assessment">Linked assessment (ID)</label><input id="f_procjena" maxlength="60"></div>
+          <div class="field c3"><label data-i18n="f_roi">Vendor register / ROI ref</label><input id="f_roi" maxlength="60"></div>
+          <div class="field c9"><label data-i18n="f_note">Note (2nd line)</label><textarea id="f_napomena" maxlength="2000"></textarea></div>
+        </div>
+      </fieldset>
+
+      <details class="history" id="histBox" style="display:none">
+        <summary data-i18n="history_title">Change history</summary>
+        <div class="histrows" id="histRows"></div>
+      </details>
+     </div>
+
+      <div class="actions">
+        <button class="btn btn-danger" id="btnDelete" type="button" style="display:none" data-i18n="btn_delete">Delete record</button>
+        <button class="btn btn-ghost" id="btnReview" type="button" style="display:none" data-i18n="btn_review">Log review (today)</button>
+        <button class="btn btn-ghost" id="btnCopy" type="button" style="display:none" data-i18n="btn_copy">Copy as new</button>
+        <div class="spacer"></div>
+        <button class="btn btn-ghost" type="button" id="btnCancel" data-i18n="btn_close">Close</button>
+        <button class="btn btn-primary" type="button" id="btnSave" data-i18n="btn_save">Save</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="overlay" id="vendorOv">
+  <div class="modal">
+    <h2 id="vTitle">New vendor</h2>
+    <div class="modalsub" data-i18n="vendor_modal_sub">One vendor = one ICT third-party contractual arrangement. Register of Information basis.</div>
+    <div class="formerr" id="vFormErr"></div>
+    <form id="vfrm" onsubmit="return false" style="display:flex;flex-direction:column;min-height:0">
+     <div class="mbody">
+      <fieldset class="fgroup"><legend data-i18n="vfs_identification">Identification</legend>
+        <div class="grid">
+          <div class="field c3"><label data-i18n="vf_id">Vendor ID *</label><input id="v_id" maxlength="40"></div>
+          <div class="field c6"><label data-i18n="vf_name">Provider name *</label><input id="v_name" maxlength="150"></div>
+          <div class="field c3"><label data-i18n="vf_type">Service type *</label><select id="v_type"></select></div>
+          <div class="field c12"><label data-i18n="vf_desc">Service description</label><textarea id="v_desc" maxlength="2000"></textarea></div>
+          <div class="field c4"><label data-i18n="vf_process">Business process supported</label><input id="v_process" maxlength="150"></div>
+          <div class="field c4"><label data-i18n="vf_cif">Supports critical/important function *</label><select id="v_cif"></select></div>
+          <div class="field c4"><label data-i18n="vf_datalocation">Data location</label><input id="v_datalocation" maxlength="150"></div>
+        </div>
+      </fieldset>
+
+      <fieldset class="fgroup"><legend data-i18n="vfs_contract">Contract</legend>
+        <div class="grid">
+          <div class="field c3"><label data-i18n="vf_contractstart">Contract start</label><input type="date" id="v_contractstart"></div>
+          <div class="field c3"><label data-i18n="vf_contractend">Contract end / renewal</label><input type="date" id="v_contractend"></div>
+          <div class="field c3"><label data-i18n="vf_status">Status *</label><select id="v_status"></select></div>
+          <div class="field c3"><label data-i18n="vf_nextreview">Next review date</label><input type="date" id="v_nextreview"></div>
+        </div>
+      </fieldset>
+
+      <fieldset class="fgroup g-decision"><legend data-i18n="vfs_chain">Sub-outsourcing &amp; concentration</legend>
+        <div class="grid">
+          <div class="field c3"><label data-i18n="vf_subcontractor">Uses subcontractor *</label><select id="v_subcontractor"></select></div>
+          <div class="field c6"><label data-i18n="vf_subcontractorname">Subcontractor name(s)</label><input id="v_subcontractorname" maxlength="150"></div>
+          <div class="field c3"><label data-i18n="vf_concentration">Concentration risk flag *</label><select id="v_concentration"></select></div>
+        </div>
+      </fieldset>
+
+      <fieldset class="fgroup g-treatment"><legend data-i18n="vfs_governance">Governance</legend>
+        <div class="grid">
+          <div class="field c4"><label data-i18n="vf_auditrights">Audit / inspection rights confirmed *</label><select id="v_auditrights"></select></div>
+          <div class="field c4"><label data-i18n="vf_exitstrategy">Exit strategy status *</label><select id="v_exitstrategy"></select></div>
+          <div class="field c4"><label data-i18n="vf_owner">Internal owner *</label><input id="v_owner" maxlength="150"></div>
+        </div>
+      </fieldset>
+
+      <fieldset class="fgroup g-veze"><legend data-i18n="vfs_links">Links &amp; notes</legend>
+        <div class="grid">
+          <div class="field c12"><label data-i18n="vf_linkedrisks">Linked risk(s) (ID)</label><input id="v_linkedrisks" maxlength="200" placeholder="RISK-2026-001; RISK-2026-004"></div>
+          <div class="field c12"><label data-i18n="vf_notes">Note</label><textarea id="v_notes" maxlength="2000"></textarea></div>
+        </div>
+      </fieldset>
+
+      <details class="history" id="vHistBox" style="display:none">
+        <summary data-i18n="history_title">Change history</summary>
+        <div class="histrows" id="vHistRows"></div>
+      </details>
+     </div>
+
+      <div class="actions">
+        <button class="btn btn-danger" id="btnVDelete" type="button" style="display:none" data-i18n="btn_delete">Delete record</button>
+        <div class="spacer"></div>
+        <button class="btn btn-ghost" type="button" id="btnVCancel" data-i18n="btn_close">Close</button>
+        <button class="btn btn-primary" type="button" id="btnVSave" data-i18n="btn_save">Save</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="overlay" id="resetConfirmOv">
+  <div class="modal narrow">
+    <h2 data-i18n="reset_modal_title">Reset to sample data</h2>
+    <div class="modalsub" id="resetModalBody"></div>
+    <div class="actions"><div class="spacer"></div>
+      <button class="btn btn-ghost" id="btnResetCancel" type="button" data-i18n="btn_cancel">Cancel</button>
+      <button class="btn btn-danger" id="btnResetOk" type="button" disabled></button>
+    </div>
+  </div>
+</div>
+
+<div class="overlay" id="settingsOv">
+  <div class="modal">
+    <h2 data-i18n="settings_title">Settings</h2>
+    <div class="modalsub" data-i18n="settings_sub"></div>
+    <div class="mbody">
+      <div class="restrictnote" id="accessRestrictedNote" style="display:none" data-i18n="settings_restricted_note">Sign-in is required for this register. Contact an administrator to change access settings.</div>
+      <div id="accessSection">
+      <div class="authtoggle">
+        <input type="checkbox" id="authToggle">
+        <div><div class="t" data-i18n="toggle_auth_label">Require sign-in to use this register</div>
+        <div class="h" id="authHint"></div></div>
+      </div>
+      <div id="userSection" style="display:none">
+        <table class="usertable">
+          <thead><tr><th data-i18n="th_username">Username</th><th data-i18n="th_role">Role</th><th data-i18n="th_mustchange">Force password change</th><th data-i18n="th_actions">Actions</th></tr></thead>
+          <tbody id="userRows"></tbody>
+        </table>
+        <fieldset class="fgroup"><legend data-i18n="new_user_legend">New user</legend>
+          <div class="grid">
+            <div class="field c4"><label data-i18n="nu_username">Username</label><input id="nu_name" placeholder="name.surname"></div>
+            <div class="field c3"><label data-i18n="nu_password">Initial password</label><input id="nu_pass" type="text"></div>
+            <div class="field c2"><label data-i18n="nu_role">Role</label><select id="nu_role"></select></div>
+            <div class="field c3"><label data-i18n="nu_mustchange">Change password at login</label><select id="nu_must"><option value="yes" data-i18n="yes_opt">Yes</option><option value="no" data-i18n="no_opt">No</option></select></div>
+          </div>
+          <div class="formerr" id="nuErr"></div>
+          <div class="actions" style="margin-bottom:8px"><div class="spacer"></div><button class="btn btn-primary btn-sm" id="btnAddUser" type="button" data-i18n="btn_add_user">Add user</button></div>
+        </fieldset>
+      </div>
+      </div>
+      <fieldset class="fgroup"><legend data-i18n="fs_data">Data &amp; storage</legend>
+        <div class="datarow"><span id="dbDot" class="db-off"></span><span id="dbStatus"></span></div>
+        <div class="datarow">
+          <button class="btn btn-ghost btn-sm" id="btnConnect"></button>
+          <button class="btn btn-ghost btn-sm" id="btnOtherFile" style="display:none" data-i18n="storage_other_file">Other file</button>
+          <button class="btn btn-ghost btn-sm" id="btnExportJson" data-i18n="storage_backup_make">Make backup</button>
+          <button class="btn btn-ghost btn-sm" id="btnImport" data-i18n="storage_backup_load">Load backup</button>
+          <button class="btn btn-ghost btn-sm" id="btnResetSample" data-i18n="storage_reset_sample">Reset to sample data</button>
+        </div>
+        <div class="datarow"><span data-i18n="storage_last_saved_lbl">Last saved:</span> <span id="lastSaved">-</span></div>
+      </fieldset>
+      <fieldset class="fgroup"><legend data-i18n="fs_getapp">Get the app</legend>
+        <div class="datarow"><button class="btn btn-ghost btn-sm" id="btnDownloadApp" data-i18n="btn_download_app">Download and run locally</button></div>
+        <div class="datarow" data-i18n="download_app_help">Saves this application as one HTML file. Put it anywhere on your computer and double-click it to open, no install and no internet needed (Chrome or Edge recommended).</div>
+      </fieldset>
+    </div>
+    <div class="actions"><div class="spacer"></div><button class="btn btn-ghost" id="btnSettingsClose" type="button" data-i18n="btn_close">Close</button></div>
+  </div>
+</div>
+
+<div class="overlay" id="pwdOv">
+  <div class="modal narrow">
+    <h2 id="pwdTitle"></h2>
+    <div class="modalsub" id="pwdSub"></div>
+    <div class="formerr" id="pwdErr"></div>
+    <div class="field" id="pwdCurWrap"><label data-i18n="pwd_current">Current password</label><input id="pwdCur" type="password" autocomplete="current-password"></div>
+    <div class="field"><label data-i18n="pwd_new1">New password</label><input id="pwdNew1" type="password" autocomplete="new-password"></div>
+    <div class="field"><label data-i18n="pwd_new2">New password (repeat)</label><input id="pwdNew2" type="password" autocomplete="new-password"></div>
+    <div class="actions"><div class="spacer"></div>
+      <button class="btn btn-ghost" id="btnPwdCancel" type="button" data-i18n="btn_cancel">Cancel</button>
+      <button class="btn btn-primary" id="btnPwdSave" type="button" data-i18n="btn_pwd_save">Save password</button>
+    </div>
+  </div>
+</div>
+
+<div class="overlay" id="reportOv">
+  <div class="modal narrow">
+    <h2 data-i18n="report_modal_title">Report generator</h2>
+    <div class="modalsub" data-i18n="report_modal_sub">Choose the period this report should cover.</div>
+    <div class="grid">
+      <div class="field c6"><label data-i18n="report_from">From</label><input type="date" id="repFrom"></div>
+      <div class="field c6"><label data-i18n="report_to">To</label><input type="date" id="repTo"></div>
+      <div class="field c12"><label data-i18n="report_audience">Prepared for</label><select id="repAudience"></select></div>
+    </div>
+    <div class="actions"><div class="spacer"></div>
+      <button class="btn btn-ghost" id="btnReportCancel" type="button" data-i18n="btn_cancel">Cancel</button>
+      <button class="btn btn-primary" id="btnReportGenerate" type="button" data-i18n="report_generate">Generate</button>
+    </div>
+  </div>
+</div>
+
+<div class="overlay" id="helpOv">
+  <div class="modal">
+    <h2 data-i18n="help_title">Help: what this tool is and how it works</h2>
+    <div class="modalsub" data-i18n="help_sub">A quick tour of every part of the app.</div>
+    <div class="mbody">
+      <div class="about-body" id="helpBody"></div>
+    </div>
+    <div class="actions"><div class="spacer"></div><button class="btn btn-ghost" id="btnHelpClose" type="button" data-i18n="btn_close">Close</button></div>
+  </div>
+</div>
+
+<div id="printArea"></div>
+
+<div class="toast" id="toast"></div>
+
+<footer>
+  <div class="footer-links">
+    <span class="fl-lbl" data-i18n="footer_more_tools">More from the author:</span>
+    <a href="https://www.linkedin.com/in/eramic/" target="_blank" rel="noopener noreferrer">
+      <svg viewBox="0 0 24 24" width="14" height="14"><rect width="24" height="24" rx="4" fill="#0A66C2"/><path d="M7.2 9.5H4.4V19h2.8V9.5zM5.8 8.3a1.6 1.6 0 100-3.2 1.6 1.6 0 000 3.2zM19.6 19h-2.8v-5.1c0-1.2-.4-2-1.5-2-.8 0-1.3.6-1.5 1.1-.1.2-.1.5-.1.7V19H10.9s.04-8.6 0-9.5h2.8v1.3c.4-.6 1-1.5 2.6-1.5 1.9 0 3.3 1.2 3.3 3.9V19z" fill="#fff"/></svg>
+      LinkedIn</a>
+    <a href="https://compass-eu.com/" target="_blank" rel="noopener noreferrer">COMPASS EU</a>
+    <a href="https://www.cyberscore360.com/" target="_blank" rel="noopener noreferrer">CyberScore360</a>
+    <a href="https://ramice.github.io/incident/#eu~i~---~,,,,,,,,~0000000~--000-~1~2026-09-12T22:24_2026-09-12T22:24" target="_blank" rel="noopener noreferrer" data-i18n="footer_incident_tool">ICT Incident Triage Tool</a>
+  </div>
+</footer>
+
+<script>
+"use strict";
+/* ===================== i18n ===================== */
+const I18N = {
+  app_title:{en:"ICT Risk Register",bs:"Registar IKT rizika"},
+  app_subtitle:{en:"Evidence register template",bs:"Template evidencijskog registra"},
+  login_title:{en:"ICT Risk Register",bs:"Registar IKT rizika"},
+  login_sub:{en:"Sign in to continue",bs:"Prijavite se za nastavak"},
+  login_button:{en:"Sign in",bs:"Prijava"},
+  nav_dashboard:{en:"Dashboard",bs:"Dashboard"},
+  nav_print:{en:"Report generator",bs:"Generator izvještaja"},
+  nav_export_csv:{en:"Export CSV",bs:"Izvezi CSV"},
+  nav_new_risk:{en:"+ New risk",bs:"+ Novi rizik"},
+  nav_password:{en:"Password",bs:"Lozinka"},
+  nav_settings:{en:"Settings",bs:"Podešavanja"},
+  nav_vendors:{en:"Vendors",bs:"Dobavljači"},
+  nav_help:{en:"Help",bs:"Pomoć"},
+  nav_new_vendor:{en:"+ New vendor",bs:"+ Novi dobavljač"},
+  help_title:{en:"Help: what this tool is and how it works",bs:"Pomoć: šta je ovaj alat i kako radi"},
+  help_sub:{en:"A quick tour of every part of the app.",bs:"Kratak pregled svih dijelova aplikacije."},
+  report_modal_title:{en:"Report generator",bs:"Generator izvještaja"},
+  report_modal_sub:{en:"Choose the period this report should cover.",bs:"Izaberite period koji izvještaj treba da pokrije."},
+  report_from:{en:"From",bs:"Od"},
+  report_to:{en:"To",bs:"Do"},
+  report_audience:{en:"Prepared for",bs:"Priprema se za"},
+  print_audience_line:{en:"Prepared for: {audience}",bs:"Priprema se za: {audience}"},
+  report_generate:{en:"Generate",bs:"Generiši"},
+  print_period_summary:{en:"In this period: {i} risks identified, {c} risks closed.",bs:"U ovom periodu: {i} identifikovanih rizika, {c} zatvorenih rizika."},
+  nav_logout:{en:"Sign out",bs:"Odjava"},
+  storage_no_localstorage:{en:"This browser does not allow local storage. Data only lives while this tab is open.",bs:"Preglednik ne dozvoljava lokalno snimanje. Podaci žive samo dok je stranica otvorena."},
+  privacy_note:{en:"All data stays in your browser, or in a local file you choose to connect. Nothing is sent to any server.",bs:"Svi podaci ostaju u vašem pregledniku ili u lokalnom fajlu koji sami povežete. Ništa se ne šalje na server."},
+  about_title:{en:"About this register: what it is, how it works",bs:"O registru: šta je i kako radi"},
+  about_what_h:{en:"What this is",bs:"Šta je ovo"},
+  about_what_b:{en:"A browser-based ICT risk register: one file, no server, no installation. It's meant to be the central evidence record for identified ICT risks: what they are, who owns them, what was decided, and where things stand. Likelihood and impact scoring deliberately live outside this tool, in a separate assessment exercise, linked back in through the \u201clinked assessment\u201d field.",
+    bs:"Registar IKT rizika koji radi direktno iz preglednika, jedan fajl, bez servera, bez instalacije. Namijenjen je da bude centralna evidencija identifikovanih IKT rizika: šta su, ko ih posjeduje, šta je odlučeno i gdje se trenutno stoji. Ocjenjivanje vjerovatnoće i uticaja namjerno je van ovog alata, vodi se u posebnoj procjeni i povezuje preko polja \u201cLinked assessment\u201d."},
+  about_how_h:{en:"How it works",bs:"Kako radi"},
+  about_how_b:{en:"Everything runs as plain HTML, CSS and JavaScript inside your browser. There's no database, no backend, and no network call of any kind. Data is stored as JSON, either in the browser's local storage (temporary, tied to this device) or in a file you connect and keep on disk or a shared drive, which is the reliable option for anything you want to keep.",
+    bs:"Sve se izvršava kao običan HTML, CSS i JavaScript unutar preglednika, nema baze, nema servera, nema mrežnih poziva bilo koje vrste. Podaci se čuvaju kao JSON, ili u localStorage preglednika (privremeno, vezano za ovaj uređaj), ili u fajlu koji povežete i čuvate na disku ili dijeljenom mrežnom disku, što je pouzdanija opcija za sve što želite zadržati."},
+  about_features_h:{en:"Intended use & key features",bs:"Namjena i ključne značajke"},
+  about_features_b:{en:"Each risk gets one record for its full lifecycle: identification, ownership, a risk level shown right in the table, a treatment decision signed off at the right level, treatment measures with a deadline (flagged automatically if overdue), and ongoing tracking linked to an incident, an audit finding, a risk assessment and a vendor register entry. Picking or typing a vendor name on a risk links it automatically, creating a stub vendor record if it does not exist yet; incomplete vendor records are flagged in amber until completed. A dashboard summarises status, category, source, trend and risk level, and every record keeps a full change history. Sign-in is optional and off by default: turn it on in Settings only if you need to separate who can edit from who can just view.",
+    bs:"Svaki rizik ima jedan zapis kroz cijeli životni ciklus: identifikacija, vlasništvo, nivo rizika prikazan direktno u tabeli, odluka o tretmanu potpisana na odgovarajućem nivou, mjere tretmana sa rokom (automatski označene ako je rok prekoračen), i praćenje sa vezama na incident, nalaz revizije, procjenu rizika i registar dobavljača. Biranje ili upisivanje naziva dobavljača na rizik automatski ga povezuje, kreirajući nepotpun zapis dobavljača ako ne postoji; nepotpuni zapisi dobavljača su označeni žuto dok se ne kompletiraju. Dashboard sumira status, kategoriju, izvor, trend i nivo rizika, a svaki zapis čuva punu istoriju izmjena. Prijava je opciona i isključena po defaultu, uključite je u Settings samo ako treba razdvojiti ko smije uređivati od onoga ko samo gleda."},
+  about_scoring_h:{en:"Risk scoring & heat map",bs:"Ocjena rizika i toplotna mapa"},
+  about_scoring_b:{en:"Likelihood and impact (1-5 each) are optional fields for recording the outcome of your separate risk assessment, not for performing it here: the register still doesn't calculate anything. The 5x5 grid, the four bands (Low/Medium/High/Critical) and the multiplication scoring are a common convention (ISO 31000-style), not a value prescribed by DORA or FBA; both frameworks leave the risk tolerance thresholds to the institution itself (FBA Odluka Art. 9(2)(f)). Align the bands with your own risk appetite policy before relying on the colours.",
+    bs:"Vjerovatnoća i uticaj (1-5) su opciona polja za bilježenje rezultata vaše posebne procjene rizika, ne za njeno rađenje ovdje, registar i dalje ništa ne računa. Mreža 5x5, četiri opsega (Nizak/Srednji/Visok/Kritičan) i množenje kao skor su uobičajena konvencija (u duhu ISO 31000), ne vrijednost propisana od strane DORA-e ili FBA, oba okvira ostavljaju pragove tolerancije na rizik samoj instituciji (FBA Odluka čl. 9 st. 2 tačka f). Uskladite opsege sa internom politikom tolerancije na rizik prije nego se oslonite na boje."},
+  about_vendors_h:{en:"ICT third-party vendor register",bs:"Registar IKT dobavljača"},
+  about_vendors_b:{en:"A second register, next to risks, for ICT third-party contractual arrangements: provider identity, whether it supports a critical or important function, the sub-outsourcing chain, exit strategy status, audit rights and contract dates. Surveys consistently name this the hardest part of DORA in practice (Deloitte found 46% of firms rank the Register of Information as their toughest DORA requirement), and it directly satisfies FBA Odluka Art. 46. It doesn't replace the EU's technical xBRL-CSV submission format, but it gives you the clean, complete underlying data most firms actually struggle to have.",
+    bs:"Drugi registar, pored rizika, za ugovorne aranžmane sa IKT dobavljačima: identitet dobavljača, da li podržava kritičnu ili važnu funkciju, lanac podizvođača, status izlazne strategije, pravo revizije i datumi ugovora. Istraživanja dosljedno navode ovo kao najteži dio DORA prakse (Deloitte navodi da 46% firmi Registar informacija smatra svojim najtežim DORA zahtjevom), a ovaj registar direktno zadovoljava FBA Odluku čl. 46. Ne zamjenjuje zvanični EU xBRL-CSV format podneska, ali daje uredne i kompletne osnovne podatke koje većina firmi realno nema."},
+  about_reports_h:{en:"Report generator",bs:"Generator izvještaja"},
+  about_reports_b:{en:"Generates a report for any date range you choose and any audience (Supervisory Board, Management Board, Risk Committee, Regulator, Audit, or Other): risks identified and closed in that period, plus a snapshot of currently open risks with their risk level. Use it for the annual framework review (FBA Odluka Art. 19, 28), an ad hoc board request, or routine committee reporting. It doesn't need to wait for year-end; pull it whenever you need it.",
+    bs:"Generiše izvještaj za bilo koji period i bilo koju publiku koju izabereš (Nadzorni odbor, Uprava, Odbor za rizike, Regulator, Revizija ili Drugo): identifikovani i zatvoreni rizici u tom periodu, plus presjek trenutno otvorenih rizika sa njihovim nivoom rizika. Koristi ga za godišnje preispitivanje okvira (FBA Odluka čl. 19, 28), vanredan zahtjev uprave, ili redovno izvještavanje komitetu. Ne mora čekati kraj godine, povuci ga kad god zatreba."},
+  about_offline_h:{en:"Using it offline",bs:"Korištenje offline"},
+  about_offline_b:{en:"Visiting this online? Settings \u2192 Get the app downloads the whole tool as one HTML file you can save anywhere and run with zero internet connection from then on. Once you have it, just open the file: double-click it, no server needed. In Chrome or Edge, connect a JSON file (Settings \u2192 Data & storage) and every change saves straight to it, whether the file is opened from disk or hosted online. Firefox and Safari work too; use Make backup / Load backup instead of the live file connection.",
+    bs:"Koristite ovo online? Settings \u2192 Get the app preuzima cijeli alat kao jedan HTML fajl koji možete sačuvati bilo gdje i od tada koristiti bez ikakve internet konekcije. Kad ga imate, samo otvorite fajl, dupli klik, bez servera. U Chrome ili Edge povežite JSON fajl (Settings \u2192 Data & storage) i svaka izmjena se snima direktno u njega, bilo da je fajl otvoren sa diska ili hostovan online. Firefox i Safari takođe rade, samo koristite Make backup / Load backup umjesto direktnog povezivanja."},
+  about_reg_h:{en:"Regulatory basis",bs:"Regulatorna osnova"},
+  about_reg_b:{en:"This register's fields are written to satisfy two frameworks at once: the EU's DORA (Regulation (EU) 2022/2554, Articles 5, 6, 8, 9, 28, supplemented by the RTS in Commission Delegated Regulations (EU) 2024/1774 and (EU) 2024/1773) and the ICT risk management framework of the Banking Agency of the Federation of Bosnia and Herzegovina (FBA Decision and Instruction on the management of information system risks). Both share the same core logic: identify the risk, tie it to a business process and a critical or important function, assign an owner, get the treatment decision signed off at the right level with a documented justification, put a deadline on the fix, review it on a schedule, and keep a paper trail to incidents, findings and vendor registers. This is a demonstration template, not an official regulatory product. Adapt the fields and terminology to your own institution's policy before using it in production.",
+    bs:"Polja ovog registra pisana su da zadovolje dva okvira istovremeno: DORA uredbu EU (Uredba (EU) 2022/2554, čl. 5, 6, 8, 9, 28, dopunjenu RTS-ovima iz Delegiranih uredbi Komisije (EU) 2024/1774 i (EU) 2024/1773) i okvir upravljanja IKT rizicima Agencije za bankarstvo FBiH (FBA Odluka i Uputstvo o upravljanju rizicima informacionog sistema). Oba dijele istu osnovnu logiku: identifikuj rizik, poveži ga sa poslovnim procesom i kritičnom ili važnom funkcijom, dodijeli vlasnika, odluku o tretmanu potpiši na odgovarajućem nivou uz dokumentovano obrazloženje, stavi rok na mjeru, periodično preispituj, i drži trag prema incidentima, nalazima i registru dobavljača. Ovo je demonstracioni template, ne zvaničan regulatorni proizvod. Prilagodite polja i terminologiju internoj politici prije produkcijske upotrebe."},
+  toolbar_search:{en:"Search: ID, name, description, asset, vendor, owner…",bs:"Pretraga: ID, naziv, opis, resurs, dobavljač, vlasnik…"},
+  btn_clear_filters:{en:"Clear filters",bs:"Poništi filtere"},
+  filter_status_all:{en:"Status: all",bs:"Status: svi"},
+  filter_category_all:{en:"Category: all",bs:"Kategorija: sve"},
+  filter_source_all:{en:"Source: all",bs:"Izvor: svi"},
+  filter_decision_all:{en:"Decision: all",bs:"Odluka: sve"},
+  th_id:{en:"ID",bs:"ID"}, th_name:{en:"Risk name",bs:"Naziv rizika"}, th_category:{en:"Category",bs:"Kategorija"},
+  th_cif:{en:"CIF",bs:"CIF"}, th_owner:{en:"Owner",bs:"Vlasnik"}, th_source:{en:"Source",bs:"Izvor"},
+  th_decision:{en:"Decision",bs:"Odluka"}, th_status:{en:"Status",bs:"Status"}, th_nextreview:{en:"Next review",bs:"Sljedeći pregled"}, th_links:{en:"Links",bs:"Veze"},
+  th_level:{en:"Risk level",bs:"Nivo rizika"},
+  th_treatdue:{en:"Treatment due date",bs:"Rok realizacije mjere"},
+  overdue_pill:{en:"Overdue",bs:"Prekoračenje"},
+  print_level:{en:"Level",bs:"Nivo"},
+  dash_level_title:{en:"Risks by level",bs:"Rizici po nivou"},
+  empty_title:{en:"The register is empty",bs:"Registar je prazan"},
+  empty_text:{en:"Add the first risk, or load an existing backup.",bs:"Dodajte prvi rizik ili učitajte postojeći backup."},
+  empty_button:{en:"+ Add first risk",bs:"+ Dodaj prvi rizik"},
+  stat_total:{en:"Total risks",bs:"Ukupno rizika"}, stat_active:{en:"Active (no treatment)",bs:"Aktivni (bez tretmana)"},
+  stat_intreat:{en:"In treatment",bs:"U tretmanu"}, stat_cif:{en:"Open CIF risks",bs:"CIF rizici (nisu zatvoreni)"}, stat_overdue:{en:"Overdue reviews",bs:"Istekli pregledi"},
+  modal_sub:{en:'One risk = one record through its full lifecycle. Likelihood/impact scoring lives in a separate assessment tool and links here via "Linked assessment".',
+    bs:'Jedan rizik = jedan zapis kroz cijeli životni ciklus. Procjena (vjerovatnoća, uticaj) vodi se u posebnom alatu i povezuje preko polja "Veza na procjenu".'},
+  fs_identification:{en:"Identification",bs:"Identifikacija"}, fs_management:{en:"Management",bs:"Upravljanje"}, fs_tracking:{en:"Tracking & links",bs:"Praćenje i veze"},
+  fs_scoring:{en:"Risk scoring (reference)",bs:"Ocjena rizika (referenca)"},
+  f_likelihood:{en:"Likelihood (1-5)",bs:"Vjerovatnoća (1-5)"},
+  f_impact:{en:"Impact (1-5)",bs:"Uticaj (1-5)"},
+  f_matrix_position:{en:"Position on matrix",bs:"Pozicija na matrici"},
+  matrix_no_score:{en:"Set likelihood and impact to see the position.",bs:"Postavite vjerovatnoću i uticaj da vidite poziciju."},
+  matrix_score_label:{en:"Score {s}: {band}",bs:"Skor {s}: {band}"},
+  dash_heatmap_title:{en:"Risk heat map (likelihood × impact)",bs:"Toplotna mapa rizika (vjerovatnoća × uticaj)"},
+  heatmap_axis_impact:{en:"Impact",bs:"Uticaj"},
+  heatmap_axis_likelihood:{en:"Likelihood",bs:"Vjerovatnoća"},
+  heatmap_scored_note:{en:"{n} of {total} risks have a recorded score.",bs:"{n} od {total} rizika ima upisan skor."},
+  fs_decision:{en:"Treatment decision",bs:"Odluka o tretmanu"}, fs_treatment:{en:"Treatment measures",bs:"Mjere tretmana"},
+  f_id:{en:"Risk ID *",bs:"ID rizika *"}, f_name:{en:"Risk name *",bs:"Naziv rizika *"}, f_category:{en:"Category *",bs:"Kategorija rizika *"},
+  f_desc:{en:"Risk description (scenario) *",bs:"Opis rizika (scenario) *"}, f_process:{en:"Business process",bs:"Poslovni proces"},
+  f_cif:{en:"Critical or important function (CIF)",bs:"Kritična ili važna funkcija (CIF)"}, f_asset:{en:"ICT asset",bs:"IKT resurs / imovina"},
+  f_vendor:{en:"Vendor (if any)",bs:"Dobavljač (ako postoji)"}, f_owner:{en:"Risk owner (unit) *",bs:"Vlasnik rizika (OJ) *"},
+  f_vendor_ph:{en:"Pick an existing vendor or type a new name",bs:"Izaberite postojećeg dobavljača ili upišite novi naziv"},
+  vendor_incomplete_badge:{en:"Incomplete",bs:"Nepotpuno"},
+  vendor_incomplete_bar:{en:"{n} vendor record(s) are incomplete and need to be completed (auto-created from a risk record or missing required fields).",
+    bs:"{n} zapis(a) dobavljača je nepotpuno i treba ih kompletirati (automatski kreirano iz zapisa rizika ili nedostaju obavezna polja)."},
+  toast_vendor_autocreated:{en:"New vendor stub created from this risk, complete it in the Vendors register.",bs:"Kreiran je nov, nepotpun zapis dobavljača iz ovog rizika, kompletirajte ga u registru dobavljača."},
+  f_dateid:{en:"Date identified *",bs:"Datum identifikacije *"}, f_source:{en:"Identification source *",bs:"Izvor identifikacije *"},
+  f_decision:{en:"Decision",bs:"Odluka"}, f_decdate:{en:"Decision date",bs:"Datum odluke"},
+  f_declevel:{en:"Decided at level",bs:"Nivo donošenja odluke"}, f_acceptuntil:{en:"Accepted until",bs:"Prihvaćeno do"},
+  f_treatmeasures:{en:"Treatment measures",bs:"Mjere tretmana"}, f_treatdue:{en:"Measures due date",bs:"Rok realizacije mjera"},
+  f_status:{en:"Status",bs:"Status"}, f_nextreview:{en:"Next review date",bs:"Datum sljedećeg pregleda"}, f_closeddate:{en:"Closed on",bs:"Datum zatvaranja"},
+  f_incident:{en:"Linked incident (ID)",bs:"Povezan incident (ID)"}, f_finding:{en:"Linked audit/finding (ID)",bs:"Povezana preporuka/nalaz (ID)"},
+  f_assessment:{en:"Linked assessment (ID)",bs:"Veza na procjenu (ID)"}, f_roi:{en:"Vendor register / ROI ref",bs:"Registar dobavljača / ROI ref"},
+  f_legacy:{en:"Legacy / obsolete system",bs:"Zastarjeli sistem"}, f_acceptjust:{en:"Acceptance justification",bs:"Obrazloženje prihvatanja"},
+  f_note:{en:"Note (2nd line)",bs:"Napomena (2LoD)"},
+  toolbar_search_vendor:{en:"Search: ID, provider, description, owner…",bs:"Pretraga: ID, dobavljač, opis, vlasnik…"},
+  vendor_empty_title:{en:"No vendors yet",bs:"Nema dobavljača"},
+  vendor_empty_text:{en:"Add the first ICT third-party vendor to this register.",bs:"Dodajte prvog IKT dobavljača u registar."},
+  vendor_empty_button:{en:"+ Add first vendor",bs:"+ Dodaj prvog dobavljača"},
+  vendor_modal_sub:{en:"One vendor = one ICT third-party contractual arrangement.",
+    bs:"Jedan dobavljač = jedan ugovorni aranžman sa IKT dobavljačem."},
+  vfs_identification:{en:"Identification",bs:"Identifikacija"},
+  vfs_contract:{en:"Contract",bs:"Ugovor"},
+  vfs_chain:{en:"Sub-outsourcing & concentration",bs:"Podizvođači i koncentracija"},
+  vfs_governance:{en:"Governance",bs:"Upravljanje"},
+  vfs_links:{en:"Links & notes",bs:"Veze i napomena"},
+  vf_id:{en:"Vendor ID *",bs:"ID dobavljača *"},
+  vf_name:{en:"Provider name *",bs:"Naziv dobavljača *"},
+  vf_type:{en:"Service type *",bs:"Vrsta usluge *"},
+  vf_desc:{en:"Service description",bs:"Opis usluge"},
+  vf_process:{en:"Business process supported",bs:"Poslovni proces koji se podržava"},
+  vf_cif:{en:"Supports critical/important function *",bs:"Podržava kritičnu/važnu funkciju *"},
+  vf_datalocation:{en:"Data location",bs:"Lokacija podataka"},
+  vf_contractstart:{en:"Contract start",bs:"Početak ugovora"},
+  vf_contractend:{en:"Contract end / renewal",bs:"Kraj ugovora / obnova"},
+  vf_status:{en:"Status *",bs:"Status *"},
+  vf_nextreview:{en:"Next review date",bs:"Datum sljedećeg pregleda"},
+  vf_subcontractor:{en:"Uses subcontractor *",bs:"Koristi podizvođača *"},
+  vf_subcontractorname:{en:"Subcontractor name(s)",bs:"Naziv podizvođača"},
+  vf_concentration:{en:"Concentration risk flag *",bs:"Oznaka koncentracijskog rizika *"},
+  vf_auditrights:{en:"Audit / inspection rights confirmed *",bs:"Potvrđeno pravo revizije/nadzora *"},
+  vf_exitstrategy:{en:"Exit strategy status *",bs:"Status izlazne strategije *"},
+  vf_owner:{en:"Internal owner *",bs:"Interni vlasnik *"},
+  vf_linkedrisks:{en:"Linked risk(s) (ID)",bs:"Povezani rizik/rizici (ID)"},
+  vf_notes:{en:"Note",bs:"Napomena"},
+  vstat_total:{en:"Total vendors",bs:"Ukupno dobavljača"},
+  vstat_cif:{en:"CIF vendors",bs:"CIF dobavljači"},
+  vstat_sub:{en:"With subcontractor",bs:"Sa podizvođačem"},
+  vstat_noexit:{en:"Critical, no exit strategy",bs:"Kritični, bez izlazne strategije"},
+  vstat_overdue:{en:"Overdue reviews",bs:"Istekli pregledi"},
+  vfilter_type_all:{en:"Type: all",bs:"Vrsta: sve"},
+  vfilter_cif_all:{en:"CIF: all",bs:"CIF: svi"},
+  vfilter_status_all:{en:"Status: all",bs:"Status: svi"},
+  vfilter_exit_all:{en:"Exit strategy: all",bs:"Izlazna strategija: sve"},
+  vth_id:{en:"ID",bs:"ID"}, vth_name:{en:"Provider",bs:"Dobavljač"}, vth_type:{en:"Type",bs:"Vrsta"},
+  vth_cif:{en:"CIF",bs:"CIF"}, vth_status:{en:"Status",bs:"Status"}, vth_exit:{en:"Exit strategy",bs:"Izlazna strategija"},
+  vth_contractend:{en:"Contract end",bs:"Kraj ugovora"}, vth_owner:{en:"Owner",bs:"Vlasnik"}, vth_links:{en:"Linked risks",bs:"Povezani rizici"},
+  vconfirm_delete:{en:"Permanently delete vendor {id}?",bs:"Trajno obrisati dobavljača {id}?"},
+  vtoast_saved:{en:"Vendor saved",bs:"Dobavljač sačuvan"},
+  vtoast_deleted:{en:"Vendor deleted",bs:"Dobavljač obrisan"},
+  verr_required:{en:"Vendor ID and provider name are required.",bs:"ID dobavljača i naziv dobavljača su obavezni."},
+  verr_dup_id:{en:"A vendor with ID '{id}' already exists.",bs:"Dobavljač sa ID '{id}' već postoji."},
+  yes_opt:{en:"Yes",bs:"Da"}, no_opt:{en:"No",bs:"Ne"},
+  btn_save:{en:"Save",bs:"Sačuvaj"}, btn_cancel:{en:"Cancel",bs:"Odustani"}, btn_close:{en:"Close",bs:"Zatvori"},
+  btn_delete:{en:"Delete record",bs:"Obriši zapis"}, btn_review:{en:"Log review (today)",bs:"Evidentiraj pregled (danas)"}, btn_copy:{en:"Copy as new",bs:"Kopiraj kao novi"},
+  history_title:{en:"Change history",bs:"Istorija izmjena"},
+  settings_title:{en:"Settings",bs:"Podešavanja"},
+  settings_sub:{en:"Access control and local data for this register file.",bs:"Kontrola pristupa i lokalni podaci za ovaj fajl registra."},
+  fs_data:{en:"Data & storage",bs:"Podaci i čuvanje"},
+  fs_getapp:{en:"Get the app",bs:"Preuzmi alat"},
+  btn_download_app:{en:"Download and run locally",bs:"Preuzmi i pokreni lokalno"},
+  download_app_help:{en:"Saves this application as one HTML file, in any browser. Put it anywhere on your computer and double-click it to open, no install and no internet needed from then on (Chrome or Edge recommended once inside the app, for the live file-save feature).",
+    bs:"Snima ovu aplikaciju kao jedan HTML fajl, u bilo kom pregledniku. Stavite ga bilo gdje na računaru i otvorite duplim klikom, bez instalacije i bez interneta od tog trenutka (Chrome ili Edge se preporučuju tek unutar alata, za direktno snimanje u fajl)."},
+  toast_app_downloaded:{en:"Downloaded. Open the saved file directly, no server needed.",bs:"Preuzeto. Otvorite sačuvani fajl direktno, bez servera."},
+  settings_restricted_note:{en:"Sign-in is required for this register. Contact an administrator to change access settings.",bs:"Za ovaj registar je obavezna prijava. Za izmjenu podešavanja pristupa obratite se administratoru."},
+  toggle_auth_label:{en:"Require sign-in to use this register",bs:"Zahtijevaj prijavu za korištenje registra"},
+  auth_hint_off:{en:"Currently open: anyone with this file can view and edit, no sign-in needed. Checking this box locks the screen right away, including for you: you'll need to sign in immediately with the built-in account (username admin, password ChangeMe!2026), then change that password before doing anything else.",
+    bs:"Trenutno otvoreno: svako ko ima ovaj fajl može gledati i mijenjati, bez prijave. Čekiranjem ove kućice ekran se odmah zaključava, i za vas: morate se odmah prijaviti sa ugrađenim nalogom (korisničko ime admin, lozinka ChangeMe!2026), pa tu lozinku odmah promijeniti prije bilo čega drugog."},
+  auth_hint_on:{en:"Sign-in is required to use this register. Manage accounts below, and make sure the built-in admin password has been changed from the default.",
+    bs:"Prijava je obavezna za korištenje registra. Upravljajte nalozima ispod, i provjerite da je ugrađena admin lozinka promijenjena sa početne."},
+  th_username:{en:"Username",bs:"Korisničko ime"}, th_role:{en:"Role",bs:"Uloga"}, th_mustchange:{en:"Force password change",bs:"Obavezna promjena lozinke"}, th_actions:{en:"Actions",bs:"Akcije"},
+  new_user_legend:{en:"New user",bs:"Novi korisnik"}, nu_username:{en:"Username",bs:"Korisničko ime"}, nu_password:{en:"Initial password",bs:"Početna lozinka"},
+  nu_role:{en:"Role",bs:"Uloga"}, nu_mustchange:{en:"Change password at login",bs:"Promjena lozinke pri prijavi"}, btn_add_user:{en:"Add user",bs:"Dodaj korisnika"},
+  role_administrator:{en:"Administrator",bs:"Administrator"}, role_viewer:{en:"Viewer",bs:"Korisnik"},
+  btn_reset_pwd:{en:"Reset password",bs:"Reset lozinke"}, btn_delete_user:{en:"Delete",bs:"Obriši"},
+  pwd_title_change:{en:"Change password",bs:"Promjena lozinke"}, pwd_title_forced:{en:"Password change required",bs:"Obavezna promjena lozinke"},
+  pwd_sub_forced:{en:"The administrator required a password change at first sign-in.",bs:"Administrator je zahtijevao promjenu lozinke pri prvoj prijavi."},
+  pwd_current:{en:"Current password",bs:"Trenutna lozinka"}, pwd_new1:{en:"New password",bs:"Nova lozinka"}, pwd_new2:{en:"New password (repeat)",bs:"Nova lozinka (ponovo)"},
+  btn_pwd_save:{en:"Save password",bs:"Sačuvaj lozinku"},
+  dash_status_title:{en:"Risks by status",bs:"Rizici po statusu"}, dash_decision_title:{en:"Treatment decision",bs:"Odluka o tretmanu"},
+  dash_source_title:{en:"Identification source",bs:"Izvor identifikacije"}, dash_category_title:{en:"Risks by category (by status)",bs:"Rizici po kategoriji (razloženo po statusu)"},
+  dash_trend_title:{en:"Trend: identified vs closed / month",bs:"Trend: identifikovani i zatvoreni po mjesecu"},
+  dash_kpi_total:{en:"Total risks in register",bs:"Ukupno rizika u registru"}, dash_kpi_nodecision:{en:"Active, no treatment decision",bs:"Aktivni bez odluke o tretmanu"},
+  dash_kpi_cif:{en:"Open CIF risks",bs:"CIF rizici (nisu zatvoreni)"}, dash_kpi_overdue:{en:"Overdue reviews",bs:"Istekli pregledi"}, dash_kpi_avgage:{en:"Avg. age of open risks (days)",bs:"Prosj. starost otvorenih (dana)"},
+  trend_identified:{en:"Identified",bs:"Identifikovani"}, trend_closed:{en:"Closed",bs:"Zatvoreni"},
+  storage_other_file:{en:"Other file",bs:"Drugi fajl"}, storage_backup_make:{en:"Make backup",bs:"Napravi backup"}, storage_backup_load:{en:"Load backup",bs:"Učitaj backup"},
+  storage_reset_sample:{en:"Reset to sample data",bs:"Vrati na sample podatke"}, storage_last_saved_lbl:{en:"Last saved:",bs:"Posljednja izmjena:"},
+  storage_connect_btn:{en:"Connect database file (.json)",bs:"Poveži fajl baze (.json)"}, storage_continue_btn:{en:"Continue with this file",bs:"Nastavi sa ovim fajlom"},
+  storage_status_local:{en:"Storage: browser only (temporary). Connecting a file is recommended.",bs:"Čuvanje: samo preglednik (privremeno). Preporučeno je povezati fajl."},
+  storage_status_nofs:{en:"Storage: browser only (temporary). Direct file saving is supported in Chrome and Edge. Here, use Make backup.",bs:"Čuvanje: samo preglednik (privremeno). Direktno snimanje u fajl podržavaju Chrome i Edge. Ovdje koristite Napravi backup."},
+  storage_status_connected_admin:{en:"Database: {name} (every change saves directly to this file).",bs:"Baza: {name} (svaka izmjena se snima direktno u fajl)."},
+  storage_status_connected_view:{en:"Database: {name} (data loaded from file, view only).",bs:"Baza: {name} (podaci učitani iz fajla, pregled)."},
+  storage_status_prev:{en:"Database file from a previous session: {name}",bs:"Fajl baze iz prethodne sesije: {name}"},
+  reset_confirm:{en:"Replace ALL current risk and vendor records with the sample records? This cannot be undone (make a backup first if unsure).",bs:"Zamijeniti SVE trenutne zapise rizika i dobavljača sa sample zapisima? Ovo se ne može poništiti (napravite backup ako niste sigurni)."},
+  reset_modal_title:{en:"Reset to sample data",bs:"Vrati na sample podatke"},
+  reset_modal_body:{en:"This replaces ALL current risk and vendor records with the sample records. This cannot be undone. Make a backup first if you're not sure. The confirm button unlocks in a few seconds so you have time to reconsider.",
+    bs:"Ovo zamjenjuje SVE trenutne zapise rizika i dobavljača sa sample zapisima. Ovo se ne može poništiti. Napravite backup prije ako niste sigurni. Dugme za potvrdu se otključava za nekoliko sekundi da imate vremena da se predomislite."},
+  reset_ok_wait:{en:"Confirm ({n})",bs:"Potvrdi ({n})"},
+  reset_ok_ready:{en:"Confirm reset",bs:"Potvrdi reset"},
+  footer_more_tools:{en:"More from the author:",bs:"Još alata istog autora:"},
+  footer_incident_tool:{en:"ICT Incident Triage Tool",bs:"ICT Incident Triage Tool"},
+  qf_nodecision:{en:"Active, no decision",bs:"Aktivni bez odluke"},
+  qf_open:{en:"Open risks",bs:"Otvoreni rizici"},
+  qf_month_identified:{en:"Identified in {month}",bs:"Identifikovano: {month}"},
+  qf_month_closed:{en:"Closed in {month}",bs:"Zatvoreno: {month}"},
+  toast_saved:{en:"Saved",bs:"Sačuvano"}, toast_deleted:{en:"Record deleted",bs:"Zapis obrisan"}, toast_review_logged:{en:"Review logged",bs:"Pregled evidentiran"},
+  toast_backup_loaded:{en:"Backup loaded",bs:"Backup učitan"}, toast_pwd_changed:{en:"Password changed",bs:"Lozinka promijenjena"}, toast_pwd_set:{en:"Password set",bs:"Lozinka postavljena"},
+  toast_reset_done:{en:"Register reset to sample data",bs:"Registar vraćen na sample podatke"},
+  toast_save_file_failed:{en:"Error: saving to the database file failed. Data was kept in the browser.",bs:"Greška: snimanje u fajl baze nije uspjelo. Podaci su zadržani u pregledniku."},
+  toast_bad_backup:{en:"File was not recognized as a valid register backup.",bs:"Fajl nije prepoznat kao validan backup registra."},
+  confirm_delete:{en:"Permanently delete record {id}? For an audit trail, consider setting status to Closed instead.",bs:"Trajno obrisati zapis {id}? Za regulatorni trag preporučuje se status 'Zatvoren' umjesto brisanja."},
+  confirm_delete_user:{en:"Delete user {u}?",bs:"Obrisati korisnika {u}?"},
+  confirm_replace_own:{en:"Cannot delete the account you are currently signed in with.",bs:"Ne možete obrisati nalog sa kojim ste prijavljeni."},
+  confirm_import:{en:"Loading a backup will replace {n} existing records{u}. Continue?",bs:"Učitavanje backupa će zamijeniti {n} postojećih zapisa{u}. Nastaviti?"},
+  confirm_import_users:{en:" and the user list",bs:" i listu korisnika"},
+  confirm_conflict:{en:"File '{name}' contains {f} records, the app currently has {d}.\n\nOK = load data FROM the file (recommended)\nCancel = {alt}",
+    bs:"Fajl '{name}' sadrži {f} zapisa, a aplikacija trenutno {d}.\n\nOK = učitaj podatke IZ FAJLA (preporučeno)\nCancel = {alt}"},
+  conflict_alt_admin:{en:"overwrite the file with the browser's current data",bs:"prepiši fajl trenutnim podacima iz preglednika"},
+  conflict_alt_view:{en:"keep the browser's current data",bs:"zadrži podatke iz preglednika"},
+  prompt_new_pwd:{en:"New password for {u} (min. 8 characters):",bs:"Nova lozinka za {u} (min. 8 znakova):"},
+  err_pwd_len:{en:"Password must be at least 8 characters.",bs:"Lozinka mora imati najmanje 8 znakova."},
+  err_required:{en:"Risk ID and Risk name are required.",bs:"ID rizika i Naziv rizika su obavezna polja."},
+  err_missing_fields:{en:"Please fill in the required fields: {fields}",bs:"Molimo popunite obavezna polja: {fields}"},
+  err_spam:{en:"The \u201c{field}\u201d field looks like repeated/junk text ({value}). Please enter a real value.",bs:"Polje \u201c{field}\u201d izgleda kao ponovljen/besmislen tekst ({value}). Molimo unesite stvaran sadržaj."},
+  err_dup_id:{en:"A record with ID '{id}' already exists.",bs:"Zapis sa ID '{id}' već postoji."},
+  err_username:{en:"Username: min. 3 characters, letters/numbers/dot.",bs:"Korisničko ime: min. 3 znaka, slova/brojevi/tačka."},
+  err_user_exists:{en:"User already exists.",bs:"Korisnik već postoji."},
+  err_login:{en:"Incorrect username or password.",bs:"Pogrešno korisničko ime ili lozinka."},
+  err_pwd_current:{en:"Current password is not correct.",bs:"Trenutna lozinka nije ispravna."},
+  err_pwd_match:{en:"New passwords do not match.",bs:"Nove lozinke se ne podudaraju."},
+  warn_header:{en:"Checks before saving:",bs:"Provjera prije snimanja:"},
+  warn_confirm:{en:"Save anyway?",bs:"Sačuvati svejedno?"},
+  warn_dec_no_date:{en:"A decision was made but the decision date is empty.",bs:"Odluka postoji, a datum odluke je prazan."},
+  warn_accepted_not_acceptance:{en:"Status is 'Accepted' but the decision is not 'Acceptance'.",bs:"Status je 'Prihvaćen', a odluka nije 'Prihvatanje'."},
+  warn_closed_future_review:{en:"Status is 'Closed' but the next review date is in the future.",bs:"Status je 'Zatvoren', a rok sljedećeg pregleda je u budućnosti."},
+  export_filtered_confirm:{en:"A filter is active ({f} of {d} records).\n\nOK = export filtered records only\nCancel = export all records",
+    bs:"Aktivan je filter ({f} od {d} zapisa).\n\nOK = izvezi samo filtrirane\nCancel = izvezi sve zapise"},
+  print_title:{en:"ICT Risk Register: report for risk committee",bs:"Registar IKT rizika: pregled za komitet"},
+  print_meta:{en:"Generated: {dt} · User: {u} · Open risks: {n} (of {total} total) · CIF risks in red",bs:"Generisano: {dt} · Korisnik: {u} · Otvorenih rizika: {n} (od ukupno {total}) · CIF rizici crveno"},
+  print_no_open:{en:"No open risks.",bs:"Nema otvorenih rizika."},
+  print_footer:{en:"Template / demonstration ICT Risk Register, for internal risk committee use",bs:"Template / demonstracioni registar IKT rizika, interno za potrebe komiteta za rizike"},
+  th_lastreview_date:{en:"Last review date",bs:"Datum posljednjeg pregleda"},
+  th_lastreview_user:{en:"Last review user",bs:"Korisnik posljednjeg pregleda"},
+  th_roi:{en:"Vendor register / ROI ref",bs:"Registar dobavljača / ROI ref"},
+  th_lastreview_short:{en:"last review: ",bs:"posljednji: "},
+  nav_register_view:{en:"Register",bs:"Registar"},
+};
+function t(key){ const e = I18N[key]; if(!e) return key; return e[curLang] || e.en || key; }
+function tf(key, vars){ let s = t(key); if(vars) for(const k in vars) s = s.split("{"+k+"}").join(vars[k]); return s; }
+
+const STATUS_KEYS = ["active","in_treatment","accepted","closed"];
+const CATEGORY_KEYS = ["cyber","operational_ict","third_party","business_continuity","information_security","projects_change","compliance","other"];
+const SOURCE_KEYS = ["incident","internal_audit","external_audit","supervisory_review","penetration_test","tlpt","ict_change_management","annual_framework_review","self_assessment","vendor_oversight","gap_analysis","other"];
+const DECISION_KEYS = ["acceptance","mitigation","avoidance","transfer","monitoring"];
+const DECLEVEL_KEYS = ["first_line","second_line","senior_management","risk_committee","management_board"];
+const CIF_KEYS = ["yes","no"];
+const LEGACY_KEYS = ["yes","no"];
+const VTYPE_KEYS = ["cloud","software","data_center","payment_processing","network_telecom","other"];
+const VSTATUS_KEYS = ["active","pending_renewal","terminated"];
+const EXIT_KEYS = ["not_started","drafted","tested","not_applicable"];
+const YESNO_KEYS = ["yes","no"];
+const AUDIENCE_KEYS = ["supervisory_board","management_board","risk_committee","regulator","audit","other"];
+const SCORE_KEYS = ["1","2","3","4","5"];
+const RISK_BANDS = [
+  {max:4,  key:"low",      color:"#34D399"},
+  {max:9,  key:"medium",   color:"#E8C845"},
+  {max:14, key:"high",     color:"#F5A524"},
+  {max:25, key:"critical", color:"#F0555F"},
+];
+function riskScore(l, i){ l = parseInt(l,10); i = parseInt(i,10); if(!l || !i) return null; return l*i; }
+function riskBand(score){ if(score == null) return null; return RISK_BANDS.find(b => score <= b.max); }
+const ENUM_LABELS = {
+  status:{active:{en:"Active",bs:"Aktivan"},in_treatment:{en:"In treatment",bs:"U tretmanu"},accepted:{en:"Accepted",bs:"Prihvaćen"},closed:{en:"Closed",bs:"Zatvoren"}},
+  category:{cyber:{en:"Cyber",bs:"Cyber"},operational_ict:{en:"Operational ICT",bs:"Operativni IKT"},third_party:{en:"Third party",bs:"Treća strana"},
+    business_continuity:{en:"Business continuity",bs:"Kontinuitet poslovanja"},information_security:{en:"Information security",bs:"Informaciona sigurnost"},
+    projects_change:{en:"Projects & change",bs:"Projekti i promjene"},compliance:{en:"Compliance",bs:"Usklađenost"},other:{en:"Other",bs:"Ostalo"}},
+  source:{incident:{en:"Incident",bs:"Incident"},internal_audit:{en:"Internal audit",bs:"Interna revizija"},external_audit:{en:"External audit",bs:"Eksterna revizija"},
+    supervisory_review:{en:"Supervisory review",bs:"Nadzor regulatora"},penetration_test:{en:"Penetration test",bs:"Penetracijsko testiranje"},
+    tlpt:{en:"Threat-led penetration test (TLPT)",bs:"Penetracijsko testiranje vođeno prijetnjama (TLPT)"},
+    ict_change_management:{en:"ICT change management",bs:"Upravljanje IKT promjenama"},
+    annual_framework_review:{en:"Annual framework review",bs:"Godišnje preispitivanje okvira"},
+    self_assessment:{en:"Self-assessment",bs:"Samoprocjena"},vendor_oversight:{en:"Vendor oversight",bs:"Nadzor dobavljača"},
+    gap_analysis:{en:"Regulatory gap analysis",bs:"Regulatorna gap analiza"},other:{en:"Other",bs:"Ostalo"}},
+  decision:{acceptance:{en:"Acceptance",bs:"Prihvatanje"},mitigation:{en:"Mitigation",bs:"Smanjenje"},avoidance:{en:"Avoidance",bs:"Izbjegavanje"},
+    transfer:{en:"Transfer",bs:"Prenos"},monitoring:{en:"Monitoring",bs:"Praćenje"}},
+  declevel:{first_line:{en:"First line (process owner)",bs:"Prva linija (vlasnik procesa)"},second_line:{en:"Second line (risk function)",bs:"Druga linija (funkcija rizika)"},
+    senior_management:{en:"Senior management",bs:"Više rukovodstvo"},risk_committee:{en:"Risk committee",bs:"Komitet za rizike"},management_board:{en:"Management board",bs:"Uprava / Nadzorni odbor"}},
+  cif:{yes:{en:"Yes",bs:"Da"},no:{en:"No",bs:"Ne"}},
+  legacy:{yes:{en:"Yes",bs:"Da"},no:{en:"No",bs:"Ne"}},
+  yesno:{yes:{en:"Yes",bs:"Da"},no:{en:"No",bs:"Ne"}},
+  vtype:{cloud:{en:"Cloud",bs:"Cloud"},software:{en:"Software",bs:"Softver"},data_center:{en:"Data center",bs:"Data centar"},
+    payment_processing:{en:"Payment processing",bs:"Procesiranje plaćanja"},network_telecom:{en:"Network / telecom",bs:"Mreža / telekom"},other:{en:"Other",bs:"Ostalo"}},
+  vstatus:{active:{en:"Active",bs:"Aktivan"},pending_renewal:{en:"Pending renewal",bs:"Čeka obnovu"},terminated:{en:"Terminated",bs:"Raskinut"}},
+  exit:{not_started:{en:"Not started",bs:"Nije počeo"},drafted:{en:"Drafted",bs:"Izrađen nacrt"},tested:{en:"Tested",bs:"Testiran"},not_applicable:{en:"Not applicable",bs:"Nije primjenjivo"}},
+  likelihood:{"1":{en:"1 - Rare",bs:"1 - Rijetko"},"2":{en:"2 - Unlikely",bs:"2 - Malo vjerovatno"},"3":{en:"3 - Possible",bs:"3 - Moguće"},
+    "4":{en:"4 - Likely",bs:"4 - Vjerovatno"},"5":{en:"5 - Almost certain",bs:"5 - Skoro sigurno"}},
+  impact:{"1":{en:"1 - Negligible",bs:"1 - Zanemarljiv"},"2":{en:"2 - Minor",bs:"2 - Manji"},"3":{en:"3 - Moderate",bs:"3 - Umjeren"},
+    "4":{en:"4 - Major",bs:"4 - Veliki"},"5":{en:"5 - Severe",bs:"5 - Ozbiljan"}},
+  band:{low:{en:"Low",bs:"Nizak"},medium:{en:"Medium",bs:"Srednji"},high:{en:"High",bs:"Visok"},critical:{en:"Critical",bs:"Kritičan"}},
+  audience:{supervisory_board:{en:"Supervisory Board",bs:"Nadzorni odbor"},management_board:{en:"Management Board",bs:"Uprava"},
+    risk_committee:{en:"Risk Committee",bs:"Odbor za rizike"},regulator:{en:"Regulator",bs:"Regulator"},audit:{en:"Audit",bs:"Revizija"},other:{en:"Other",bs:"Drugo"}},
+};
+function elabel(type,key){ if(!key) return ""; const e = ENUM_LABELS[type] && ENUM_LABELS[type][key]; return e ? (e[curLang]||e.en) : key; }
+
+/* ===================== state / constants ===================== */
+const KEY = "ict_risk_register_v1";
+const SESSKEY = "ict_risk_register_session";
+const LANGKEY = "ict_risk_register_lang";
+const FILTKEY = "ict_risk_register_filters";
+const FIELDS = ["id","naziv","kat","opis","proces","cif","legacy","resurs","dobavljac","vlasnik","datident","izvor",
+  "likelihood","impact",
+  "odluka","datodluka","declevel","acceptuntil","acceptjust","treatmeasures","treatdue",
+  "status","datpregled","datclosed","incident","preporuka","procjena","roi","napomena"];
+const CSV_KEYS = ["id","naziv","kat","opis","proces","cif","legacy","resurs","dobavljac","vlasnik","datident","izvor",
+  "likelihood","impact",
+  "odluka","datodluka","declevel","acceptuntil","acceptjust","treatmeasures","treatdue",
+  "status","datpregled","datclosed","pregledD","pregledU","incident","preporuka","procjena","roi","napomena"];
+const CSV_LBLKEYS = ["f_id","f_name","f_category","f_desc","f_process","f_cif","f_legacy","f_asset","f_vendor","f_owner","f_dateid","f_source",
+  "f_likelihood","f_impact",
+  "f_decision","f_decdate","f_declevel","f_acceptuntil","f_acceptjust","f_treatmeasures","f_treatdue",
+  "f_status","f_nextreview","f_closeddate","th_lastreview_date","th_lastreview_user","f_incident","f_finding","f_assessment","th_roi","f_note"];
+const VFIELDS = ["id","name","type","desc","process","cif","datalocation","contractstart","contractend","status","nextreview",
+  "subcontractor","subcontractorname","concentration","auditrights","exitstrategy","owner","linkedrisks","notes"];
+const VCSV_KEYS = ["id","name","type","desc","process","cif","datalocation","contractstart","contractend","status","nextreview",
+  "subcontractor","subcontractorname","concentration","auditrights","exitstrategy","owner","linkedrisks","notes"];
+const VCSV_LBLKEYS = ["vf_id","vf_name","vf_type","vf_desc","vf_process","vf_cif","vf_datalocation","vf_contractstart","vf_contractend","vf_status","vf_nextreview",
+  "vf_subcontractor","vf_subcontractorname","vf_concentration","vf_auditrights","vf_exitstrategy","vf_owner","vf_linkedrisks","vf_notes"];
+const RISK_REQUIRED = ["id","naziv","kat","opis","vlasnik","datident","izvor"];
+const VENDOR_REQUIRED = ["id","name","type","cif","status","subcontractor","concentration","auditrights","exitstrategy","owner"];
+const RISK_TEXT_FIELDS = ["id","naziv","opis","proces","resurs","dobavljac","vlasnik","treatmeasures","acceptjust","incident","preporuka","procjena","roi","napomena"];
+const VENDOR_TEXT_FIELDS = ["id","name","desc","process","datalocation","subcontractorname","owner","linkedrisks","notes"];
+function looksLikeSpam(v){
+  if(!v) return false;
+  const s = v.trim();
+  if(s.length < 8) return false;
+  if(/(.)\1{7,}/.test(s)) return true;
+  for(let period = 2; period <= 4; period++){
+    if(s.length < period * 4) continue;
+    const unit = s.slice(0, period);
+    if(unit.trim().length < period) continue;
+    const repeated = unit.repeat(Math.ceil(s.length / period)).slice(0, s.length);
+    if(repeated === s) return true;
+  }
+  return false;
+}
+const STATUS_COLORS = {active:"#F5A524",in_treatment:"#E8C845",accepted:"#5B93F0",closed:"#34D399"};
+const PALETTE = ["#5B93F0","#D4AF37","#34D399","#F5A524","#F0555F","#9B8CFF","#4FD1C5","#E8C845","#98A1BD"];
+const BUILTIN_USER = "admin";
+const DEFAULT_PWD = "ChangeMe!2026";
+
+let curLang = "en";
+let data = [], vendors = [], users = [], settings = { authEnabled:false };
+let currentUser = null, editingId = null, editingVendorId = null, readOnlyForm = false, storageOk = true;
+let currentView = "register";
+let sortKey = "id", sortDir = 1, quickFilter = null;
+let vSortKey = "id", vSortDir = 1;
+
+const SAMPLE_RECORDS = [
+  {id:"RISK-2026-001",naziv:"[SAMPLE] Unsupported OS versions on production servers",kat:"operational_ict",
+   opis:"A portion of production servers run OS versions without vendor support and without regular security patching, increasing exposure to known vulnerabilities.",
+   proces:"Payments processing",cif:"yes",legacy:"yes",likelihood:"3",impact:"4",resurs:"Production servers (HW/OS)",dobavljac:"",vlasnik:"IT Infrastructure",
+   datident:"2026-05-12",izvor:"penetration_test",odluka:"mitigation",datodluka:"2026-05-28",declevel:"second_line",acceptuntil:"",acceptjust:"",
+   treatmeasures:"OS upgrade and patch cycle for the affected server pool.",treatdue:"2026-08-15",
+   status:"in_treatment",datpregled:"2026-11-30",datclosed:"",pregledD:"2026-06-30",pregledU:"admin",
+   incident:"",preporuka:"PT-2026-04",procjena:"RISK-001",roi:"",
+   napomena:"Sample record for demonstration. Server migration plan targets Q4 2026.",
+   history:[{t:"2026-05-12T09:15:00.000Z",u:"system",a:"Record created (sample)",ch:[]},
+            {t:"2026-05-28T11:40:00.000Z",u:"system",a:"Record updated",ch:["Decision: - to Mitigation","Status: Active to In treatment"]},
+            {t:"2026-06-30T08:05:00.000Z",u:"system",a:"2nd-line review logged",ch:["Next review: 30.11.2026."]}]},
+  {id:"RISK-2026-002",naziv:"[SAMPLE] Concentration of critical ICT services in one vendor",kat:"third_party",
+   opis:"Several critical ICT services are outsourced to the same vendor without a developed exit strategy, creating concentration risk under DORA Art. 28.",
+   proces:"Digital banking",cif:"yes",legacy:"no",likelihood:"2",impact:"4",resurs:"Outsourced ICT services",dobavljac:"Primary ICT vendor",vlasnik:"IT Development",
+   datident:"2026-06-03",izvor:"gap_analysis",odluka:"",datodluka:"",declevel:"",acceptuntil:"",acceptjust:"",
+   treatmeasures:"",treatdue:"",
+   status:"active",datpregled:"2026-12-03",datclosed:"",pregledD:"",pregledU:"",
+   incident:"",preporuka:"GAP-2026-11",procjena:"",roi:"VEND-2026-001",
+   napomena:"Sample record for demonstration. Awaiting treatment decision.",
+   history:[{t:"2026-06-03T10:20:00.000Z",u:"system",a:"Record created (sample)",ch:[]}]},
+  {id:"RISK-2026-003",naziv:"[SAMPLE] Incomplete disaster recovery test for secondary site",kat:"business_continuity",
+   opis:"The latest DR test did not cover all critical applications, so actual recovery time for part of the estate is not confirmed against defined RTO targets.",
+   proces:"Business continuity",cif:"no",legacy:"no",likelihood:"1",impact:"3",resurs:"DR environment, secondary site",dobavljac:"Secondary site DR provider",vlasnik:"IT Infrastructure",
+   datident:"2026-04-20",izvor:"internal_audit",odluka:"acceptance",datodluka:"2026-05-15",declevel:"risk_committee",acceptuntil:"2027-05-15",
+   acceptjust:"DR capacity for the non-critical estate already exceeds RTO with margin; residual gap is limited to non-priority reporting systems and is retested annually.",
+   treatmeasures:"",treatdue:"",
+   status:"accepted",datpregled:"2027-04-20",datclosed:"",pregledD:"",pregledU:"",
+   incident:"",preporuka:"IA-2026-07",procjena:"RISK-003",roi:"VEND-2026-003",
+   napomena:"Sample record for demonstration. Temporarily accepted pending next annual DR test.",
+   history:[{t:"2026-04-20T13:00:00.000Z",u:"system",a:"Record created (sample)",ch:[]},
+            {t:"2026-05-15T09:30:00.000Z",u:"system",a:"Record updated",ch:["Decision: - to Acceptance","Status: Active to Accepted"]}]}
+];
+
+const SAMPLE_VENDORS = [
+  {id:"VEND-2026-001",name:"[SAMPLE] Primary ICT vendor",type:"cloud",
+   desc:"Cloud hosting and managed infrastructure services supporting core banking applications.",
+   process:"Digital banking",cif:"yes",datalocation:"EU (Frankfurt, Dublin)",
+   contractstart:"2024-01-01",contractend:"2027-01-01",status:"active",nextreview:"2026-12-01",
+   subcontractor:"yes",subcontractorname:"Regional data center operator (undisclosed)",
+   concentration:"yes",auditrights:"yes",exitstrategy:"not_started",owner:"IT Development",
+   linkedrisks:"RISK-2026-002",notes:"Sample record for demonstration. Exit strategy work not yet started despite CIF and concentration flags, a gap worth tracking.",
+   history:[{t:"2026-06-03T10:00:00.000Z",u:"system",a:"Record created (sample)",ch:[]}]},
+  {id:"VEND-2026-002",name:"[SAMPLE] HR payroll software provider",type:"software",
+   desc:"SaaS payroll and HR administration platform.",
+   process:"Human resources",cif:"no",datalocation:"EU (Amsterdam)",
+   contractstart:"2023-05-01",contractend:"2026-05-01",status:"pending_renewal",nextreview:"2027-01-15",
+   subcontractor:"no",subcontractorname:"",
+   concentration:"no",auditrights:"yes",exitstrategy:"not_applicable",owner:"HR / IT Infrastructure",
+   linkedrisks:"",notes:"Sample record for demonstration. Non-critical function, renewal due soon.",
+   history:[{t:"2025-05-01T09:00:00.000Z",u:"system",a:"Record created (sample)",ch:[]}]},
+  {id:"VEND-2026-003",name:"[SAMPLE] Secondary site DR provider",type:"data_center",
+   desc:"Managed secondary data center used as the failover site for disaster recovery.",
+   process:"Business continuity",cif:"no",datalocation:"BiH (Sarajevo region)",
+   contractstart:"2022-09-01",contractend:"2027-09-01",status:"active",nextreview:"2027-03-01",
+   subcontractor:"no",subcontractorname:"",
+   concentration:"no",auditrights:"yes",exitstrategy:"tested",owner:"IT Infrastructure",
+   linkedrisks:"RISK-2026-003",notes:"Sample record for demonstration. Exit strategy already tested, shown here for contrast with VEND-2026-001.",
+   history:[{t:"2022-09-01T09:00:00.000Z",u:"system",a:"Record created (sample)",ch:[]}]}
+];
+
+/* ===================== helpers ===================== */
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+function fmtD(iso){ if(!iso) return ""; const [y,m,d] = iso.split("-"); return `${d}.${m}.${y}.`; }
+function fmtDT(iso){ const d = new Date(iso); return d.toLocaleDateString(curLang==="bs"?"bs-BA":"en-GB") + " " + d.toLocaleTimeString(curLang==="bs"?"bs-BA":"en-GB",{hour:"2-digit",minute:"2-digit"}); }
+function todayISO(){ return new Date().toISOString().slice(0,10); }
+function monthLabel(m){
+  const [y,mo] = m.split("-");
+  const namesEn = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+  const namesBs = ["jan","feb","mar","apr","maj","jun","jul","avg","sep","okt","nov","dec"];
+  return (curLang === "bs" ? namesBs : namesEn)[parseInt(mo,10)-1] + " " + y;
+}
+function isOverdue(r){ return r.datpregled && r.datpregled < todayISO() && r.status !== "closed"; }
+function isTreatmentOverdue(r){ return r.treatdue && r.treatdue < todayISO() && r.status !== "closed"; }
+function levelChipHTML(r){
+  const score = riskScore(r.likelihood, r.impact);
+  if(score == null) return "";
+  const band = riskBand(score);
+  return `<span class="chip" style="background:${band.color}22;color:${band.color}">${esc(elabel("band", band.key))}</span>`;
+}
+function isAdmin(){ return !settings.authEnabled || (currentUser && currentUser.role === "administrator"); }
+function addMonths(iso, m){
+  const [y,mo,d] = iso.split("-").map(Number);
+  const dt = new Date(Date.UTC(y, mo - 1 + m, d));
+  if(dt.getUTCDate() !== d) dt.setUTCDate(0);
+  return dt.toISOString().slice(0,10);
+}
+function suggestNextReview(rec){ const base = rec.pregledD || rec.datident || todayISO(); return addMonths(base, rec.cif === "yes" ? 6 : 12); }
+function nextId(){
+  const y = new Date().getFullYear();
+  let max = 0;
+  data.forEach(r => { const m = new RegExp("^RISK-" + y + "-(\\d+)$").exec(r.id || ""); if(m) max = Math.max(max, parseInt(m[1],10)); });
+  return "RISK-" + y + "-" + String(max + 1).padStart(3,"0");
+}
+function nextVendorId(){
+  const y = new Date().getFullYear();
+  let max = 0;
+  vendors.forEach(r => { const m = new RegExp("^VEND-" + y + "-(\\d+)$").exec(r.id || ""); if(m) max = Math.max(max, parseInt(m[1],10)); });
+  return "VEND-" + y + "-" + String(max + 1).padStart(3,"0");
+}
+function fillEnumSelect(el, type, keys, withEmpty){
+  el.innerHTML = (withEmpty ? '<option value=""></option>' : "") + keys.map(k => `<option value="${k}">${esc(elabel(type,k))}</option>`).join("");
+}
+async function hashPwd(salt, pwd){
+  const s = salt + "::" + pwd;
+  try{
+    const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(s));
+    return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2,"0")).join("");
+  }catch(e){
+    let h = 2166136261;
+    for(let i = 0; i < s.length; i++){ h ^= s.charCodeAt(i); h = Math.imul(h, 16777619) >>> 0; }
+    return "fnv" + h.toString(16);
+  }
+}
+function newSalt(){ return Math.random().toString(36).slice(2) + Date.now().toString(36); }
+
+/* ===================== language ===================== */
+function setLang(l){
+  curLang = l;
+  try{ localStorage.setItem(LANGKEY, l); }catch(e){}
+  document.documentElement.lang = l;
+  $("langEn").className = l === "en" ? "active" : "";
+  $("langBs").className = l === "bs" ? "active" : "";
+  document.querySelectorAll("[data-i18n]").forEach(el => { el.textContent = t(el.dataset.i18n); });
+  document.querySelectorAll("[data-i18n-ph]").forEach(el => { el.placeholder = t(el.dataset.i18nPh); });
+  $("helpBody").innerHTML = ["what","how","features","scoring","vendors","reports","offline","reg"].map(k =>
+    `<h4>${esc(t("about_"+k+"_h"))}</h4><p>${esc(t("about_"+k+"_b"))}</p>`).join("");
+  rebuildEnumSelects();
+  applyPerms();
+  updateDbUi();
+  if(currentView === "vendors") renderVendors();
+  else if(currentView === "dashboard") { render(); renderDashboard(); }
+  else render();
+}
+function rebuildEnumSelects(){
+  const cur = id => $(id).value;
+  fillEnumSelect($("fStatus"), "status", STATUS_KEYS, true); $("fStatus").insertAdjacentHTML("afterbegin", `<option value="">${esc(t("filter_status_all"))}</option>`);
+  fillEnumSelect($("fKat"), "category", CATEGORY_KEYS, true); $("fKat").insertAdjacentHTML("afterbegin", `<option value="">${esc(t("filter_category_all"))}</option>`);
+  fillEnumSelect($("fIzvor"), "source", SOURCE_KEYS, true); $("fIzvor").insertAdjacentHTML("afterbegin", `<option value="">${esc(t("filter_source_all"))}</option>`);
+  fillEnumSelect($("fOdluka"), "decision", DECISION_KEYS, true); $("fOdluka").insertAdjacentHTML("afterbegin", `<option value="">${esc(t("filter_decision_all"))}</option>`);
+  fillEnumSelect($("f_kat"), "category", CATEGORY_KEYS, true);
+  fillEnumSelect($("f_izvor"), "source", SOURCE_KEYS, true);
+  fillEnumSelect($("f_odluka"), "decision", DECISION_KEYS, true);
+  fillEnumSelect($("f_status"), "status", STATUS_KEYS, true);
+  fillEnumSelect($("f_declevel"), "declevel", DECLEVEL_KEYS, true);
+  fillEnumSelect($("f_cif"), "cif", CIF_KEYS, true);
+  fillEnumSelect($("f_legacy"), "legacy", LEGACY_KEYS, true);
+  fillEnumSelect($("f_likelihood"), "likelihood", SCORE_KEYS, true);
+  fillEnumSelect($("f_impact"), "impact", SCORE_KEYS, true);
+  fillEnumSelect($("nu_role"), "role", ["viewer","administrator"], false);
+  fillEnumSelect($("repAudience"), "audience", AUDIENCE_KEYS, false);
+  fillEnumSelect($("vfType"), "vtype", VTYPE_KEYS, true); $("vfType").insertAdjacentHTML("afterbegin", `<option value="">${esc(t("vfilter_type_all"))}</option>`);
+  fillEnumSelect($("vfCif"), "yesno", YESNO_KEYS, true); $("vfCif").insertAdjacentHTML("afterbegin", `<option value="">${esc(t("vfilter_cif_all"))}</option>`);
+  fillEnumSelect($("vfStatus"), "vstatus", VSTATUS_KEYS, true); $("vfStatus").insertAdjacentHTML("afterbegin", `<option value="">${esc(t("vfilter_status_all"))}</option>`);
+  fillEnumSelect($("vfExit"), "exit", EXIT_KEYS, true); $("vfExit").insertAdjacentHTML("afterbegin", `<option value="">${esc(t("vfilter_exit_all"))}</option>`);
+  fillEnumSelect($("v_type"), "vtype", VTYPE_KEYS, true);
+  fillEnumSelect($("v_cif"), "yesno", YESNO_KEYS, true);
+  fillEnumSelect($("v_status"), "vstatus", VSTATUS_KEYS, true);
+  fillEnumSelect($("v_subcontractor"), "yesno", YESNO_KEYS, true);
+  fillEnumSelect($("v_concentration"), "yesno", YESNO_KEYS, true);
+  fillEnumSelect($("v_auditrights"), "yesno", YESNO_KEYS, true);
+  fillEnumSelect($("v_exitstrategy"), "exit", EXIT_KEYS, true);
+  // restore previous selections where possible (values are canonical keys, safe across reload)
+  ["fStatus","fKat","fIzvor","fOdluka","f_kat","f_izvor","f_odluka","f_status","f_declevel","f_cif","f_legacy","f_likelihood","f_impact",
+   "vfType","vfCif","vfStatus","vfExit","v_type","v_cif","v_status","v_subcontractor","v_concentration","v_auditrights","v_exitstrategy","repAudience"
+  ].forEach(id => { const v = cur(id); if(v) $(id).value = v; });
+}
+ENUM_LABELS.role = { viewer:{en:"Viewer",bs:"Korisnik"}, administrator:{en:"Administrator",bs:"Administrator"} };
+$("langEn").addEventListener("click", () => setLang("en"));
+$("langBs").addEventListener("click", () => setLang("bs"));
+
+/* ===================== toast ===================== */
+let toastTimer;
+function showToast(msg, err){
+  const el = $("toast");
+  el.textContent = msg;
+  el.className = "toast show" + (err ? " err" : "");
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => el.classList.remove("show"), err ? 5000 : 1800);
+}
+
+/* ===================== storage (file db + localStorage mirror) ===================== */
+const supportsFS = "showSaveFilePicker" in window;
+let fileHandle = null, storedHandle = null, dbConnected = false, writeChain = Promise.resolve();
+
+function currentPayload(){ return { app:"ICT Risk Register Template", version:1, saved:new Date().toISOString(), records:data, vendors:vendors, users:users, settings:settings }; }
+function applyPayload(parsed){
+  data = parsed.records || [];
+  if(parsed.vendors !== undefined){ vendors = parsed.vendors; hadVendorsKey = true; }
+  if(parsed.users && parsed.users.length) users = parsed.users;
+  if(parsed.settings) settings = Object.assign({authEnabled:false}, parsed.settings);
+  if(parsed.saved) setLastSaved(parsed.saved);
+}
+let hadStore = false, hadVendorsKey = false;
+function loadData(){
+  try{
+    const raw = localStorage.getItem(KEY);
+    if(raw){ hadStore = true; applyPayload(JSON.parse(raw)); }
+  }catch(e){ storageOk = false; $("warnStorage").style.display = "block"; }
+  if(!hadStore && data.length === 0) data = JSON.parse(JSON.stringify(SAMPLE_RECORDS));
+  if(!hadVendorsKey && vendors.length === 0) vendors = JSON.parse(JSON.stringify(SAMPLE_VENDORS));
+}
+function saveData(){
+  const payload = currentPayload();
+  const json = JSON.stringify(payload, null, 2);
+  try{ localStorage.setItem(KEY, json); }
+  catch(e){ if(!fileHandle){ storageOk = false; $("warnStorage").style.display = "block"; } }
+  setLastSaved(payload.saved);
+  fillVendorDatalist();
+  if(fileHandle && isAdmin()) writeChain = writeChain.then(() => writeFile(json));
+}
+function saveDataAsAny(){
+  const payload = currentPayload();
+  const json = JSON.stringify(payload, null, 2);
+  try{ localStorage.setItem(KEY, json); }catch(e){}
+  setLastSaved(payload.saved);
+  fillVendorDatalist();
+  if(fileHandle) writeChain = writeChain.then(() => writeFile(json));
+}
+async function writeFile(json){
+  try{ const w = await fileHandle.createWritable(); await w.write(json); await w.close(); dbConnected = true; }
+  catch(e){ dbConnected = false; showToast(t("toast_save_file_failed"), true); }
+  updateDbUi();
+}
+function setLastSaved(iso){ $("lastSaved").textContent = iso ? fmtDT(iso) : "-"; }
+
+function idbOpen(){ return new Promise(res => {
+  const rq = indexedDB.open("ict_reg_fs", 1);
+  rq.onupgradeneeded = () => rq.result.createObjectStore("h");
+  rq.onsuccess = () => res(rq.result);
+  rq.onerror = () => res(null);
+});}
+async function idbSet(handle){ const db = await idbOpen(); if(!db) return; try{ db.transaction("h","readwrite").objectStore("h").put(handle,"handle"); }catch(e){} }
+async function idbGet(){
+  const db = await idbOpen(); if(!db) return null;
+  return new Promise(res => {
+    try{ const g = db.transaction("h","readonly").objectStore("h").get("handle"); g.onsuccess = () => res(g.result||null); g.onerror = () => res(null); }
+    catch(e){ res(null); }
+  });
+}
+async function readFromHandle(){
+  try{ const file = await fileHandle.getFile(); const text = await file.text(); if(!text.trim()) return null; return JSON.parse(text); }
+  catch(e){ return null; }
+}
+async function adoptHandle(){
+  const parsed = await readFromHandle();
+  if(parsed){
+    const fileRecs = parsed.records || (Array.isArray(parsed) ? parsed : []);
+    if(fileRecs.length){
+      if(data.length === 0){ applyPayload(parsed.records ? parsed : {records:fileRecs}); }
+      else if(JSON.stringify(fileRecs) !== JSON.stringify(data)){
+        const fromFile = confirm(tf("confirm_conflict", { name:fileHandle.name, f:fileRecs.length, d:data.length, alt: isAdmin() ? t("conflict_alt_admin") : t("conflict_alt_view") }));
+        if(fromFile) applyPayload(parsed.records ? parsed : {records:fileRecs});
+      }
+    } else if(parsed.settings || parsed.users){ applyPayload(parsed); }
+  }
+  await ensureBuiltins();
+  idbSet(fileHandle);
+  if(isAdmin()) saveData(); else saveDataAsAny();
+  render(); updateDbUi();
+}
+async function pickFile(){
+  try{
+    const h = await window.showSaveFilePicker({ suggestedName:"ict_risk_register_data.json", types:[{description:"Register database (JSON)", accept:{"application/json":[".json"]}}] });
+    fileHandle = h; dbConnected = true;
+    await adoptHandle();
+  }catch(e){ /* cancelled */ }
+}
+async function reconnectStored(){
+  try{
+    const perm = await storedHandle.requestPermission({ mode: isAdmin() ? "readwrite" : "read" });
+    if(perm === "granted"){ fileHandle = storedHandle; dbConnected = true; await adoptHandle(); }
+  }catch(e){ pickFile(); }
+}
+function updateDbUi(){
+  const st = $("dbStatus"), dot = $("dbDot"), btn = $("btnConnect"), other = $("btnOtherFile");
+  if(!supportsFS){
+    st.textContent = t("storage_status_nofs");
+    btn.style.display = "none"; other.style.display = "none"; return;
+  }
+  if(fileHandle && dbConnected){
+    st.innerHTML = tf(isAdmin() ? "storage_status_connected_admin" : "storage_status_connected_view", { name: "<b>"+esc(fileHandle.name)+"</b>" });
+    dot.className = "db-ok"; btn.style.display = "none"; other.style.display = "inline-block";
+  }else if(storedHandle){
+    st.innerHTML = tf("storage_status_prev", { name: "<b>"+esc(storedHandle.name)+"</b>" });
+    dot.className = "db-off"; btn.textContent = t("storage_continue_btn"); btn.style.display = "inline-block"; other.style.display = "inline-block";
+  }else{
+    st.textContent = t("storage_status_local");
+    dot.className = "db-off"; btn.textContent = t("storage_connect_btn"); btn.style.display = "inline-block"; other.style.display = "none";
+  }
+}
+async function initFileDb(){ if(!supportsFS){ updateDbUi(); return; } storedHandle = await idbGet(); updateDbUi(); }
+
+/* ===================== users / auth ===================== */
+async function ensureBuiltins(){
+  let u = users.find(x => x.u === BUILTIN_USER);
+  if(!u){ const salt = newSalt(); users.push({ u:BUILTIN_USER, salt, hash: await hashPwd(salt, DEFAULT_PWD), role:"administrator", builtin:true, mustChange:false }); }
+  else{ u.builtin = true; u.role = "administrator"; }
+}
+function setSession(name){ try{ sessionStorage.setItem(SESSKEY, name); }catch(e){} }
+function getSession(){ try{ return sessionStorage.getItem(SESSKEY); }catch(e){ return null; } }
+function clearSession(){ try{ sessionStorage.removeItem(SESSKEY); }catch(e){} }
+
+function applyPerms(){
+  const admin = isAdmin(), authed = settings.authEnabled && currentUser;
+  $("btnNew").style.display = (admin && currentView !== "dashboard") ? "inline-block" : "none";
+  $("btnNew").textContent = currentView === "vendors" ? t("nav_new_vendor") : t("nav_new_risk");
+  $("btnEmptyNew").style.display = admin ? "inline-block" : "none";
+  $("btnVEmptyNew").style.display = admin ? "inline-block" : "none";
+  $("btnImport").style.display = admin ? "inline-block" : "none";
+  $("btnResetSample").style.display = admin ? "inline-block" : "none";
+  $("btnMyPwd").style.display = authed ? "inline-block" : "none";
+  $("btnLogout").style.display = authed ? "inline-block" : "none";
+  $("userChip").innerHTML = authed ? ("<b>" + esc(currentUser.u) + "</b> · " + esc(elabel("role",currentUser.role))) : "";
+  $("hdivUser").style.display = settings.authEnabled ? "inline-block" : "none";
+  $("userChip").style.display = settings.authEnabled ? "inline-block" : "none";
+}
+function showLogin(){
+  currentUser = null; clearSession(); applyPerms();
+  $("loginErr").textContent = ""; $("loginUser").value = ""; $("loginPass").value = "";
+  $("loginOv").classList.add("open");
+  setTimeout(() => $("loginUser").focus(), 50);
+}
+async function tryLogin(){
+  const name = $("loginUser").value.trim().toLowerCase();
+  const pwd = $("loginPass").value;
+  const u = users.find(x => x.u === name);
+  if(!u){ $("loginErr").textContent = t("err_login"); return; }
+  const h = await hashPwd(u.salt, pwd);
+  if(h !== u.hash){ $("loginErr").textContent = t("err_login"); return; }
+  currentUser = u; setSession(u.u);
+  $("loginOv").classList.remove("open");
+  applyPerms(); render(); updateDbUi();
+  if(u.mustChange) openPwd(true);
+}
+$("btnLogin").addEventListener("click", tryLogin);
+$("loginPass").addEventListener("keydown", e => { if(e.key === "Enter") tryLogin(); });
+$("loginUser").addEventListener("keydown", e => { if(e.key === "Enter") $("loginPass").focus(); });
+$("btnLogout").addEventListener("click", showLogin);
+
+let pwdForced = false;
+function openPwd(forced){
+  pwdForced = !!forced;
+  $("pwdErr").textContent = "";
+  $("pwdCur").value = ""; $("pwdNew1").value = ""; $("pwdNew2").value = "";
+  $("pwdCurWrap").style.display = forced ? "none" : "block";
+  $("pwdTitle").textContent = forced ? t("pwd_title_forced") : t("pwd_title_change");
+  $("pwdSub").textContent = forced ? t("pwd_sub_forced") : (currentUser ? currentUser.u : "");
+  $("btnPwdCancel").style.display = forced ? "none" : "inline-block";
+  $("pwdOv").classList.add("open");
+}
+$("btnMyPwd").addEventListener("click", () => { if(currentUser) openPwd(false); });
+$("btnPwdCancel").addEventListener("click", () => $("pwdOv").classList.remove("open"));
+$("btnPwdSave").addEventListener("click", async () => {
+  const n1 = $("pwdNew1").value, n2 = $("pwdNew2").value;
+  if(!pwdForced){
+    const cur = await hashPwd(currentUser.salt, $("pwdCur").value);
+    if(cur !== currentUser.hash){ $("pwdErr").textContent = t("err_pwd_current"); return; }
+  }
+  if(n1.length < 8){ $("pwdErr").textContent = t("err_pwd_len"); return; }
+  if(n1 !== n2){ $("pwdErr").textContent = t("err_pwd_match"); return; }
+  currentUser.salt = newSalt(); currentUser.hash = await hashPwd(currentUser.salt, n1); currentUser.mustChange = false;
+  saveDataAsAny();
+  $("pwdOv").classList.remove("open");
+  showToast(t("toast_pwd_changed"));
+});
+
+/* --- settings modal (auth toggle + user manager) --- */
+function renderUsers(){
+  $("userRows").innerHTML = users.map((u,i) => `
+    <tr>
+      <td>${esc(u.u)}${u.builtin ? '<span class="tagbuiltin">built-in</span>' : ""}</td>
+      <td>${u.builtin ? esc(elabel("role",u.role)) : `<select data-act="role" data-i="${i}">${["viewer","administrator"].map(r=>`<option value="${r}"${u.role===r?" selected":""}>${esc(elabel("role",r))}</option>`).join("")}</select>`}</td>
+      <td><input type="checkbox" data-act="must" data-i="${i}" ${u.mustChange ? "checked" : ""}></td>
+      <td><button class="btn btn-ghost btn-sm" data-act="reset" data-i="${i}">${esc(t("btn_reset_pwd"))}</button>${u.builtin ? "" : `<button class="btn btn-danger btn-sm" data-act="del" data-i="${i}">${esc(t("btn_delete_user"))}</button>`}</td>
+    </tr>`).join("");
+}
+function openSettings(){
+  const canManage = isAdmin();
+  $("accessSection").style.display = canManage ? "block" : "none";
+  $("accessRestrictedNote").style.display = canManage ? "none" : "block";
+  if(canManage){
+    $("authToggle").checked = settings.authEnabled;
+    $("authHint").textContent = settings.authEnabled ? t("auth_hint_on") : t("auth_hint_off");
+    $("userSection").style.display = settings.authEnabled ? "block" : "none";
+    renderUsers();
+  }
+  $("nuErr").style.display = "none";
+  updateDbUi();
+  $("settingsOv").classList.add("open");
+}
+$("btnSettings").addEventListener("click", openSettings);
+$("btnSettingsClose").addEventListener("click", () => $("settingsOv").classList.remove("open"));
+$("btnHelp").addEventListener("click", () => { $("helpOv").classList.add("open"); });
+$("btnHelpClose").addEventListener("click", () => $("helpOv").classList.remove("open"));
+$("authToggle").addEventListener("change", () => {
+  settings.authEnabled = $("authToggle").checked;
+  $("authHint").textContent = settings.authEnabled ? t("auth_hint_on") : t("auth_hint_off");
+  $("userSection").style.display = settings.authEnabled ? "block" : "none";
+  saveData(); applyPerms(); render();
+  if(settings.authEnabled){ $("settingsOv").classList.remove("open"); showLogin(); }
+});
+$("userRows").addEventListener("click", async e => {
+  const b = e.target, act = b.dataset.act, i = parseInt(b.dataset.i, 10);
+  if(!act || isNaN(i)) return;
+  const u = users[i];
+  if(act === "del" && !u.builtin){
+    if(confirm(tf("confirm_delete_user", {u:u.u}))){
+      if(currentUser && currentUser.u === u.u){ alert(t("confirm_replace_own")); return; }
+      users.splice(i,1); saveData(); renderUsers();
+    }
+  }
+  if(act === "reset"){
+    const np = prompt(tf("prompt_new_pwd", {u:u.u}));
+    if(np === null) return;
+    if(np.length < 8){ alert(t("err_pwd_len")); return; }
+    u.salt = newSalt(); u.hash = await hashPwd(u.salt, np);
+    saveData(); showToast(t("toast_pwd_set"));
+  }
+});
+$("userRows").addEventListener("change", e => {
+  const t2 = e.target, act = t2.dataset.act, i = parseInt(t2.dataset.i, 10);
+  if(isNaN(i)) return;
+  const u = users[i];
+  if(act === "role" && !u.builtin){ u.role = t2.value; saveData(); }
+  if(act === "must"){ u.mustChange = t2.checked; saveData(); }
+});
+$("btnAddUser").addEventListener("click", async () => {
+  const name = $("nu_name").value.trim().toLowerCase();
+  const pwd = $("nu_pass").value;
+  const err = $("nuErr"); err.style.display = "none";
+  if(!/^[a-z0-9._-]{3,}$/.test(name)){ err.textContent = t("err_username"); err.style.display = "block"; return; }
+  if(users.find(x => x.u === name)){ err.textContent = t("err_user_exists"); err.style.display = "block"; return; }
+  if(pwd.length < 8){ err.textContent = t("err_pwd_len"); err.style.display = "block"; return; }
+  const salt = newSalt();
+  users.push({ u:name, salt, hash: await hashPwd(salt, pwd), role: $("nu_role").value, builtin:false, mustChange: $("nu_must").value === "yes" });
+  $("nu_name").value = ""; $("nu_pass").value = "";
+  saveData(); renderUsers();
+});
+
+/* ===================== checks ===================== */
+/* ===================== render (registry) ===================== */
+function buildHead(){
+  const cols = [["id","th_id"],["naziv","th_name"],["level","th_level"],["kat","th_category"],["cif","th_cif"],["vlasnik","th_owner"],
+    ["izvor","th_source"],["odluka","th_decision"],["status","th_status"],["treatdue","th_treatdue"],["datpregled","th_nextreview"]];
+  $("regHead").innerHTML = "<tr>" + cols.map(([k,l]) => `<th data-sort="${k}">${esc(t(l))}<span class="arr"></span></th>`).join("") + `<th>${esc(t("th_links"))}</th></tr>`;
+}
+function getFiltered(){
+  const q = $("q").value.trim().toLowerCase();
+  const fS = $("fStatus").value, fK = $("fKat").value, fI = $("fIzvor").value, fO = $("fOdluka").value;
+  let rows = data
+    .filter(r => (!fS || r.status === fS) && (!fK || r.kat === fK) && (!fI || r.izvor === fI) && (!fO || r.odluka === fO))
+    .filter(r => !q || [r.id,r.naziv,r.opis,r.resurs,r.dobavljac,r.vlasnik,r.proces,r.napomena,r.incident,r.preporuka,r.procjena,r.roi,r.treatmeasures].join(" ").toLowerCase().includes(q));
+  if(quickFilter){
+    if(quickFilter.kind === "cif") rows = rows.filter(r => r.cif === "yes" && r.status !== "closed");
+    else if(quickFilter.kind === "overdue") rows = rows.filter(isOverdue);
+    else if(quickFilter.kind === "nodecision") rows = rows.filter(r => r.status === "active" && !r.odluka);
+    else if(quickFilter.kind === "open") rows = rows.filter(r => r.status !== "closed");
+    else if(quickFilter.kind === "month_identified") rows = rows.filter(r => (r.datident || "").slice(0,7) === quickFilter.month);
+    else if(quickFilter.kind === "month_closed") rows = rows.filter(r => closedMonth(r) === quickFilter.month);
+    else if(quickFilter.kind === "matrix") rows = rows.filter(r => r.likelihood === String(quickFilter.l) && r.impact === String(quickFilter.i));
+    else if(quickFilter.kind === "level") rows = rows.filter(r => { const b = riskBand(riskScore(r.likelihood, r.impact)); return b && b.key === quickFilter.band; });
+  }
+  rows.sort((a,b) => {
+    if(sortKey === "level"){
+      const sa = riskScore(a.likelihood, a.impact), sb = riskScore(b.likelihood, b.impact);
+      if(sa == null && sb != null) return 1;
+      if(sa != null && sb == null) return -1;
+      if(sa == null && sb == null) return 0;
+      return sortDir * (sa - sb);
+    }
+    const va = a[sortKey] || "", vb = b[sortKey] || "";
+    if(sortKey === "datpregled" || sortKey === "treatdue"){ if(!va && vb) return 1; if(va && !vb) return -1; }
+    return sortDir * String(va).localeCompare(String(vb), undefined, {numeric:true});
+  });
+  return rows;
+}
+function saveFilters(){
+  try{ sessionStorage.setItem(FILTKEY, JSON.stringify({ q:$("q").value, s:$("fStatus").value, k:$("fKat").value, i:$("fIzvor").value, o:$("fOdluka").value, qf:quickFilter, sk:sortKey, sd:sortDir })); }catch(e){}
+}
+function restoreFilters(){
+  try{
+    const f = JSON.parse(sessionStorage.getItem(FILTKEY) || "null");
+    if(!f) return;
+    $("q").value = f.q || ""; quickFilter = f.qf || null; sortKey = f.sk || "id"; sortDir = f.sd || 1;
+    restoreFilters._pending = f;
+  }catch(e){}
+}
+function render(){
+  buildHead();
+  if(restoreFilters._pending){ const f = restoreFilters._pending; $("fStatus").value=f.s||""; $("fKat").value=f.k||""; $("fIzvor").value=f.i||""; $("fOdluka").value=f.o||""; restoreFilters._pending=null; }
+  const rows = getFiltered();
+
+  $("tbody").innerHTML = rows.map(r => {
+    const chip = "chip-" + r.status;
+    const veze = [
+      r.incident ? `<span class="linktag">INC ${esc(r.incident)}</span>` : "",
+      r.preporuka ? `<span class="linktag">AUD ${esc(r.preporuka)}</span>` : "",
+      r.procjena ? `<span class="linktag">RA ${esc(r.procjena)}</span>` : "",
+      r.roi ? `<span class="linktag">ROI ${esc(r.roi)}</span>` : "",
+    ].join("");
+    const pregledSub = r.pregledD ? `<span class="sub">${esc(t("th_lastreview_short"))}${fmtD(r.pregledD)} (${esc(r.pregledU || "")})</span>` : "";
+    return `<tr data-id="${esc(r.id)}">
+      <td class="idcell">${esc(r.id)}</td>
+      <td>${esc(r.naziv)}${r.resurs ? `<span class="sub">${esc(r.resurs)}</span>` : ""}</td>
+      <td>${levelChipHTML(r)}</td>
+      <td>${esc(elabel("category",r.kat))}</td>
+      <td class="${r.cif === "yes" ? "cif-yes" : ""}">${esc(elabel("cif",r.cif))}</td>
+      <td>${esc(r.vlasnik)}</td>
+      <td>${esc(elabel("source",r.izvor))}</td>
+      <td>${esc(elabel("decision",r.odluka))}</td>
+      <td>${r.status ? `<span class="chip ${chip}">${esc(elabel("status",r.status))}</span>` : ""}</td>
+      <td class="${isTreatmentOverdue(r) ? "overdue" : ""}">${fmtD(r.treatdue)}${isTreatmentOverdue(r) ? `<br><span class="chip-overdue">${esc(t("overdue_pill"))}</span>` : ""}</td>
+      <td class="${isOverdue(r) ? "overdue" : ""}">${fmtD(r.datpregled)}${pregledSub}</td>
+      <td>${veze}</td>
+    </tr>`;
+  }).join("");
+
+  $("empty").style.display = data.length ? "none" : "block";
+  $("countNote").textContent = data.length ? (curLang==="en" ? `Showing ${rows.length} of ${data.length} records.` : `Prikazano ${rows.length} od ${data.length} zapisa.`) : "";
+
+  const aktivni = data.filter(r => r.status === "active").length;
+  const utret = data.filter(r => r.status === "in_treatment").length;
+  const cifOpen = data.filter(r => r.cif === "yes" && r.status !== "closed").length;
+  const overdue = data.filter(isOverdue).length;
+  const fSt = $("fStatus").value;
+  $("stats").innerHTML = `
+    <div class="stat clickable" data-qf="all"><div class="num">${data.length}</div><div class="lbl">${esc(t("stat_total"))}</div></div>
+    <div class="stat clickable ${(!quickFilter && fSt === "active") ? "activef" : ""}" data-qf="status:active"><div class="num">${aktivni}</div><div class="lbl">${esc(t("stat_active"))}</div></div>
+    <div class="stat clickable ${(!quickFilter && fSt === "in_treatment") ? "activef" : ""}" data-qf="status:in_treatment"><div class="num">${utret}</div><div class="lbl">${esc(t("stat_intreat"))}</div></div>
+    <div class="stat clickable ${cifOpen ? "warn" : ""} ${(quickFilter && quickFilter.kind === "cif") ? "activef" : ""}" data-qf="cif"><div class="num">${cifOpen}</div><div class="lbl">${esc(t("stat_cif"))}</div></div>
+    <div class="stat clickable ${overdue ? "alert" : ""} ${(quickFilter && quickFilter.kind === "overdue") ? "activef" : ""}" data-qf="overdue"><div class="num">${overdue}</div><div class="lbl">${esc(t("stat_overdue"))}</div></div>`;
+
+  document.querySelectorAll("#regHead th[data-sort]").forEach(th => { th.querySelector(".arr").textContent = th.dataset.sort === sortKey ? (sortDir === 1 ? "▲" : "▼") : ""; });
+  const chipKinds = { nodecision:"qf_nodecision", open:"qf_open" };
+  const chip = $("qfChip");
+  if(quickFilter && chipKinds[quickFilter.kind]){
+    chip.style.display = "inline-flex";
+    chip.innerHTML = `${esc(t(chipKinds[quickFilter.kind]))} <button id="qfChipX" title="×">×</button>`;
+  }else if(quickFilter && (quickFilter.kind === "month_identified" || quickFilter.kind === "month_closed")){
+    chip.style.display = "inline-flex";
+    chip.innerHTML = `${esc(tf(quickFilter.kind === "month_identified" ? "qf_month_identified" : "qf_month_closed", {month: monthLabel(quickFilter.month)}))} <button id="qfChipX" title="×">×</button>`;
+  }else if(quickFilter && quickFilter.kind === "matrix"){
+    chip.style.display = "inline-flex";
+    chip.innerHTML = `${esc(elabel("likelihood", quickFilter.l))} × ${esc(elabel("impact", quickFilter.i))} <button id="qfChipX" title="×">×</button>`;
+  }else if(quickFilter && quickFilter.kind === "level"){
+    chip.style.display = "inline-flex";
+    chip.innerHTML = `${esc(elabel("band", quickFilter.band))} <button id="qfChipX" title="×">×</button>`;
+  }else{
+    chip.style.display = "none";
+  }
+  saveFilters();
+}
+$("tbody").addEventListener("click", e => { const tr = e.target.closest("tr[data-id]"); if(tr) openForm(tr.dataset.id); });
+document.addEventListener("click", e => { if(e.target.id === "qfChipX"){ quickFilter = null; render(); } });
+$("stats").addEventListener("click", e => {
+  const card = e.target.closest(".stat[data-qf]"); if(!card) return;
+  const qf = card.dataset.qf;
+  if(qf === "all"){ ["q","fStatus","fKat","fIzvor","fOdluka"].forEach(id => $(id).value = ""); quickFilter = null; }
+  else if(qf.startsWith("status:")){ const s = qf.slice(7); quickFilter = null; $("fStatus").value = ($("fStatus").value === s) ? "" : s; }
+  else{ quickFilter = (quickFilter && quickFilter.kind === qf) ? null : { kind: qf }; }
+  render();
+});
+document.addEventListener("click", e => {
+  const th = e.target.closest("#regHead th[data-sort]"); if(!th) return;
+  if(sortKey === th.dataset.sort) sortDir = -sortDir; else { sortKey = th.dataset.sort; sortDir = 1; }
+  render();
+});
+["q","fStatus","fKat","fIzvor","fOdluka"].forEach(id => $(id).addEventListener("input", render));
+$("btnClear").addEventListener("click", () => { ["q","fStatus","fKat","fIzvor","fOdluka"].forEach(id => $(id).value = ""); quickFilter = null; render(); });
+
+/* ===================== dashboard ===================== */
+function donutSVG(items, dtype){
+  const total = items.reduce((s,i) => s + i.value, 0);
+  if(!total) return `<div style="color:var(--gray);font-size:12px;padding:20px 0">-</div>`;
+  const R = 62, C = 2 * Math.PI * R;
+  let off = 0, segs = "";
+  items.filter(i => i.value > 0).forEach(i => {
+    const len = i.value / total * C;
+    segs += `<circle class="dseg" data-dtype="${dtype}" data-key="${esc(i.key)}" r="${R}" cx="90" cy="90" fill="none" stroke="${i.color}" stroke-width="30" stroke-dasharray="${len} ${C - len}" stroke-dashoffset="${-off}" transform="rotate(-90 90 90)"><title>${esc(i.label)}: ${i.value}</title></circle>`;
+    off += len;
+  });
+  const legend = items.map(i => `<span class="dleg" data-dtype="${dtype}" data-key="${esc(i.key)}"><span class="sw" style="background:${i.color}"></span>${esc(i.label)}: <b>${i.value}</b> (${Math.round(i.value/total*100)}%)</span>`).join("");
+  return `<svg viewBox="0 0 180 180" style="max-width:150px;margin:0 auto">${segs}
+    <text x="90" y="86" text-anchor="middle" font-size="26" font-weight="700" fill="#5B93F0">${total}</text></svg>
+    <div class="legend">${legend}</div>`;
+}
+function hbarSVG(rows, stacked, dtype){
+  if(!rows.length) return `<div style="color:var(--gray);font-size:12px;padding:20px 0">-</div>`;
+  const max = Math.max(...rows.map(r => r.total)) || 1;
+  const W = 640, LBLW = 170, BARW = W - LBLW - 60, RH = 22;
+  const H = rows.length * RH + 6;
+  let out = `<svg viewBox="0 0 ${W} ${H}">`;
+  rows.forEach((r,i) => {
+    const y = i * RH + 3;
+    out += `<text class="blabel" data-dtype="${dtype}" data-key="${esc(r.key)}" x="${LBLW - 8}" y="${y + 13}" text-anchor="end" font-size="11" fill="#C7CEE4"><title>${esc(r.label)}: ${r.total}</title>${esc(r.label)}</text>`;
+    let x = LBLW;
+    (stacked ? r.parts : [{value:r.total, color:"#5B93F0", key:null}]).forEach(p => {
+      if(!p.value) return;
+      const w = p.value / max * BARW;
+      const statusAttr = p.key ? ` data-status="${esc(p.key)}"` : "";
+      out += `<rect class="bseg" data-dtype="${dtype}" data-key="${esc(r.key)}"${statusAttr} x="${x}" y="${y}" width="${Math.max(w,1)}" height="15" rx="3" fill="${p.color}"><title>${esc(r.label)}${p.key ? " · " + esc(elabel("status",p.key)) : ""}: ${p.value}</title></rect>`;
+      x += w;
+    });
+    out += `<text class="blabel" data-dtype="${dtype}" data-key="${esc(r.key)}" x="${x + 6}" y="${y + 13}" font-size="11" font-weight="700" fill="#5B93F0">${r.total}</text>`;
+  });
+  return out + "</svg>";
+}
+function lineSVG(months, sIdent, sZatv){
+  if(!months.length) return `<div style="color:var(--gray);font-size:12px;padding:20px 0">-</div>`;
+  const W = 640, H = 175, PL = 32, PB = 26, PT = 10, PR = 10;
+  const maxV = Math.max(1, ...sIdent, ...sZatv);
+  const iw = (W - PL - PR) / Math.max(1, months.length - 1);
+  const X = i => PL + i * iw;
+  const Y = v => PT + (H - PT - PB) * (1 - v / maxV);
+  const pts = s => s.map((v,i) => X(i) + "," + Y(v)).join(" ");
+  let grid = "";
+  for(let g = 0; g <= maxV; g += Math.max(1, Math.ceil(maxV / 4))){
+    grid += `<line x1="${PL}" y1="${Y(g)}" x2="${W-PR}" y2="${Y(g)}" stroke="#242C48"/><text x="${PL-6}" y="${Y(g)+3}" text-anchor="end" font-size="9" fill="#98A1BD">${g}</text>`;
+  }
+  let labels = "";
+  months.forEach((m,i) => { if(months.length <= 8 || i % 2 === 0 || i === months.length - 1) labels += `<text x="${X(i)}" y="${H-8}" text-anchor="middle" font-size="9" fill="#98A1BD">${m.slice(5)}.${m.slice(2,4)}</text>`; });
+  const dots = (s,color,series) => s.map((v,i) => `<circle class="tpoint" data-dtype="month" data-series="${series}" data-key="${months[i]}" cx="${X(i)}" cy="${Y(v)}" r="4" fill="${color}"><title>${months[i]}: ${v}</title></circle>`).join("");
+  return `<svg viewBox="0 0 ${W} ${H}">${grid}${labels}
+    <polyline points="${pts(sIdent)}" fill="none" stroke="#5B93F0" stroke-width="2.5"/>${dots(sIdent,"#5B93F0","identified")}
+    <polyline points="${pts(sZatv)}" fill="none" stroke="#34D399" stroke-width="2.5"/>${dots(sZatv,"#34D399","closed")}</svg>
+    <div class="legend"><span><span class="sw" style="background:#5B93F0"></span>${esc(t("trend_identified"))}</span><span><span class="sw" style="background:#34D399"></span>${esc(t("trend_closed"))}</span></div>`;
+}
+function matrixMiniSVG(l, i){
+  const selL = parseInt(l,10) || 0, selI = parseInt(i,10) || 0;
+  const cell = 26, gap = 3, pl = 22, pb = 18;
+  const size = cell*5 + gap*4;
+  let out = `<svg viewBox="0 0 ${pl+size+4} ${size+pb+4}">`;
+  for(let row = 5; row >= 1; row--){
+    for(let col = 1; col <= 5; col++){
+      const band = riskBand(row*col);
+      const x = pl + (col-1)*(cell+gap);
+      const y = (5-row)*(cell+gap);
+      const isSel = (row === selL && col === selI);
+      out += `<rect x="${x}" y="${y}" width="${cell}" height="${cell}" rx="4" fill="${band.color}" opacity="${isSel ? 1 : 0.28}" stroke="${isSel ? '#fff' : 'none'}" stroke-width="${isSel?2.5:0}"/>`;
+    }
+    out += `<text x="${pl-6}" y="${(5-row)*(cell+gap)+cell/2+4}" text-anchor="end" font-size="9" fill="#98A1BD">${row}</text>`;
+  }
+  for(let col = 1; col <= 5; col++){
+    out += `<text x="${pl+(col-1)*(cell+gap)+cell/2}" y="${size+13}" text-anchor="middle" font-size="9" fill="#98A1BD">${col}</text>`;
+  }
+  out += `</svg>`;
+  const score = riskScore(l, i);
+  const note = score == null ? t("matrix_no_score") : tf("matrix_score_label", {s:score, band:elabel("band", riskBand(score).key)});
+  return out + `<div style="font-size:11px;color:var(--gray);margin-top:4px">${esc(note)}</div>`;
+}
+function heatmapSVG(){
+  const cell = 46, gap = 4, pl = 32, pb = 26, pt = 6;
+  const size = cell*5 + gap*4;
+  const counts = {};
+  let scored = 0;
+  data.forEach(r => { const s = riskScore(r.likelihood, r.impact); if(s != null){ scored++; const k = r.likelihood+"-"+r.impact; counts[k] = (counts[k]||0)+1; } });
+  let out = `<svg viewBox="0 0 ${pl+size+10} ${pt+size+pb+10}">`;
+  for(let row = 5; row >= 1; row--){
+    for(let col = 1; col <= 5; col++){
+      const band = riskBand(row*col);
+      const n = counts[row+"-"+col] || 0;
+      const x = pl + (col-1)*(cell+gap), y = pt + (5-row)*(cell+gap);
+      out += `<rect class="hseg" data-dtype="matrix" data-l="${row}" data-i="${col}" x="${x}" y="${y}" width="${cell}" height="${cell}" rx="5" fill="${band.color}" opacity="${n?0.85:0.18}"><title>${elabel("likelihood",String(row))} × ${elabel("impact",String(col))}: ${n}</title></rect>`;
+      if(n) out += `<text x="${x+cell/2}" y="${y+cell/2+5}" text-anchor="middle" font-size="15" font-weight="700" fill="#14110A" style="pointer-events:none">${n}</text>`;
+    }
+    out += `<text x="${pl-8}" y="${pt+(5-row)*(cell+gap)+cell/2+4}" text-anchor="end" font-size="10" fill="#98A1BD">${row}</text>`;
+  }
+  for(let col = 1; col <= 5; col++){
+    out += `<text x="${pl+(col-1)*(cell+gap)+cell/2}" y="${pt+size+16}" text-anchor="middle" font-size="10" fill="#98A1BD">${col}</text>`;
+  }
+  out += `<text x="${pl-8}" y="${pt-8}" font-size="9" fill="#98A1BD" text-anchor="start">${esc(t("heatmap_axis_likelihood"))} ↑</text>`;
+  out += `<text x="${pl+size/2}" y="${pt+size+pb+2}" font-size="9" fill="#98A1BD" text-anchor="middle">${esc(t("heatmap_axis_impact"))} →</text>`;
+  out += `</svg>`;
+  $("heatmapNote").textContent = tf("heatmap_scored_note", {n:scored, total:data.length});
+  return out;
+}
+function refreshMatrixMini(){ $("f_matrixMini").innerHTML = matrixMiniSVG($("f_likelihood").value, $("f_impact").value); }
+$("f_likelihood").addEventListener("change", refreshMatrixMini);
+$("f_impact").addEventListener("change", refreshMatrixMini);
+function closedMonth(r){
+  if(r.history){ for(let i = r.history.length - 1; i >= 0; i--){ const h = r.history[i]; if((h.ch || []).some(c => /→ Closed|→ Zatvoren/.test(c))) return h.t.slice(0,7); } }
+  if(r.status === "closed" && r.datclosed) return r.datclosed.slice(0,7);
+  if(r.status === "closed" && r.datodluka) return r.datodluka.slice(0,7);
+  return null;
+}
+function renderDashboard(){
+  const open = data.filter(r => r.status !== "closed");
+  const bezOdluke = data.filter(r => r.status === "active" && !r.odluka).length;
+  const cifOpen = data.filter(r => r.cif === "yes" && r.status !== "closed").length;
+  const overdue = data.filter(isOverdue).length;
+  const ages = open.filter(r => r.datident).map(r => Math.floor((Date.now() - new Date(r.datident)) / 86400000));
+  const avgAge = ages.length ? Math.round(ages.reduce((a,b) => a+b, 0) / ages.length) : 0;
+  $("dashKpi").innerHTML = `
+    <div class="stat clickable" data-dqf="all"><div class="num">${data.length}</div><div class="lbl">${esc(t("dash_kpi_total"))}</div></div>
+    <div class="stat clickable ${bezOdluke ? "warn" : ""}" data-dqf="nodecision"><div class="num">${bezOdluke}</div><div class="lbl">${esc(t("dash_kpi_nodecision"))}</div></div>
+    <div class="stat clickable ${cifOpen ? "warn" : ""}" data-dqf="cif"><div class="num">${cifOpen}</div><div class="lbl">${esc(t("dash_kpi_cif"))}</div></div>
+    <div class="stat clickable ${overdue ? "alert" : ""}" data-dqf="overdue"><div class="num">${overdue}</div><div class="lbl">${esc(t("dash_kpi_overdue"))}</div></div>
+    <div class="stat clickable" data-dqf="open"><div class="num">${avgAge}</div><div class="lbl">${esc(t("dash_kpi_avgage"))}</div></div>`;
+
+  $("chStatus").innerHTML = donutSVG(STATUS_KEYS.map(s => ({ label:elabel("status",s), value:data.filter(r => r.status === s).length, color:STATUS_COLORS[s], key:s })), "status");
+  $("chOdluka").innerHTML = donutSVG(DECISION_KEYS.map((o,i) => ({ label:elabel("decision",o), value:data.filter(r => r.odluka === o).length, color:PALETTE[i], key:o })).concat([{label:(curLang==="en"?"No decision":"Bez odluke"), value:data.filter(r => !r.odluka).length, color:"#3A4568", key:""}]), "decision");
+  $("chKat").innerHTML = hbarSVG(
+    CATEGORY_KEYS.map(k => { const rs = data.filter(r => r.kat === k); return { label:elabel("category",k), key:k, total:rs.length, parts:STATUS_KEYS.map(s => ({ value:rs.filter(r => r.status === s).length, color:STATUS_COLORS[s], key:s })) }; }).filter(r => r.total > 0), true, "category") +
+    `<div class="legend">${STATUS_KEYS.map(s => `<span><span class="sw" style="background:${STATUS_COLORS[s]}"></span>${esc(elabel("status",s))}</span>`).join("")}</div>`;
+  $("chIzvor").innerHTML = hbarSVG(SOURCE_KEYS.map(z => ({ label:elabel("source",z), key:z, total:data.filter(r => r.izvor === z).length })).filter(r => r.total > 0), false, "source");
+
+  const now = new Date();
+  const months = [];
+  for(let i = 11; i >= 0; i--){ const d = new Date(now.getFullYear(), now.getMonth() - i, 1); months.push(d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2,"0")); }
+  const sIdent = months.map(m => data.filter(r => (r.datident || "").slice(0,7) === m).length);
+  const sZatv = months.map(m => data.filter(r => closedMonth(r) === m).length);
+  $("chTrend").innerHTML = lineSVG(months, sIdent, sZatv);
+  $("chHeatmap").innerHTML = heatmapSVG();
+  $("chLevel").innerHTML = donutSVG(["low","medium","high","critical"].map(k => ({
+    label: elabel("band", k),
+    value: data.filter(r => { const b = riskBand(riskScore(r.likelihood, r.impact)); return b && b.key === k; }).length,
+    color: RISK_BANDS.find(b => b.key === k).color,
+    key: k
+  })), "level");
+}
+function showView(view){
+  currentView = view;
+  $("viewRegistar").style.display = view === "register" ? "block" : "none";
+  $("viewVendors").style.display = view === "vendors" ? "block" : "none";
+  $("viewDashboard").style.display = view === "dashboard" ? "block" : "none";
+  $("btnViewRegister").classList.toggle("active", view === "register");
+  $("btnViewVendors").classList.toggle("active", view === "vendors");
+  $("btnDash").classList.toggle("active", view === "dashboard");
+  applyPerms();
+  if(view === "dashboard") renderDashboard();
+  if(view === "vendors") renderVendors();
+  if(view === "register") render();
+}
+$("btnViewRegister").addEventListener("click", () => showView("register"));
+$("btnViewVendors").addEventListener("click", () => showView("vendors"));
+$("btnDash").addEventListener("click", () => showView("dashboard"));
+function drillTo(opts){
+  opts = opts || {};
+  ["q","fStatus","fKat","fIzvor","fOdluka"].forEach(id => $(id).value = "");
+  if(opts.status) $("fStatus").value = opts.status;
+  if(opts.kat) $("fKat").value = opts.kat;
+  if(opts.izvor) $("fIzvor").value = opts.izvor;
+  if(opts.odluka) $("fOdluka").value = opts.odluka;
+  quickFilter = opts.quick || null;
+  showView("register");
+}
+$("viewDashboard").addEventListener("click", e => {
+  const el = e.target.closest(".dseg,.dleg,.bseg,.blabel,.tpoint,.hseg,.stat[data-dqf]");
+  if(!el) return;
+  if(el.dataset.dqf !== undefined){
+    const k = el.dataset.dqf;
+    if(k === "all") drillTo({});
+    else drillTo({ quick: { kind: k } });
+    return;
+  }
+  const dtype = el.dataset.dtype, key = el.dataset.key;
+  if(dtype === "status") drillTo({ status: key });
+  else if(dtype === "decision") drillTo(key ? { odluka: key } : { quick: { kind: "nodecision" } });
+  else if(dtype === "category") drillTo(el.dataset.status ? { kat: key, status: el.dataset.status } : { kat: key });
+  else if(dtype === "source") drillTo({ izvor: key });
+  else if(dtype === "month") drillTo({ quick: { kind: el.dataset.series === "closed" ? "month_closed" : "month_identified", month: key } });
+  else if(dtype === "matrix") drillTo({ quick: { kind: "matrix", l: el.dataset.l, i: el.dataset.i } });
+  else if(dtype === "level") drillTo({ quick: { kind: "level", band: key } });
+});
+
+/* ===================== record form ===================== */
+function renderHistory(r, boxId, rowsId){
+  boxId = boxId || "histBox"; rowsId = rowsId || "histRows";
+  if(!r || !r.history || !r.history.length){ $(boxId).style.display = "none"; return; }
+  $(boxId).style.display = "block";
+  $(rowsId).innerHTML = r.history.slice().reverse().map(h => `
+    <div class="histrow"><span class="when">${fmtDT(h.t)}</span> · <span class="who">${esc(h.u)}</span> · ${esc(h.a)}
+    ${(h.ch && h.ch.length) ? "<ul>" + h.ch.map(c => "<li>" + esc(c) + "</li>").join("") + "</ul>" : ""}</div>`).join("");
+}
+function openForm(id){
+  editingId = id || null;
+  readOnlyForm = !isAdmin();
+  const r = id ? data.find(x => x.id === id) : null;
+  $("mTitle").textContent = id ? (readOnlyForm ? (curLang==="en"?"View risk ":"Pregled rizika ") + id : (curLang==="en"?"Edit risk ":"Uredi rizik ") + id) : t("nav_new_risk").replace("+ ","");
+  $("btnDelete").style.display = (id && !readOnlyForm) ? "inline-block" : "none";
+  $("btnReview").style.display = (id && !readOnlyForm) ? "inline-block" : "none";
+  $("btnCopy").style.display = (id && !readOnlyForm) ? "inline-block" : "none";
+  $("btnSave").style.display = readOnlyForm ? "none" : "inline-block";
+  $("formErr").style.display = "none";
+  FIELDS.forEach(f => { const el = $("f_" + f); if(el){ el.value = r ? (r[f] || "") : ""; el.disabled = readOnlyForm; } });
+  if(!r && !readOnlyForm){ $("f_id").value = nextId(); $("f_datident").value = todayISO(); $("f_status").value = "active"; }
+  const rl = $("reviewLine");
+  if(r && r.pregledD){ rl.style.display = "flex"; rl.innerHTML = (curLang==="en"?"Last 2nd-line review: ":"Posljednji pregled 2LoD: ") + "<b>" + fmtD(r.pregledD) + "</b> (" + esc(r.pregledU || "") + ")"; }
+  else if(r){ rl.style.display = "flex"; rl.innerHTML = curLang==="en" ? "2nd-line review not yet logged for this record." : "Pregled 2LoD još nije evidentiran za ovaj zapis."; }
+  else rl.style.display = "none";
+  renderHistory(r);
+  refreshMatrixMini();
+  $("overlay").classList.add("open");
+  if(!readOnlyForm) $("f_naziv").focus();
+}
+function closeForm(){ $("overlay").classList.remove("open"); editingId = null; }
+$("btnCancel").addEventListener("click", closeForm);
+$("btnNew").addEventListener("click", () => { if(!isAdmin()) return; if(currentView === "vendors") openVendorForm(); else openForm(); });
+$("btnEmptyNew").addEventListener("click", () => { if(isAdmin()) openForm(); });
+
+function maybeSuggestReview(){
+  if(readOnlyForm) return;
+  if(!$("f_datpregled").value){
+    const rec = { cif: $("f_cif").value, datident: $("f_datident").value };
+    const existing = editingId ? data.find(x => x.id === editingId) : null;
+    if(existing) rec.pregledD = existing.pregledD;
+    if(rec.datident || rec.pregledD) $("f_datpregled").value = suggestNextReview(rec);
+  }
+}
+function maybeSuggestAcceptUntil(){
+  if(readOnlyForm) return;
+  if($("f_odluka").value === "acceptance" && $("f_datodluka").value && !$("f_acceptuntil").value){
+    $("f_acceptuntil").value = addMonths($("f_datodluka").value, 12);
+  }
+}
+$("f_cif").addEventListener("change", maybeSuggestReview);
+$("f_datident").addEventListener("change", maybeSuggestReview);
+$("f_odluka").addEventListener("change", maybeSuggestAcceptUntil);
+$("f_datodluka").addEventListener("change", maybeSuggestAcceptUntil);
+
+$("btnCopy").addEventListener("click", () => {
+  if(!isAdmin() || !editingId) return;
+  editingId = null;
+  $("f_id").value = nextId();
+  $("f_datident").value = todayISO();
+  $("f_status").value = "active";
+  $("f_odluka").value = ""; $("f_datodluka").value = ""; $("f_declevel").value = ""; $("f_acceptuntil").value = ""; $("f_acceptjust").value = "";
+  $("f_treatmeasures").value = ""; $("f_treatdue").value = ""; $("f_datpregled").value = ""; $("f_datclosed").value = "";
+  $("mTitle").textContent = (curLang==="en"?"New risk (copy)":"Novi rizik (kopija)");
+  $("btnDelete").style.display = "none"; $("btnReview").style.display = "none"; $("btnCopy").style.display = "none";
+  $("histBox").style.display = "none"; $("reviewLine").style.display = "none";
+  maybeSuggestReview();
+  refreshMatrixMini();
+  $("f_naziv").focus();
+});
+
+$("btnSave").addEventListener("click", () => {
+  if(!isAdmin()) return;
+  const rec = {};
+  FIELDS.forEach(f => { const el = $("f_" + f); rec[f] = el ? el.value.trim() : ""; });
+  const err = $("formErr");
+  const missing = RISK_REQUIRED.filter(f => !rec[f]);
+  if(missing.length){ err.textContent = tf("err_missing_fields", {fields: missing.map(f => t("f_"+f).replace(" *","")).join(", ")}); err.style.display = "block"; return; }
+  const spamField = RISK_TEXT_FIELDS.find(f => looksLikeSpam(rec[f]));
+  if(spamField){ err.textContent = tf("err_spam", {field: t("f_"+spamField).replace(" *",""), value: rec[spamField].slice(0,24)}); err.style.display = "block"; return; }
+  const dup = data.find(x => x.id === rec.id && x.id !== editingId);
+  if(dup){ err.textContent = tf("err_dup_id", {id:rec.id}); err.style.display = "block"; return; }
+  if(!rec.datpregled && rec.status !== "closed") rec.datpregled = suggestNextReview(rec);
+  if(rec.status === "closed" && !rec.datclosed) rec.datclosed = todayISO();
+  const warns = [];
+  if(rec.odluka && !rec.datodluka) warns.push(t("warn_dec_no_date"));
+  if(rec.status === "accepted" && rec.odluka !== "acceptance") warns.push(t("warn_accepted_not_acceptance"));
+  if(rec.status === "closed" && rec.datpregled && rec.datpregled > todayISO()) warns.push(t("warn_closed_future_review"));
+  if(warns.length && !confirm(t("warn_header") + "\n\n- " + warns.join("\n- ") + "\n\n" + t("warn_confirm"))) return;
+  if(rec.dobavljac) rec.roi = resolveOrCreateVendor(rec.dobavljac, rec.id);
+  const now = new Date().toISOString();
+  if(editingId){
+    const i = data.findIndex(x => x.id === editingId);
+    const old = data[i];
+    const ch = [];
+    FIELDS.forEach(f => {
+      if((old[f] || "") !== (rec[f] || "")){
+        const isDate = f.startsWith("dat") || f === "acceptuntil" || f === "treatdue";
+        const isEnum = ["kat","izvor","odluka","status","declevel","cif","legacy","likelihood","impact"].includes(f);
+        const etypeMap = {kat:"category",izvor:"source",odluka:"decision",status:"status",declevel:"declevel",cif:"cif",legacy:"legacy",likelihood:"likelihood",impact:"impact"};
+        const ov = isDate ? fmtD(old[f]) : isEnum ? elabel(etypeMap[f], old[f]) : (old[f] || "-");
+        const nv = isDate ? fmtD(rec[f]) : isEnum ? elabel(etypeMap[f], rec[f]) : (rec[f] || "-");
+        ch.push(t("f_"+({naziv:"name",kat:"category",opis:"desc",proces:"process",cif:"cif",legacy:"legacy",resurs:"asset",dobavljac:"vendor",vlasnik:"owner",datident:"dateid",izvor:"source",odluka:"decision",datodluka:"decdate",declevel:"declevel",acceptuntil:"acceptuntil",acceptjust:"acceptjust",treatmeasures:"treatmeasures",treatdue:"treatdue",status:"status",datpregled:"nextreview",datclosed:"closeddate",incident:"incident",preporuka:"finding",procjena:"assessment",roi:"roi",napomena:"note",likelihood:"likelihood",impact:"impact"}[f]||f)) + ": " + (ov || "-") + " -> " + (nv || "-"));
+      }
+    });
+    rec.pregledD = old.pregledD; rec.pregledU = old.pregledU;
+    rec.history = old.history || [];
+    if(ch.length) rec.history.push({ t:now, u:(currentUser?currentUser.u:"guest"), a:(curLang==="en"?"Record updated":"Izmjena zapisa"), ch });
+    data[i] = rec;
+  }else{
+    rec.history = [{ t:now, u:(currentUser?currentUser.u:"guest"), a:(curLang==="en"?"Record created":"Kreiran zapis"), ch:[] }];
+    data.push(rec);
+  }
+  saveData(); render(); closeForm();
+  showToast(t("toast_saved"));
+});
+
+$("btnReview").addEventListener("click", () => {
+  if(!isAdmin() || !editingId) return;
+  const r = data.find(x => x.id === editingId);
+  if(!r) return;
+  r.pregledD = todayISO(); r.pregledU = (currentUser?currentUser.u:"guest");
+  const next = suggestNextReview(r);
+  r.datpregled = next;
+  r.history = r.history || [];
+  r.history.push({ t:new Date().toISOString(), u:r.pregledU, a:(curLang==="en"?"2nd-line review logged":"Evidentiran pregled 2LoD"), ch:[(curLang==="en"?"Next review: ":"Sljedeći pregled: ")+fmtD(next)] });
+  saveData(); render();
+  showToast(t("toast_review_logged"));
+  openForm(editingId);
+});
+$("btnDelete").addEventListener("click", () => {
+  if(!isAdmin() || !editingId) return;
+  if(confirm(tf("confirm_delete", {id:editingId}))){
+    data = data.filter(x => x.id !== editingId);
+    saveData(); render(); closeForm();
+    showToast(t("toast_deleted"));
+  }
+});
+/* backdrop click intentionally does not close the risk form, to avoid losing unsaved input; use Close/Cancel or Escape */
+document.addEventListener("keydown", e => {
+  if(e.key === "Escape"){ closeForm(); closeVendorForm(); $("settingsOv").classList.remove("open"); $("helpOv").classList.remove("open"); $("reportOv").classList.remove("open"); closeResetConfirm(); if(!pwdForced) $("pwdOv").classList.remove("open"); }
+});
+
+/* ===================== vendor register ===================== */
+function buildVendorHead(){
+  const cols = [["id","vth_id"],["name","vth_name"],["type","vth_type"],["cif","vth_cif"],["status","vth_status"],
+    ["exitstrategy","vth_exit"],["contractend","vth_contractend"],["owner","vth_owner"]];
+  $("vendHead").innerHTML = "<tr>" + cols.map(([k,l]) => `<th data-vsort="${k}">${esc(t(l))}<span class="arr"></span></th>`).join("") + `<th>${esc(t("vth_links"))}</th></tr>`;
+}
+function getFilteredVendors(){
+  const q = $("vq").value.trim().toLowerCase();
+  const fT = $("vfType").value, fC = $("vfCif").value, fS = $("vfStatus").value, fE = $("vfExit").value;
+  let rows = vendors
+    .filter(r => (!fT || r.type === fT) && (!fC || r.cif === fC) && (!fS || r.status === fS) && (!fE || r.exitstrategy === fE))
+    .filter(r => !q || [r.id,r.name,r.desc,r.process,r.owner,r.datalocation,r.subcontractorname,r.linkedrisks,r.notes].join(" ").toLowerCase().includes(q));
+  rows.sort((a,b) => {
+    const va = a[vSortKey] || "", vb = b[vSortKey] || "";
+    return vSortDir * String(va).localeCompare(String(vb), undefined, {numeric:true});
+  });
+  return rows;
+}
+function isVendorIncomplete(v){ return VENDOR_REQUIRED.some(f => !v[f]); }
+function renderVendors(){
+  buildVendorHead();
+  fillVendorDatalist();
+  const rows = getFilteredVendors();
+  $("vtbody").innerHTML = rows.map(r => {
+    const links = [r.linkedrisks ? `<span class="linktag">RISK ${esc(r.linkedrisks)}</span>` : ""].join("");
+    const noExit = r.cif === "yes" && (!r.exitstrategy || r.exitstrategy === "not_started");
+    const incomplete = isVendorIncomplete(r);
+    return `<tr data-id="${esc(r.id)}" class="${incomplete ? "vincomplete" : ""}">
+      <td class="idcell">${esc(r.id)}</td>
+      <td>${esc(r.name)}${incomplete ? `<span class="chip-incomplete">${esc(t("vendor_incomplete_badge"))}</span>` : ""}${r.desc ? `<span class="sub">${esc(r.desc)}</span>` : ""}</td>
+      <td>${esc(elabel("vtype",r.type))}</td>
+      <td class="${r.cif === "yes" ? "cif-yes" : ""}">${esc(elabel("yesno",r.cif))}</td>
+      <td>${esc(elabel("vstatus",r.status))}</td>
+      <td class="${noExit ? "overdue" : ""}">${esc(elabel("exit",r.exitstrategy))}</td>
+      <td class="${isVendorReviewOverdue(r) ? "overdue" : ""}">${fmtD(r.contractend)}</td>
+      <td>${esc(r.owner)}</td>
+      <td>${links}</td>
+    </tr>`;
+  }).join("");
+  $("vempty").style.display = vendors.length ? "none" : "block";
+  $("vCountNote").textContent = vendors.length ? (curLang==="en" ? `Showing ${rows.length} of ${vendors.length} records.` : `Prikazano ${rows.length} od ${vendors.length} zapisa.`) : "";
+
+  const total = vendors.length;
+  const cifCount = vendors.filter(r => r.cif === "yes").length;
+  const subCount = vendors.filter(r => r.subcontractor === "yes").length;
+  const noExitCount = vendors.filter(r => r.cif === "yes" && (!r.exitstrategy || r.exitstrategy === "not_started")).length;
+  const overdueCount = vendors.filter(isVendorReviewOverdue).length;
+  $("vendorStats").innerHTML = `
+    <div class="stat"><div class="num">${total}</div><div class="lbl">${esc(t("vstat_total"))}</div></div>
+    <div class="stat"><div class="num">${cifCount}</div><div class="lbl">${esc(t("vstat_cif"))}</div></div>
+    <div class="stat"><div class="num">${subCount}</div><div class="lbl">${esc(t("vstat_sub"))}</div></div>
+    <div class="stat ${noExitCount ? "warn" : ""}"><div class="num">${noExitCount}</div><div class="lbl">${esc(t("vstat_noexit"))}</div></div>
+    <div class="stat ${overdueCount ? "alert" : ""}"><div class="num">${overdueCount}</div><div class="lbl">${esc(t("vstat_overdue"))}</div></div>`;
+
+  const incompleteCount = vendors.filter(isVendorIncomplete).length;
+  const ibar = $("vIncompleteBar");
+  if(incompleteCount){ ibar.style.display = "block"; ibar.textContent = tf("vendor_incomplete_bar", {n:incompleteCount}); }
+  else{ ibar.style.display = "none"; }
+
+  document.querySelectorAll("#vendHead th[data-vsort]").forEach(th => { th.querySelector(".arr").textContent = th.dataset.vsort === vSortKey ? (vSortDir === 1 ? "▲" : "▼") : ""; });
+}
+function fillVendorDatalist(){
+  $("vendorNamesList").innerHTML = vendors.map(v => `<option value="${esc(v.name)}">`).join("");
+}
+function resolveOrCreateVendor(name, riskId){
+  if(!name) return "";
+  let v = vendors.find(x => x.name.trim().toLowerCase() === name.trim().toLowerCase());
+  if(!v){
+    v = { id: nextVendorId(), name: name.trim(), type:"", desc:"", process:"", cif:"", datalocation:"", contractstart:"", contractend:"",
+      status:"", nextreview:"", subcontractor:"", subcontractorname:"", concentration:"", auditrights:"", exitstrategy:"", owner:"", linkedrisks:"", notes:"",
+      history:[{ t:new Date().toISOString(), u:(currentUser?currentUser.u:"guest"), a:(curLang==="en"?"Auto-created from risk record":"Automatski kreiran iz zapisa rizika"), ch:[] }] };
+    vendors.push(v);
+    showToast(t("toast_vendor_autocreated"));
+  }
+  if(riskId){
+    const ids = v.linkedrisks ? v.linkedrisks.split(";").map(s => s.trim()).filter(Boolean) : [];
+    if(!ids.includes(riskId)){ ids.push(riskId); v.linkedrisks = ids.join("; "); }
+  }
+  return v.id;
+}
+function isVendorReviewOverdue(r){ return r.nextreview && r.nextreview < todayISO(); }
+$("vtbody").addEventListener("click", e => { const tr = e.target.closest("tr[data-id]"); if(tr) openVendorForm(tr.dataset.id); });
+document.addEventListener("click", e => {
+  const th = e.target.closest("#vendHead th[data-vsort]"); if(!th) return;
+  if(vSortKey === th.dataset.vsort) vSortDir = -vSortDir; else { vSortKey = th.dataset.vsort; vSortDir = 1; }
+  renderVendors();
+});
+["vq","vfType","vfCif","vfStatus","vfExit"].forEach(id => $(id).addEventListener("input", renderVendors));
+$("btnVClear").addEventListener("click", () => { ["vq","vfType","vfCif","vfStatus","vfExit"].forEach(id => $(id).value = ""); renderVendors(); });
+
+function openVendorForm(id){
+  editingVendorId = id || null;
+  readOnlyForm = !isAdmin();
+  const r = id ? vendors.find(x => x.id === id) : null;
+  $("vTitle").textContent = id ? (readOnlyForm ? (curLang==="en"?"View vendor ":"Pregled dobavljača ") + id : (curLang==="en"?"Edit vendor ":"Uredi dobavljača ") + id) : t("nav_new_vendor").replace("+ ","");
+  $("btnVDelete").style.display = (id && !readOnlyForm) ? "inline-block" : "none";
+  $("btnVSave").style.display = readOnlyForm ? "none" : "inline-block";
+  $("vFormErr").style.display = "none";
+  VFIELDS.forEach(f => { const el = $("v_" + f); if(el){ el.value = r ? (r[f] || "") : ""; el.disabled = readOnlyForm; } });
+  if(!r && !readOnlyForm){ $("v_id").value = nextVendorId(); $("v_status").value = "active"; }
+  renderHistory(r, "vHistBox", "vHistRows");
+  $("vendorOv").classList.add("open");
+  if(!readOnlyForm) $("v_name").focus();
+}
+function closeVendorForm(){ $("vendorOv").classList.remove("open"); editingVendorId = null; }
+$("btnVCancel").addEventListener("click", closeVendorForm);
+$("btnVEmptyNew").addEventListener("click", () => { if(isAdmin()) openVendorForm(); });
+$("btnVSave").addEventListener("click", () => {
+  if(!isAdmin()) return;
+  const rec = {};
+  VFIELDS.forEach(f => { const el = $("v_" + f); rec[f] = el ? el.value.trim() : ""; });
+  const err = $("vFormErr");
+  const missing = VENDOR_REQUIRED.filter(f => !rec[f]);
+  if(missing.length){ err.textContent = tf("err_missing_fields", {fields: missing.map(f => t("vf_"+f).replace(" *","")).join(", ")}); err.style.display = "block"; return; }
+  const spamField = VENDOR_TEXT_FIELDS.find(f => looksLikeSpam(rec[f]));
+  if(spamField){ err.textContent = tf("err_spam", {field: t("vf_"+spamField).replace(" *",""), value: rec[spamField].slice(0,24)}); err.style.display = "block"; return; }
+  const dup = vendors.find(x => x.id === rec.id && x.id !== editingVendorId);
+  if(dup){ err.textContent = tf("verr_dup_id", {id:rec.id}); err.style.display = "block"; return; }
+  const now = new Date().toISOString();
+  if(editingVendorId){
+    const i = vendors.findIndex(x => x.id === editingVendorId);
+    const old = vendors[i];
+    const ch = [];
+    VFIELDS.forEach(f => {
+      if((old[f] || "") !== (rec[f] || "")){
+        const isDate = f === "contractstart" || f === "contractend" || f === "nextreview";
+        const isEnum = ["type","cif","status","subcontractor","concentration","auditrights","exitstrategy"].includes(f);
+        const etype = {type:"vtype",cif:"yesno",status:"vstatus",subcontractor:"yesno",concentration:"yesno",auditrights:"yesno",exitstrategy:"exit"}[f];
+        const ov = isDate ? fmtD(old[f]) : isEnum ? elabel(etype, old[f]) : (old[f] || "-");
+        const nv = isDate ? fmtD(rec[f]) : isEnum ? elabel(etype, rec[f]) : (rec[f] || "-");
+        ch.push(t("vf_"+f) + ": " + (ov || "-") + " -> " + (nv || "-"));
+      }
+    });
+    rec.history = old.history || [];
+    if(ch.length) rec.history.push({ t:now, u:(currentUser?currentUser.u:"guest"), a:(curLang==="en"?"Record updated":"Izmjena zapisa"), ch });
+    vendors[i] = rec;
+  }else{
+    rec.history = [{ t:now, u:(currentUser?currentUser.u:"guest"), a:(curLang==="en"?"Record created":"Kreiran zapis"), ch:[] }];
+    vendors.push(rec);
+  }
+  saveData(); renderVendors(); closeVendorForm();
+  showToast(t("vtoast_saved"));
+});
+$("btnVDelete").addEventListener("click", () => {
+  if(!isAdmin() || !editingVendorId) return;
+  if(confirm(tf("vconfirm_delete", {id:editingVendorId}))){
+    vendors = vendors.filter(x => x.id !== editingVendorId);
+    saveData(); renderVendors(); closeVendorForm();
+    showToast(t("vtoast_deleted"));
+  }
+});
+/* backdrop click intentionally does not close the vendor form, to avoid losing unsaved input; use Close/Cancel or Escape */
+
+/* ===================== export / import / print ===================== */
+function download(name, content, type){
+  const blob = new Blob([content], {type});
+  const a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = name; a.click(); URL.revokeObjectURL(a.href);
+}
+function downloadStandaloneCopy(){
+  const clone = document.documentElement.cloneNode(true);
+  clone.querySelectorAll(".overlay.open").forEach(el => el.classList.remove("open"));
+  clone.querySelectorAll(".toast.show").forEach(el => el.classList.remove("show"));
+  const bodyEl = clone.querySelector("body");
+  if(bodyEl) bodyEl.classList.remove("printing");
+  const html = "<!DOCTYPE html>\n" + clone.outerHTML;
+  download("ict_risk_register_template.html", html, "text/html;charset=utf-8");
+  showToast(t("toast_app_downloaded"));
+}
+$("btnDownloadApp").addEventListener("click", downloadStandaloneCopy);
+$("btnExportJson").addEventListener("click", () => { download("ict_risk_register_backup_" + todayISO() + ".json", JSON.stringify(currentPayload(), null, 2), "application/json"); });
+function exportRisksCsv(){
+  const csvCell = v => { v = String(v ?? ""); return /[;"\n\r]/.test(v) ? '"' + v.replace(/"/g,'""') + '"' : v; };
+  const headers = CSV_LBLKEYS.map(k => t(k) === k ? k : t(k));
+  const lines = [headers.join(";")];
+  const filt = getFiltered();
+  let rows = data.slice().sort((a,b) => (a.id||"").localeCompare(b.id||"", undefined, {numeric:true}));
+  if(filt.length && filt.length !== data.length && confirm(tf("export_filtered_confirm", {f:filt.length, d:data.length}))) rows = filt;
+  rows.forEach(r => {
+    const rowVals = CSV_KEYS.map(k => {
+      if(["datident","datodluka","acceptuntil","treatdue","datpregled","datclosed","pregledD"].includes(k)) return fmtD(r[k]);
+      if(k === "kat") return elabel("category", r.kat);
+      if(k === "izvor") return elabel("source", r.izvor);
+      if(k === "odluka") return elabel("decision", r.odluka);
+      if(k === "status") return elabel("status", r.status);
+      if(k === "declevel") return elabel("declevel", r.declevel);
+      if(k === "cif") return elabel("cif", r.cif);
+      if(k === "legacy") return elabel("legacy", r.legacy);
+      if(k === "likelihood") return elabel("likelihood", r.likelihood);
+      if(k === "impact") return elabel("impact", r.impact);
+      return r[k];
+    });
+    lines.push(rowVals.map(csvCell).join(";"));
+  });
+  download("ict_risk_register_" + todayISO() + ".csv", "\uFEFF" + lines.join("\r\n"), "text/csv;charset=utf-8");
+}
+function exportVendorsCsv(){
+  const csvCell = v => { v = String(v ?? ""); return /[;"\n\r]/.test(v) ? '"' + v.replace(/"/g,'""') + '"' : v; };
+  const headers = VCSV_LBLKEYS.map(k => t(k) === k ? k : t(k));
+  const lines = [headers.join(";")];
+  const filt = getFilteredVendors();
+  let rows = vendors.slice().sort((a,b) => (a.id||"").localeCompare(b.id||"", undefined, {numeric:true}));
+  if(filt.length && filt.length !== vendors.length && confirm(tf("export_filtered_confirm", {f:filt.length, d:vendors.length}))) rows = filt;
+  rows.forEach(r => {
+    const rowVals = VCSV_KEYS.map(k => {
+      if(["contractstart","contractend","nextreview"].includes(k)) return fmtD(r[k]);
+      if(k === "type") return elabel("vtype", r.type);
+      if(k === "cif" || k === "subcontractor" || k === "concentration" || k === "auditrights") return elabel("yesno", r[k]);
+      if(k === "status") return elabel("vstatus", r.status);
+      if(k === "exitstrategy") return elabel("exit", r.exitstrategy);
+      return r[k];
+    });
+    lines.push(rowVals.map(csvCell).join(";"));
+  });
+  download("ict_vendor_register_" + todayISO() + ".csv", "\uFEFF" + lines.join("\r\n"), "text/csv;charset=utf-8");
+}
+$("btnExportCsv").addEventListener("click", () => { if(currentView === "vendors") exportVendorsCsv(); else exportRisksCsv(); });
+$("btnImport").addEventListener("click", () => { if(isAdmin()) $("fileImport").click(); });
+$("fileImport").addEventListener("change", e => {
+  const file = e.target.files[0]; if(!file) return;
+  const reader = new FileReader();
+  reader.onload = async () => {
+    try{
+      const parsed = JSON.parse(reader.result);
+      const recs = parsed.records || (Array.isArray(parsed) ? parsed : null);
+      if(!recs) throw new Error("bad");
+      if(data.length && !confirm(tf("confirm_import", {n:data.length, u: parsed.users ? t("confirm_import_users") : ""}))){ e.target.value = ""; return; }
+      applyPayload(parsed.records ? parsed : {records:recs});
+      await ensureBuiltins();
+      saveData(); render();
+      showToast(t("toast_backup_loaded"));
+    }catch(err){ showToast(t("toast_bad_backup"), true); }
+    e.target.value = "";
+  };
+  reader.readAsText(file);
+});
+let resetCountdownTimer = null;
+function performReset(){
+  data = JSON.parse(JSON.stringify(SAMPLE_RECORDS));
+  vendors = JSON.parse(JSON.stringify(SAMPLE_VENDORS));
+  hadVendorsKey = true;
+  saveData(); render(); renderVendors();
+  showToast(t("toast_reset_done"));
+}
+function closeResetConfirm(){
+  $("resetConfirmOv").classList.remove("open");
+  if(resetCountdownTimer){ clearInterval(resetCountdownTimer); resetCountdownTimer = null; }
+}
+$("btnResetSample").addEventListener("click", () => {
+  if(!isAdmin()) return;
+  $("resetModalBody").textContent = t("reset_modal_body");
+  const btn = $("btnResetOk");
+  btn.disabled = true;
+  let n = 30;
+  btn.textContent = tf("reset_ok_wait", {n});
+  $("resetConfirmOv").classList.add("open");
+  if(resetCountdownTimer) clearInterval(resetCountdownTimer);
+  resetCountdownTimer = setInterval(() => {
+    n--;
+    if(n <= 0){
+      clearInterval(resetCountdownTimer); resetCountdownTimer = null;
+      btn.disabled = false; btn.textContent = t("reset_ok_ready");
+    }else{
+      btn.textContent = tf("reset_ok_wait", {n});
+    }
+  }, 1000);
+});
+$("btnResetCancel").addEventListener("click", closeResetConfirm);
+$("btnResetOk").addEventListener("click", () => {
+  if($("btnResetOk").disabled) return;
+  closeResetConfirm();
+  performReset();
+});
+
+$("btnPrint").addEventListener("click", () => {
+  const now = new Date();
+  $("repFrom").value = new Date(now.getFullYear(), 0, 1).toISOString().slice(0,10);
+  $("repTo").value = todayISO();
+  $("reportOv").classList.add("open");
+});
+$("btnReportCancel").addEventListener("click", () => $("reportOv").classList.remove("open"));
+$("btnReportGenerate").addEventListener("click", () => {
+  const from = $("repFrom").value, to = $("repTo").value, audience = $("repAudience").value;
+  $("reportOv").classList.remove("open");
+  const open = data.filter(r => r.status !== "closed").sort((a,b) => (b.cif === "yes") - (a.cif === "yes") || (a.id||"").localeCompare(b.id||"", undefined, {numeric:true}));
+  const identifiedInPeriod = data.filter(r => r.datident && (!from || r.datident >= from) && (!to || r.datident <= to)).length;
+  const closedInPeriod = data.filter(r => r.datclosed && (!from || r.datclosed >= from) && (!to || r.datclosed <= to)).length;
+  const rows = open.map(r => {
+    const score = riskScore(r.likelihood, r.impact);
+    const band = riskBand(score);
+    return `
+    <tr><td>${esc(r.id)}</td><td>${esc(r.naziv)}</td><td>${band ? esc(elabel("band", band.key)) : "-"}</td><td>${esc(elabel("category",r.kat))}</td>
+    <td class="${r.cif === "yes" ? "pcif" : ""}">${esc(elabel("cif",r.cif))}</td><td>${esc(r.vlasnik)}</td>
+    <td>${esc(elabel("source",r.izvor))}</td><td>${esc(elabel("decision",r.odluka)) || "-"}</td><td>${esc(elabel("declevel",r.declevel))||"-"}</td>
+    <td>${esc(elabel("status",r.status))}</td><td>${fmtD(r.datpregled)}</td>
+    <td>${[r.incident,r.preporuka,r.procjena,r.roi].filter(Boolean).map(esc).join("; ")}</td></tr>`;
+  }).join("");
+  $("printArea").innerHTML = `
+    <div class="phead"><svg width="30" height="30"><use href="#brandmark"/></svg><h1>${esc(t("print_title"))}</h1></div>
+    <div class="pmeta">${esc(tf("print_audience_line", {audience: elabel("audience", audience)}))}<br>${esc(tf("print_meta", {dt:fmtDT(new Date().toISOString()), u:(currentUser?currentUser.u:"guest"), n:open.length, total:data.length}))}<br>${esc(fmtD(from))} - ${esc(fmtD(to))}: ${esc(tf("print_period_summary", {i:identifiedInPeriod, c:closedInPeriod}))}</div>
+    <table><thead><tr><th>${esc(t("th_id"))}</th><th>${esc(t("th_name"))}</th><th>${esc(t("print_level"))}</th><th>${esc(t("th_category"))}</th><th>${esc(t("th_cif"))}</th><th>${esc(t("th_owner"))}</th><th>${esc(t("th_source"))}</th><th>${esc(t("th_decision"))}</th><th>${esc(t("f_declevel"))}</th><th>${esc(t("th_status"))}</th><th>${esc(t("th_nextreview"))}</th><th>${esc(t("th_links"))}</th></tr></thead>
+    <tbody>${rows || `<tr><td colspan="12">${esc(t("print_no_open"))}</td></tr>`}</tbody></table>
+    <div class="pfoot">${esc(t("print_footer"))}</div>`;
+  document.body.classList.add("printing");
+  window.print();
+});
+window.addEventListener("afterprint", () => document.body.classList.remove("printing"));
+
+/* ===================== file db buttons ===================== */
+$("btnConnect").addEventListener("click", () => { if(fileHandle) return; if(storedHandle && !dbConnected) reconnectStored(); else pickFile(); });
+$("btnOtherFile").addEventListener("click", () => pickFile());
+
+/* ===================== init ===================== */
+(async function init(){
+  try{ curLang = localStorage.getItem(LANGKEY) || "en"; }catch(e){}
+  loadData();
+  await ensureBuiltins();
+  saveDataAsAny();
+  restoreFilters();
+  setLang(curLang);
+  showView("register");
+  initFileDb();
+  applyPerms();
+  if(settings.authEnabled){
+    const sess = getSession();
+    const u = sess ? users.find(x => x.u === sess) : null;
+    if(u){ currentUser = u; applyPerms(); showView("register"); updateDbUi(); if(u.mustChange) openPwd(true); }
+    else showLogin();
+  }
+})();
+</script>
+</body>
+</html>
