@@ -5,27 +5,31 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data:; base-uri 'none'; form-action 'none'">
 <title>ICT Risk Register Template</title>
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MCA0MCI+CjxwYXRoIGQ9Ik0yMCAzIEwzNCAxMSBMMzQgMjkgTDIwIDM3IEw2IDI5IEw2IDExIFoiIGZpbGw9IiNENEFGMzciLz4KPHJlY3QgeD0iMTIuNiIgeT0iMjMiIHdpZHRoPSI0LjIiIGhlaWdodD0iOSIgcng9IjEiIGZpbGw9IiMxNzEyMDMiLz4KPHJlY3QgeD0iMTcuOSIgeT0iMTciIHdpZHRoPSI0LjIiIGhlaWdodD0iMTUiIHJ4PSIxIiBmaWxsPSIjMTcxMjAzIi8+CjxyZWN0IHg9IjIzLjIiIHk9IjEwLjUiIHdpZHRoPSI0LjIiIGhlaWdodD0iMjEuNSIgcng9IjEiIGZpbGw9IiMxNzEyMDMiLz4KPC9zdmc+">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MCA0MCI+CjxwYXRoIGQ9Ik0yMCAzIEwzNCAxMSBMMzQgMjkgTDIwIDM3IEw2IDI5IEw2IDExIFoiIGZpbGw9IiNDOTlBM0IiLz4KPHJlY3QgeD0iMTIuNiIgeT0iMjMiIHdpZHRoPSI0LjIiIGhlaWdodD0iOSIgcng9IjEiIGZpbGw9IiMxNzEyMDMiLz4KPHJlY3QgeD0iMTcuOSIgeT0iMTciIHdpZHRoPSI0LjIiIGhlaWdodD0iMTUiIHJ4PSIxIiBmaWxsPSIjMTcxMjAzIi8+CjxyZWN0IHg9IjIzLjIiIHk9IjEwLjUiIHdpZHRoPSI0LjIiIGhlaWdodD0iMjEuNSIgcng9IjEiIGZpbGw9IiMxNzEyMDMiLz4KPC9zdmc+">
 <style>
 :root{
-  --brand:#5B93F0; --brand-dark:#3D7ADB; --brand-deep:#0A0E1A; --brand-accent:#D4AF37; --brand-accent-dark:#B8962E;
-  --brand-mid:#5B93F0; --brand-light:#8FB0F5; --brand-pale:#33406B;
-  --brand-tint:rgba(91,147,240,.10); --brand-line:#242C48; --canvas:#0A0E1A;
-  --panel:#10152A; --panel-2:#171D36; --panel-3:#1E2542;
-  --ink:#E7EAF3; --gray:#98A1BD; --green:#34D399; --orange:#F5A524; --yellow:#E8C845;
-  --red:#F0555F; --red-bg:rgba(240,85,95,.14); --ok-bg:rgba(52,211,153,.14);
-  --radius:12px; --pill:999px; --btnr:9px;
+  --brand:#2953D6; --brand-dark:#1D3FAE; --brand-deep:#FFFFFF; --brand-accent:#C99A3B; --brand-accent-dark:#A87D28;
+  --brand-mid:#2953D6; --brand-light:#7A93E8; --brand-pale:#B9C4E0;
+  --brand-tint:rgba(41,83,214,.08); --brand-line:#D8DEEA; --canvas:#EEF1F7;
+  --panel:#FFFFFF; --panel-2:#F4F6FB; --panel-3:#E7ECF5;
+  --ink:#16203D; --gray:#566178; --green:#1F9D63; --orange:#D2691E; --yellow:#B5820F;
+  --red:#C62E3D; --red-bg:rgba(198,46,61,.10); --ok-bg:rgba(31,157,99,.10);
+  --orange-tint:rgba(210,105,30,.13); --yellow-tint:rgba(181,130,15,.13);
+  --radius:14px; --pill:999px; --btnr:9px;
+  --shadow-card:0 1px 2px rgba(22,32,61,.05),0 8px 22px rgba(22,32,61,.08); --shadow-card-hover:0 16px 36px rgba(22,32,61,.16);
   --font:'Segoe UI','Trebuchet MS',-apple-system,BlinkMacSystemFont,Roboto,Arial,sans-serif;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:var(--font);color:var(--ink);background-color:var(--canvas);font-size:14px;background-image:radial-gradient(1100px 850px at right -40px bottom -60px, rgba(60,90,160,.22) 0%, rgba(10,14,26,0) 62%),url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgNDAwIj4KPGRlZnM+PGZpbHRlciBpZD0iYiIgeD0iLTUwJSIgeT0iLTUwJSIgd2lkdGg9IjIwMCUiIGhlaWdodD0iMjAwJSI+PGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iNi4wNzUiLz48L2ZpbHRlcj48L2RlZnM+CjxnIGZpbHRlcj0idXJsKCNiKSI+CjxwYXRoIGQ9Ik0yMDAgNDQgTDMyOCAxMTggTDMyOCAyODIgTDIwMCAzNTYgTDcyIDI4MiBMNzIgMTE4IFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzZGQTBGNSIgc3Ryb2tlLXdpZHRoPSIyIiBvcGFjaXR5PSIwLjA3IiB0cmFuc2Zvcm09InJvdGF0ZSg2IDIwMCAyMDApIi8+CjxwYXRoIGQ9Ik0yMDAgNjQgTDMxMiAxMjggTDMxMiAyNzIgTDIwMCAzMzYgTDg4IDI3MiBMODggMTI4IFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzZGQTBGNSIgc3Ryb2tlLXdpZHRoPSIyLjUiIG9wYWNpdHk9IjAuMTMiLz4KPHJlY3QgeD0iMTQxIiB5PSIyMjQiIHdpZHRoPSIzNCIgaGVpZ2h0PSI3MiIgcng9IjYiIGZpbGw9IiNENEFGMzciIG9wYWNpdHk9IjAuMTUiLz4KPHJlY3QgeD0iMTgzIiB5PSIxNzYiIHdpZHRoPSIzNCIgaGVpZ2h0PSIxMjAiIHJ4PSI2IiBmaWxsPSIjRDRBRjM3IiBvcGFjaXR5PSIwLjE1Ii8+CjxyZWN0IHg9IjIyNiIgeT0iMTI0IiB3aWR0aD0iMzQiIGhlaWdodD0iMTcyIiByeD0iNiIgZmlsbD0iI0Q0QUYzNyIgb3BhY2l0eT0iMC4xNSIvPgo8L2c+Cjwvc3ZnPg==");background-repeat:no-repeat,no-repeat;background-position:0 0,right -70px bottom -90px;background-size:auto,640px 640px;background-attachment:fixed,fixed}
+html{background:var(--canvas)}
+body{font-family:var(--font);color:var(--ink);background-color:var(--canvas);font-size:14px;background-image:radial-gradient(1100px 850px at right -40px bottom -60px, rgba(41,83,214,.09) 0%, rgba(238,241,247,0) 62%),url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgNDAwIj4KPGRlZnM+PGZpbHRlciBpZD0iYiIgeD0iLTUwJSIgeT0iLTUwJSIgd2lkdGg9IjIwMCUiIGhlaWdodD0iMjAwJSI+PGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iNi4wNzUiLz48L2ZpbHRlcj48L2RlZnM+CjxnIGZpbHRlcj0idXJsKCNiKSI+CjxwYXRoIGQ9Ik0yMDAgNDQgTDMyOCAxMTggTDMyOCAyODIgTDIwMCAzNTYgTDcyIDI4MiBMNzIgMTE4IFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzI5NTNENiIgc3Ryb2tlLXdpZHRoPSIyIiBvcGFjaXR5PSIwLjExIiB0cmFuc2Zvcm09InJvdGF0ZSg2IDIwMCAyMDApIi8+CjxwYXRoIGQ9Ik0yMDAgNjQgTDMxMiAxMjggTDMxMiAyNzIgTDIwMCAzMzYgTDg4IDI3MiBMODggMTI4IFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzI5NTNENiIgc3Ryb2tlLXdpZHRoPSIyLjUiIG9wYWNpdHk9IjAuMTYiLz4KPHJlY3QgeD0iMTQxIiB5PSIyMjQiIHdpZHRoPSIzNCIgaGVpZ2h0PSI3MiIgcng9IjYiIGZpbGw9IiNDOTlBM0IiIG9wYWNpdHk9IjAuMjAiLz4KPHJlY3QgeD0iMTgzIiB5PSIxNzYiIHdpZHRoPSIzNCIgaGVpZ2h0PSIxMjAiIHJ4PSI2IiBmaWxsPSIjQzk5QTNCIiBvcGFjaXR5PSIwLjIwIi8+CjxyZWN0IHg9IjIyNiIgeT0iMTI0IiB3aWR0aD0iMzQiIGhlaWdodD0iMTcyIiByeD0iNiIgZmlsbD0iI0M5OUEzQiIgb3BhY2l0eT0iMC4yMCIvPgo8L2c+Cjwvc3ZnPg==");background-repeat:no-repeat,no-repeat;background-position:0 0,right -70px bottom -90px;background-size:auto,640px 640px;background-attachment:fixed,fixed}
+.topstrip{height:4px;background:linear-gradient(90deg,var(--brand-accent) 0%,var(--brand) 55%,var(--brand-dark) 100%);position:sticky;top:0;z-index:21}
 button{font-family:inherit;cursor:pointer}
 input,select,textarea{font-family:inherit;font-size:13px;color:var(--ink)}
 
-header{display:flex;align-items:center;gap:10px;padding:12px 24px;border-bottom:1px solid var(--brand-line);position:sticky;top:0;background:var(--brand-deep);z-index:20;flex-wrap:wrap}
+header{display:flex;align-items:center;gap:10px;padding:12px 24px;border-bottom:1px solid var(--brand-line);box-shadow:0 1px 0 rgba(22,32,61,.03),0 4px 14px rgba(22,32,61,.05);position:sticky;top:4px;background:var(--brand-deep);z-index:20;flex-wrap:wrap}
 header .brandmark{flex:0 0 auto}
 header .apptitle{font-size:16px;font-weight:700;color:var(--ink);letter-spacing:.2px}
-header .apptitle small{display:block;font-size:11px;font-weight:400;color:var(--gray);letter-spacing:.3px}
+header .apptitle small{display:block;font-size:10.5px;font-weight:600;color:var(--gray);letter-spacing:.6px;text-transform:uppercase}
 header .spacer{flex:1}
 .langtoggle{display:flex;border:1.5px solid var(--brand-line);border-radius:var(--pill);overflow:hidden}
 .langtoggle button{border:none;background:transparent;color:var(--gray);padding:7px 12px;font-size:12px;font-weight:700;transition:background .15s,color .15s}
@@ -33,18 +37,19 @@ header .spacer{flex:1}
 .hdiv{width:1px;height:26px;background:var(--brand-line);margin:0 4px}
 .userchip{font-size:12px;color:var(--gray);background:var(--panel-2);border:1px solid var(--brand-line);border-radius:var(--pill);padding:6px 14px}
 .userchip b{color:var(--ink)}
-.btn{border:none;border-radius:var(--btnr);padding:10px 18px;font-size:13px;font-weight:600;transition:background .15s,color .15s,border-color .15s,transform .12s,box-shadow .15s}
+.btn{border:none;border-radius:var(--btnr);padding:10px 18px;font-size:13px;font-weight:600;transition:background .15s,color .15s,border-color .15s,transform .14s cubic-bezier(.2,.7,.3,1),box-shadow .15s}
 .btn:hover{transform:translateY(-1px)}
-.btn-primary{background:var(--brand-accent);color:#171203}
-.btn-primary:hover{background:var(--brand-accent-dark);box-shadow:0 4px 14px rgba(212,175,55,.25)}
+.btn:active{transform:translateY(0)}
+.btn-primary{background:var(--brand-accent);color:#171203;box-shadow:0 2px 10px rgba(212,175,55,.18)}
+.btn-primary:hover{background:var(--brand-accent-dark);box-shadow:0 5px 16px rgba(212,175,55,.3)}
 .btn-ghost{background:var(--panel-2);color:var(--ink);border:1.5px solid var(--brand-line)}
 .btn-ghost:hover{border-color:var(--brand);background:var(--panel-3)}
 .btn-danger{background:var(--panel-2);color:var(--red);border:1.5px solid rgba(240,85,95,.35)}
 .btn-danger:hover{background:var(--red-bg)}
 .btn-sm{padding:6px 13px;font-size:12px}
 .btn:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--brand-accent);outline-offset:1px}
-header .btn-ghost{background:rgba(255,255,255,.05);color:var(--ink);border:1.5px solid var(--brand-line)}
-header .btn-ghost:hover{background:rgba(255,255,255,.09);border-color:var(--brand)}
+header .btn-ghost{background:rgba(20,30,60,.04);color:var(--ink);border:1.5px solid var(--brand-line)}
+header .btn-ghost:hover{background:rgba(20,30,60,.08);border-color:var(--brand)}
 header .navtab.active{background:var(--brand-tint);border-color:var(--brand);color:var(--brand)}
 ::-webkit-scrollbar{height:9px;width:9px}
 ::-webkit-scrollbar-thumb{background:var(--brand-pale);border-radius:8px}
@@ -60,15 +65,15 @@ main{max-width:1480px;margin:0 auto;padding:16px 24px 60px}
 .about-body p{margin-bottom:2px}
 
 .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:18px}
-.stat{background:var(--panel);border:1px solid var(--brand-line);border-left:3px solid var(--brand-mid);border-radius:var(--radius);padding:11px 14px;transition:transform .12s,box-shadow .12s}
+.stat{background:var(--panel);border:1px solid var(--brand-line);border-left:3px solid var(--brand-mid);border-radius:var(--radius);padding:11px 14px;box-shadow:var(--shadow-card);transition:transform .14s cubic-bezier(.2,.7,.3,1),box-shadow .15s}
 .stat.clickable{cursor:pointer}
-.stat.clickable:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(0,0,0,.35)}
+.stat.clickable:hover{transform:translateY(-2px);box-shadow:var(--shadow-card-hover)}
 .stat.activef{outline:2px solid var(--brand-accent);outline-offset:-1px}
-.stat .num{font-size:22px;font-weight:700;color:var(--ink);line-height:1.1}
-.stat .lbl{font-size:11.5px;color:var(--gray);margin-top:3px;letter-spacing:.2px}
-.stat.warn{border-left-color:var(--orange)}
+.stat .num{font-size:23px;font-weight:800;color:var(--ink);line-height:1.1;font-variant-numeric:tabular-nums;letter-spacing:-.3px}
+.stat .lbl{font-size:11px;color:var(--gray);margin-top:4px;letter-spacing:.3px;text-transform:uppercase;font-weight:600}
+.stat.warn{border-left-color:var(--orange);background:linear-gradient(180deg,var(--orange-tint) 0%,var(--panel) 60%)}
 .stat.warn .num{color:var(--orange)}
-.stat.alert{border-left-color:var(--red)}
+.stat.alert{border-left-color:var(--red);background:linear-gradient(180deg,var(--red-bg) 0%,var(--panel) 60%)}
 .stat.alert .num{color:var(--red)}
 
 .toolbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:14px}
@@ -78,22 +83,22 @@ main{max-width:1480px;margin:0 auto;padding:16px 24px 60px}
 .toolbar select{padding:9px 12px;border:1.5px solid var(--brand-line);border-radius:var(--btnr);background:var(--panel);color:var(--ink);outline:none}
 .toolbar select:focus{border-color:var(--brand)}
 .qfchip{display:inline-flex;align-items:center;gap:6px;background:var(--brand-tint);color:var(--brand);border:1px solid var(--brand-line);border-radius:var(--pill);padding:6px 8px 6px 14px;font-size:12px;font-weight:600}
-.qfchip button{border:none;background:var(--brand);color:#0A0E1A;width:18px;height:18px;border-radius:50%;font-size:11px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.qfchip button{border:none;background:var(--brand);color:#fff;width:18px;height:18px;border-radius:50%;font-size:11px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center}
 
-.tablewrap{border:1px solid var(--brand-line);border-radius:var(--radius);overflow:auto;background:var(--panel)}
+.tablewrap{border:1px solid var(--brand-line);border-radius:var(--radius);overflow:auto;background:var(--panel);box-shadow:var(--shadow-card);position:relative}
 table{width:100%;border-collapse:collapse;min-width:1350px}
-thead th{position:sticky;top:0;background:var(--panel-2);color:var(--gray);font-size:11px;font-weight:700;text-align:left;padding:10px 12px;letter-spacing:.4px;text-transform:uppercase;white-space:nowrap;border-bottom:1px solid var(--brand-line)}
+thead th{position:sticky;top:0;background:var(--panel-2);color:var(--gray);font-size:11px;font-weight:700;text-align:left;padding:10px 12px;letter-spacing:.4px;text-transform:uppercase;white-space:nowrap;border-bottom:2px solid var(--brand-line);z-index:2}
 thead th[data-sort]{cursor:pointer;user-select:none}
 thead th .arr{font-size:9px;margin-left:3px;display:inline-block;width:9px;color:var(--brand)}
 tbody td{padding:10px 12px;border-bottom:1px solid var(--brand-line);font-size:13px;vertical-align:top;color:var(--ink)}
 .tablewrap tbody tr{cursor:pointer;transition:background .1s}
 .tablewrap tbody tr:nth-child(even){background:var(--panel-2)}
 .tablewrap tbody tr:hover{background:var(--panel-3)}
-td.idcell{font-weight:700;color:var(--brand);white-space:nowrap}
+td.idcell{font-weight:700;color:var(--brand);white-space:nowrap;font-variant-numeric:tabular-nums}
 td .sub{display:block;font-size:11px;color:var(--gray);margin-top:2px}
 .chip{display:inline-block;border-radius:var(--pill);padding:3px 11px;font-size:11.5px;font-weight:600;white-space:nowrap}
 .chip-active{background:var(--orange-tint,rgba(245,165,36,.16));color:var(--orange)}
-.chip-in_treatment{background:rgba(232,200,69,.16);color:var(--yellow)}
+.chip-in_treatment{background:var(--yellow-tint);color:var(--yellow)}
 .chip-accepted{background:var(--brand-tint);color:var(--brand)}
 .chip-closed{background:var(--ok-bg);color:var(--green)}
 .cif-yes{color:var(--red);font-weight:700}
@@ -105,7 +110,7 @@ td .sub{display:block;font-size:11px;color:var(--gray);margin-top:2px}
 
 #viewDashboard{display:none}
 .dashgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-.dashcard{border:1px solid var(--brand-line);border-radius:var(--radius);padding:13px 15px;background:var(--panel)}
+.dashcard{border:1px solid var(--brand-line);border-radius:var(--radius);padding:13px 15px;background:var(--panel);box-shadow:var(--shadow-card)}
 .dashcard.wide{grid-column:span 2}
 .dashcard h3{font-size:11.5px;color:var(--gray);letter-spacing:.4px;text-transform:uppercase;margin-bottom:8px;font-weight:700}
 .dashcard svg{width:100%;height:auto;display:block}
@@ -125,7 +130,7 @@ td .sub{display:block;font-size:11px;color:var(--gray);margin-top:2px}
 .overlay{position:fixed;inset:0;background:rgba(4,6,14,.65);display:none;align-items:center;justify-content:center;z-index:50;padding:22px 16px}
 #resetConfirmOv{z-index:60}
 .overlay.open{display:flex}
-.modal{background:var(--panel);border:1px solid var(--brand-line);border-radius:16px;width:100%;max-width:960px;padding:22px 26px 18px;margin:auto;box-shadow:0 30px 80px rgba(0,0,0,.55);animation:pop .18s ease-out;max-height:calc(100vh - 44px);display:flex;flex-direction:column}
+.modal{background:var(--panel);border:1px solid var(--brand-line);border-radius:16px;width:100%;max-width:960px;padding:22px 26px 18px;margin:auto;box-shadow:0 24px 60px rgba(30,40,80,.20);animation:pop .18s ease-out;max-height:calc(100vh - 44px);display:flex;flex-direction:column}
 .mbody{overflow-y:auto;padding-right:8px;margin-right:-6px;flex:1;min-height:0}
 .modal.narrow{max-width:520px}
 .modal h2{font-size:18px;color:var(--ink);margin-bottom:2px}
@@ -153,6 +158,10 @@ td .sub{display:block;font-size:11px;color:var(--gray);margin-top:2px}
 .history summary{list-style:none;padding:10px 14px;font-size:12px;font-weight:700;color:var(--brand);cursor:pointer;letter-spacing:.4px;text-transform:uppercase}
 .history summary::-webkit-details-marker{display:none}
 .histrows{max-height:220px;overflow:auto;border-top:1px solid var(--brand-line)}
+.integrity{font-size:10.5px;padding:6px 14px;border-top:1px solid var(--brand-line)}
+.integrity.ok{color:var(--green)}
+.integrity.broken{color:var(--red);font-weight:600}
+.integrity.unchained{color:var(--gray)}
 .histrow{padding:8px 14px;font-size:12px;border-bottom:1px solid var(--brand-line);color:var(--gray)}
 .histrow .when{color:var(--brand);font-weight:600}
 .histrow .who{color:var(--gray)}
@@ -175,9 +184,9 @@ td .sub{display:block;font-size:11px;color:var(--gray);margin-top:2px}
 .authtoggle .t{font-size:13px;font-weight:600;color:var(--ink)}
 .authtoggle .h{font-size:12px;color:var(--gray);margin-top:3px}
 
-#loginOv{position:fixed;inset:0;background-color:var(--brand-deep);background-image:radial-gradient(900px 700px at right -40px bottom -40px, rgba(60,90,160,.26) 0%, rgba(10,14,26,0) 62%),url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgNDAwIj4KPGRlZnM+PGZpbHRlciBpZD0iYiIgeD0iLTUwJSIgeT0iLTUwJSIgd2lkdGg9IjIwMCUiIGhlaWdodD0iMjAwJSI+PGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iNi4wNzUiLz48L2ZpbHRlcj48L2RlZnM+CjxnIGZpbHRlcj0idXJsKCNiKSI+CjxwYXRoIGQ9Ik0yMDAgNDQgTDMyOCAxMTggTDMyOCAyODIgTDIwMCAzNTYgTDcyIDI4MiBMNzIgMTE4IFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzZGQTBGNSIgc3Ryb2tlLXdpZHRoPSIyIiBvcGFjaXR5PSIwLjA3IiB0cmFuc2Zvcm09InJvdGF0ZSg2IDIwMCAyMDApIi8+CjxwYXRoIGQ9Ik0yMDAgNjQgTDMxMiAxMjggTDMxMiAyNzIgTDIwMCAzMzYgTDg4IDI3MiBMODggMTI4IFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzZGQTBGNSIgc3Ryb2tlLXdpZHRoPSIyLjUiIG9wYWNpdHk9IjAuMTMiLz4KPHJlY3QgeD0iMTQxIiB5PSIyMjQiIHdpZHRoPSIzNCIgaGVpZ2h0PSI3MiIgcng9IjYiIGZpbGw9IiNENEFGMzciIG9wYWNpdHk9IjAuMTUiLz4KPHJlY3QgeD0iMTgzIiB5PSIxNzYiIHdpZHRoPSIzNCIgaGVpZ2h0PSIxMjAiIHJ4PSI2IiBmaWxsPSIjRDRBRjM3IiBvcGFjaXR5PSIwLjE1Ii8+CjxyZWN0IHg9IjIyNiIgeT0iMTI0IiB3aWR0aD0iMzQiIGhlaWdodD0iMTcyIiByeD0iNiIgZmlsbD0iI0Q0QUYzNyIgb3BhY2l0eT0iMC4xNSIvPgo8L2c+Cjwvc3ZnPg==");background-repeat:no-repeat,no-repeat;background-position:0 0,right -60px bottom -70px;background-size:auto,560px 560px;display:none;align-items:center;justify-content:center;z-index:100}
+#loginOv{position:fixed;inset:0;background-color:var(--brand-deep);background-image:radial-gradient(900px 700px at right -40px bottom -40px, rgba(41,83,214,.12) 0%, rgba(255,255,255,0) 62%),url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgNDAwIj4KPGRlZnM+PGZpbHRlciBpZD0iYiIgeD0iLTUwJSIgeT0iLTUwJSIgd2lkdGg9IjIwMCUiIGhlaWdodD0iMjAwJSI+PGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iNi4wNzUiLz48L2ZpbHRlcj48L2RlZnM+CjxnIGZpbHRlcj0idXJsKCNiKSI+CjxwYXRoIGQ9Ik0yMDAgNDQgTDMyOCAxMTggTDMyOCAyODIgTDIwMCAzNTYgTDcyIDI4MiBMNzIgMTE4IFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzI5NTNENiIgc3Ryb2tlLXdpZHRoPSIyIiBvcGFjaXR5PSIwLjExIiB0cmFuc2Zvcm09InJvdGF0ZSg2IDIwMCAyMDApIi8+CjxwYXRoIGQ9Ik0yMDAgNjQgTDMxMiAxMjggTDMxMiAyNzIgTDIwMCAzMzYgTDg4IDI3MiBMODggMTI4IFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzI5NTNENiIgc3Ryb2tlLXdpZHRoPSIyLjUiIG9wYWNpdHk9IjAuMTYiLz4KPHJlY3QgeD0iMTQxIiB5PSIyMjQiIHdpZHRoPSIzNCIgaGVpZ2h0PSI3MiIgcng9IjYiIGZpbGw9IiNDOTlBM0IiIG9wYWNpdHk9IjAuMjAiLz4KPHJlY3QgeD0iMTgzIiB5PSIxNzYiIHdpZHRoPSIzNCIgaGVpZ2h0PSIxMjAiIHJ4PSI2IiBmaWxsPSIjQzk5QTNCIiBvcGFjaXR5PSIwLjIwIi8+CjxyZWN0IHg9IjIyNiIgeT0iMTI0IiB3aWR0aD0iMzQiIGhlaWdodD0iMTcyIiByeD0iNiIgZmlsbD0iI0M5OUEzQiIgb3BhY2l0eT0iMC4yMCIvPgo8L2c+Cjwvc3ZnPg==");background-repeat:no-repeat,no-repeat;background-position:0 0,right -60px bottom -70px;background-size:auto,560px 560px;display:none;align-items:center;justify-content:center;z-index:100}
 #loginOv.open{display:flex}
-.logincard{background:var(--panel);border:1px solid var(--brand-line);border-radius:16px;padding:36px 40px;width:100%;max-width:400px;text-align:center;box-shadow:0 30px 80px rgba(0,0,0,.5);animation:pop .25s ease-out}
+.logincard{background:var(--panel);border:1px solid var(--brand-line);border-radius:16px;padding:36px 40px;width:100%;max-width:400px;text-align:center;box-shadow:0 20px 50px rgba(30,40,80,.18);animation:pop .25s ease-out}
 .logincard h1{font-size:17px;color:var(--ink);margin:10px 0 2px}
 .logincard .sub{font-size:12px;color:var(--gray);margin-bottom:22px}
 .logincard input{width:100%;padding:11px 14px;border:1.5px solid var(--brand-line);border-radius:9px;margin-bottom:10px;outline:none;font-size:14px;background:var(--panel-2);color:var(--ink)}
@@ -191,37 +200,63 @@ td .sub{display:block;font-size:11px;color:var(--gray);margin-top:2px}
 .db-ok{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--green);margin-right:2px}
 .db-off{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--orange);margin-right:2px}
 .warnbar{background:var(--orange-tint,rgba(245,165,36,.14));color:var(--orange);border:1px solid rgba(245,165,36,.3);border-radius:var(--radius);padding:10px 16px;font-size:12.5px;margin-bottom:14px;display:none}
-.tablewrap tbody tr.vincomplete{background:rgba(245,165,36,.09)}
-.tablewrap tbody tr.vincomplete:hover{background:rgba(245,165,36,.16)}
-.chip-incomplete{display:inline-block;border-radius:var(--pill);padding:2px 9px;font-size:10.5px;font-weight:700;background:rgba(245,165,36,.16);color:var(--orange);margin-left:6px}
-.chip-overdue{display:inline-block;border-radius:var(--pill);padding:2px 9px;font-size:10.5px;font-weight:700;background:rgba(240,85,95,.16);color:var(--red);margin-top:3px}
+.tablewrap tbody tr.vincomplete{background:rgba(179,107,0,.07)}
+.tablewrap tbody tr.vincomplete:hover{background:rgba(179,107,0,.13)}
+.chip-incomplete{display:inline-block;border-radius:var(--pill);padding:2px 9px;font-size:10.5px;font-weight:700;background:var(--orange-tint);color:var(--orange);margin-left:6px}
+.chip-overdue{display:inline-block;border-radius:var(--pill);padding:2px 9px;font-size:10.5px;font-weight:700;background:var(--red-bg);color:var(--red);margin-top:3px}
 footer{border-top:1px solid var(--brand-line);margin-top:16px;padding:16px 24px;font-size:11.5px;color:var(--gray);max-width:1480px;margin-left:auto;margin-right:auto}
 footer .footer-links{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
 footer .footer-links .fl-lbl{font-size:11px;color:var(--gray);margin-right:2px}
 footer .footer-links a{display:inline-flex;align-items:center;gap:5px;color:var(--brand);text-decoration:none;font-size:11.5px;font-weight:600;padding:4px 11px;border-radius:var(--pill);background:var(--panel-2);border:1px solid var(--brand-line);transition:background .15s,border-color .15s}
 footer .footer-links a:hover{background:var(--panel-3);border-color:var(--brand)}
-.toast{position:fixed;right:18px;bottom:18px;background:var(--panel-3);border:1px solid var(--brand-line);color:var(--ink);padding:10px 18px;border-radius:var(--pill);font-size:12.5px;box-shadow:0 8px 24px rgba(0,0,0,.4);opacity:0;transform:translateY(8px);transition:.25s;pointer-events:none;z-index:200}
+.toast{position:fixed;right:18px;bottom:18px;background:var(--panel);border:1px solid var(--brand-line);color:var(--ink);padding:10px 18px;border-radius:var(--pill);font-size:12.5px;box-shadow:0 10px 26px rgba(30,40,80,.22);opacity:0;transform:translateY(8px);transition:.25s;pointer-events:none;z-index:200}
 .toast.show{opacity:1;transform:none}
 .toast.err{background:var(--red-bg);border-color:rgba(240,85,95,.4);color:var(--red)}
 
-@media (max-width:760px){ .c3,.c4,.c6{grid-column:span 12} header{padding:12px 14px} main{padding:14px} header .spacer{flex-basis:100%;height:0} }
+.tablewrap thead th:first-child,.tablewrap tbody td:first-child{position:sticky;left:0;z-index:1;background:var(--panel);box-shadow:2px 0 8px rgba(0,0,0,.28)}
+.tablewrap thead th:first-child{top:0;z-index:3;background:var(--panel-2)}
+.tablewrap tbody tr:nth-child(even) td:first-child{background:var(--panel-2)}
+.tablewrap tbody tr:hover td:first-child{background:var(--panel-3)}
+
+@media (max-width:760px){
+  .c2,.c3,.c4,.c5,.c6,.c9{grid-column:span 12}
+  header{padding:10px 14px;gap:8px}
+  header .btn,header select{padding:8px 12px;font-size:12.5px}
+  main{padding:12px}
+  header .spacer{flex-basis:100%;height:0}
+  .toolbar input[type=search]{min-width:100%}
+  .toolbar select{flex:1 1 auto;min-width:0}
+  .modal{border-radius:14px;padding:16px 16px 14px;max-height:calc(100vh - 24px)}
+  .modal.narrow{max-width:100%}
+  .logincard{padding:28px 22px;max-width:100%}
+  .grid{gap:8px 10px}
+  #chHeatmap svg{width:82%;min-width:0}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .dashcard.wide{grid-column:auto}
+}
+@media (max-width:480px){
+  header .apptitle{font-size:14.5px}
+  .stat{padding:10px 12px}
+  .stat .num{font-size:20px}
+  .modal h2{font-size:16px}
+}
 
 #printArea{display:none}
 @media print{
   @page{size:landscape;margin:12mm}
-  body.printing header, body.printing main, body.printing footer, body.printing .overlay, body.printing #loginOv, body.printing .storagebar, body.printing .toast{display:none!important}
+  body.printing header, body.printing main, body.printing footer, body.printing .overlay, body.printing #loginOv, body.printing .storagebar, body.printing .toast, body.printing .topstrip{display:none!important}
   body.printing #printArea{display:block!important}
   #printArea{font-size:11px;color:#000}
-  #printArea .phead{display:flex;align-items:center;gap:14px;border-bottom:2px solid #2F6FE0;padding-bottom:8px;margin-bottom:6px}
+  #printArea .phead{display:flex;align-items:center;gap:14px;border-bottom:2px solid #2953D6;padding-bottom:8px;margin-bottom:6px}
   #printArea .phead .spacer{flex:1}
   #printArea .pclass{border:1.5px solid #C23B3B;color:#C23B3B;font-weight:700;font-size:10px;letter-spacing:.5px;padding:3px 10px;border-radius:3px;text-transform:uppercase;white-space:nowrap}
   #printArea .pfoot .pclass-inline{color:#C23B3B;font-weight:700}
-  #printArea h1{font-size:15px;color:#2F6FE0}
+  #printArea h1{font-size:15px;color:#2953D6}
   #printArea .paudience{font-size:12.5px;font-weight:700;color:#14110A;margin:2px 0 6px}
   #printArea .pmeta{font-size:9.5px;color:#555;margin-bottom:12px;line-height:1.5}
   #printArea .psummary{display:flex;gap:8px;margin-bottom:10px;flex-wrap:wrap}
   #printArea .pstat{border:1px solid #C9D8F5;border-radius:5px;padding:6px 12px;text-align:center;min-width:78px;background:#F7FAFF}
-  #printArea .pstat .n{font-size:16px;font-weight:700;color:#2F6FE0;line-height:1.1}
+  #printArea .pstat .n{font-size:16px;font-weight:700;color:#2953D6;line-height:1.1}
   #printArea .pstat.warn .n{color:#B8860B}
   #printArea .pstat.alert .n{color:#C23B3B}
   #printArea .pstat .l{font-size:7.5px;color:#555;text-transform:uppercase;letter-spacing:.3px;margin-top:2px}
@@ -229,15 +264,18 @@ footer .footer-links a:hover{background:var(--panel-3);border-color:var(--brand)
   #printArea .plevels b{margin-right:4px}
   #printArea .plevels span{margin-right:14px}
   #printArea table{width:100%;border-collapse:collapse;margin-bottom:14px}
-  #printArea th{background:#EAF0FD;color:#2F6FE0;text-align:left;padding:5px 6px;font-size:9px;border:1px solid #C9D8F5}
+  #printArea th{background:#EAF0FD;color:#2953D6;text-align:left;padding:5px 6px;font-size:9px;border:1px solid #C9D8F5}
   #printArea td{padding:5px 6px;border:1px solid #DDD;font-size:9px;vertical-align:top}
   #printArea .pcif{color:#C23B3B;font-weight:700}
-  #printArea h2{font-size:12px;color:#2F6FE0;margin:12px 0 6px}
+  #printArea .pfp{display:block;font-family:monospace;font-size:7px;color:#888;font-weight:400}
+  #printArea h2{font-size:12px;color:#2953D6;margin:12px 0 6px}
   #printArea .pfoot{margin-top:14px;font-size:9px;color:#666;border-top:1px solid #CCC;padding-top:6px}
 }
 </style>
 </head>
 <body>
+
+<div class="topstrip"></div>
 
 <svg width="0" height="0" style="position:absolute">
   <symbol id="brandmark" viewBox="0 0 40 40">
@@ -269,7 +307,6 @@ footer .footer-links a:hover{background:var(--panel-3);border-color:var(--brand)
   <button class="btn btn-ghost navtab" id="btnViewVendors" data-i18n="nav_vendors">Vendors</button>
   <button class="btn btn-ghost navtab" id="btnDash" data-i18n="nav_dashboard">Dashboard</button>
   <button class="btn btn-ghost" id="btnPrint" data-i18n="nav_print">Report generator</button>
-  <button class="btn btn-ghost" id="btnExportCsv" data-i18n="nav_export_csv">Export CSV</button>
   <button class="btn btn-primary" id="btnNew" data-i18n="nav_new_risk">+ New risk</button>
   <button class="btn btn-ghost" id="btnHelp" data-i18n="nav_help">Help</button>
   <span class="hdiv" id="hdivUser"></span>
@@ -424,6 +461,7 @@ footer .footer-links a:hover{background:var(--panel-3);border-color:var(--brand)
       <details class="history" id="histBox" style="display:none">
         <summary data-i18n="history_title">Change history</summary>
         <div class="histrows" id="histRows"></div>
+        <div class="integrity" id="histIntegrity"></div>
       </details>
      </div>
 
@@ -431,6 +469,7 @@ footer .footer-links a:hover{background:var(--panel-3);border-color:var(--brand)
         <button class="btn btn-danger" id="btnDelete" type="button" style="display:none" data-i18n="btn_delete">Delete record</button>
         <button class="btn btn-ghost" id="btnReview" type="button" style="display:none" data-i18n="btn_review">Log review (today)</button>
         <button class="btn btn-ghost" id="btnCopy" type="button" style="display:none" data-i18n="btn_copy">Copy as new</button>
+        <button class="btn btn-primary" id="btnEditRisk" type="button" style="display:none" data-i18n="btn_edit">Edit</button>
         <div class="spacer"></div>
         <button class="btn btn-ghost" type="button" id="btnCancel" data-i18n="btn_close">Close</button>
         <button class="btn btn-primary" type="button" id="btnSave" data-i18n="btn_save">Save</button>
@@ -454,7 +493,11 @@ footer .footer-links a:hover{background:var(--panel-3);border-color:var(--brand)
           <div class="field c12"><label data-i18n="vf_desc">Service description</label><textarea id="v_desc" maxlength="2000"></textarea></div>
           <div class="field c4"><label data-i18n="vf_process">Business process supported</label><input id="v_process" maxlength="150"></div>
           <div class="field c4"><label data-i18n="vf_cif">Supports critical/important function *</label><select id="v_cif"></select></div>
-          <div class="field c4"><label data-i18n="vf_datalocation">Data location</label><input id="v_datalocation" maxlength="150"></div>
+          <div class="field c4"><label data-i18n="vf_criticalityassessdate">Criticality assessment date</label><input type="date" id="v_criticalityassessdate"></div>
+          <div class="field c3"><label data-i18n="vf_providertype">Provider identifier type</label><select id="v_providertype"></select></div>
+          <div class="field c5"><label data-i18n="vf_providercode">Provider identifier code (e.g. LEI)</label><input id="v_providercode" maxlength="40"></div>
+          <div class="field c4"><label data-i18n="vf_providercountry">Provider country (registration)</label><input id="v_providercountry" maxlength="80"></div>
+          <div class="field c12"><label data-i18n="vf_datalocation">Data location</label><input id="v_datalocation" maxlength="150"></div>
         </div>
       </fieldset>
 
@@ -464,6 +507,8 @@ footer .footer-links a:hover{background:var(--panel-3);border-color:var(--brand)
           <div class="field c3"><label data-i18n="vf_contractend">Contract end / renewal</label><input type="date" id="v_contractend"></div>
           <div class="field c3"><label data-i18n="vf_status">Status *</label><select id="v_status"></select></div>
           <div class="field c3"><label data-i18n="vf_nextreview">Next review date</label><input type="date" id="v_nextreview"></div>
+          <div class="field c6"><label data-i18n="vf_arrangementid">Arrangement ID</label><input id="v_arrangementid" maxlength="60"></div>
+          <div class="field c6"><label data-i18n="vf_governinglaw">Governing law</label><input id="v_governinglaw" maxlength="80"></div>
         </div>
       </fieldset>
 
@@ -472,6 +517,7 @@ footer .footer-links a:hover{background:var(--panel-3);border-color:var(--brand)
           <div class="field c3"><label data-i18n="vf_subcontractor">Uses subcontractor *</label><select id="v_subcontractor"></select></div>
           <div class="field c6"><label data-i18n="vf_subcontractorname">Subcontractor name(s)</label><input id="v_subcontractorname" maxlength="150"></div>
           <div class="field c3"><label data-i18n="vf_concentration">Concentration risk flag *</label><select id="v_concentration"></select></div>
+          <div class="field c4"><label data-i18n="vf_substitutability">Substitutability</label><select id="v_substitutability"></select></div>
         </div>
       </fieldset>
 
@@ -493,11 +539,13 @@ footer .footer-links a:hover{background:var(--panel-3);border-color:var(--brand)
       <details class="history" id="vHistBox" style="display:none">
         <summary data-i18n="history_title">Change history</summary>
         <div class="histrows" id="vHistRows"></div>
+        <div class="integrity" id="vHistIntegrity"></div>
       </details>
      </div>
 
       <div class="actions">
         <button class="btn btn-danger" id="btnVDelete" type="button" style="display:none" data-i18n="btn_delete">Delete record</button>
+        <button class="btn btn-primary" id="btnEditVendor" type="button" style="display:none" data-i18n="btn_edit">Edit</button>
         <div class="spacer"></div>
         <button class="btn btn-ghost" type="button" id="btnVCancel" data-i18n="btn_close">Close</button>
         <button class="btn btn-primary" type="button" id="btnVSave" data-i18n="btn_save">Save</button>
@@ -560,6 +608,17 @@ footer .footer-links a:hover{background:var(--panel-3);border-color:var(--brand)
       <fieldset class="fgroup"><legend data-i18n="fs_getapp">Get the app</legend>
         <div class="datarow"><button class="btn btn-ghost btn-sm" id="btnDownloadApp" data-i18n="btn_download_app">Download and run locally</button></div>
         <div class="datarow" data-i18n="download_app_help">Saves this application as one HTML file. Put it anywhere on your computer and double-click it to open, no install and no internet needed (Chrome or Edge recommended).</div>
+      </fieldset>
+      <fieldset class="fgroup"><legend data-i18n="fs_riskbands">Risk matrix thresholds</legend>
+        <div class="datarow" data-i18n="riskbands_help">Score = Likelihood x Impact (1-25). These boundaries between Low, Medium, High and Critical are a common convention, not a regulatory value; set your own, aligned with your institution's risk tolerance policy.</div>
+        <div class="grid">
+          <div class="field c4"><label data-i18n="riskbands_low">Low, score up to</label><input type="number" id="rb_low" min="1" max="23"></div>
+          <div class="field c4"><label data-i18n="riskbands_medium">Medium, score up to</label><input type="number" id="rb_medium" min="2" max="24"></div>
+          <div class="field c4"><label data-i18n="riskbands_high">High, score up to</label><input type="number" id="rb_high" min="3" max="24"></div>
+        </div>
+        <div class="h" data-i18n="riskbands_critical_note">Anything above the High boundary is Critical (up to the maximum score of 25).</div>
+        <div class="formerr" id="rbFormErr"></div>
+        <div class="datarow" style="margin-top:8px"><button class="btn btn-ghost btn-sm" id="btnSaveBands" style="display:none" data-i18n="btn_save_bands">Save thresholds</button></div>
       </fieldset>
     </div>
     <div class="actions"><div class="spacer"></div><button class="btn btn-ghost" id="btnSettingsClose" type="button" data-i18n="btn_close">Close</button></div>
@@ -635,7 +694,6 @@ const I18N = {
   login_button:{en:"Sign in",bs:"Prijava"},
   nav_dashboard:{en:"Dashboard",bs:"Dashboard"},
   nav_print:{en:"Report generator",bs:"Generator izvještaja"},
-  nav_export_csv:{en:"Export CSV",bs:"Izvezi CSV"},
   nav_new_risk:{en:"+ New risk",bs:"+ Novi rizik"},
   nav_password:{en:"Password",bs:"Lozinka"},
   nav_settings:{en:"Settings",bs:"Podešavanja"},
@@ -673,12 +731,15 @@ const I18N = {
   about_features_h:{en:"Intended use & key features",bs:"Namjena i ključne značajke"},
   about_features_b:{en:"Each risk gets one record for its full lifecycle: identification, ownership, a risk level shown right in the table, a treatment decision signed off at the right level, treatment measures with a deadline (flagged automatically if overdue), and ongoing tracking linked to an incident, an audit finding, a risk assessment and a vendor register entry. Picking or typing a vendor name on a risk links it automatically, creating a stub vendor record if it does not exist yet; incomplete vendor records are flagged in amber until completed. A dashboard summarises status, category, source, trend and risk level, and every record keeps a full change history. Sign-in is optional and off by default: turn it on in Settings only if you need to separate who can edit from who can just view.",
     bs:"Svaki rizik ima jedan zapis kroz cijeli životni ciklus: identifikacija, vlasništvo, nivo rizika prikazan direktno u tabeli, odluka o tretmanu potpisana na odgovarajućem nivou, mjere tretmana sa rokom (automatski označene ako je rok prekoračen), i praćenje sa vezama na incident, nalaz revizije, procjenu rizika i registar dobavljača. Biranje ili upisivanje naziva dobavljača na rizik automatski ga povezuje, kreirajući nepotpun zapis dobavljača ako ne postoji; nepotpuni zapisi dobavljača su označeni žuto dok se ne kompletiraju. Dashboard sumira status, kategoriju, izvor, trend i nivo rizika, a svaki zapis čuva punu istoriju izmjena. Prijava je opciona i isključena po defaultu, uključite je u Settings samo ako treba razdvojiti ko smije uređivati od onoga ko samo gleda."},
+  about_integrity_h:{en:"Change history integrity",bs:"Integritet istorije izmjena"},
+  about_integrity_b:{en:"Every change history is a hash chain: each entry's fingerprint is computed from the previous entry's fingerprint plus its own content, the same technique behind git commits. Opening a record re-verifies the chain and shows the result. This does not prevent someone with file access from editing the JSON, nothing running purely in a browser can, but it makes an edit to a past entry detectable rather than silent. Records saved before this feature existed show as \"predates integrity tracking\" rather than a false alarm. Reports also print a short fingerprint under each risk's ID, a snapshot you can compare against later if a record's history is ever questioned. The vendor register additionally checks whether a record changed since you opened it for editing, most relevant on the concentration and substitutability fields where several people often weigh in independently, and warns before anything gets silently overwritten.",
+    bs:"Svaka istorija izmjena je hash lanac: fingerprint svakog unosa se računa iz fingerprinta prethodnog unosa plus njegovog sadržaja, ista tehnika kao kod git commit-ova. Otvaranje zapisa ponovo provjerava lanac i prikazuje rezultat. Ovo ne sprečava nekoga sa pristupom fajlu da izmijeni JSON, ništa što radi isključivo u pregledniku to ne može, ali čini izmjenu prošlog unosa uočljivom umjesto tihom. Zapisi sačuvani prije ove funkcionalnosti prikazuju se kao \"stariji od praćenja integriteta\", ne kao lažni alarm. Izvještaji takođe štampaju kratak fingerprint ispod ID-a svakog rizika, snimak koji možete kasnije uporediti ako se ikad postavi pitanje o istoriji zapisa. Registar dobavljača dodatno provjerava da li se zapis promijenio otkako je otvoren za uređivanje (najčešće baš na poljima koncentracije i zamjenjivosti, gdje više ljudi nezavisno unosi mišljenje), i upozori prije nego bilo šta tiho prepiše."},
   about_scoring_h:{en:"Risk scoring & heat map",bs:"Ocjena rizika i toplotna mapa"},
-  about_scoring_b:{en:"Likelihood and impact (1-5 each) are optional fields for recording the outcome of your separate risk assessment, not for performing it here: the register still doesn't calculate anything. The 5x5 grid, the four bands (Low/Medium/High/Critical) and the multiplication scoring are a common convention (ISO 31000-style), not a value prescribed by DORA or FBA; both frameworks leave the risk tolerance thresholds to the institution itself (FBA Odluka Art. 9(2)(f)). Align the bands with your own risk appetite policy before relying on the colours.",
-    bs:"Vjerovatnoća i uticaj (1-5) su opciona polja za bilježenje rezultata vaše posebne procjene rizika, ne za njeno rađenje ovdje, registar i dalje ništa ne računa. Mreža 5x5, četiri opsega (Nizak/Srednji/Visok/Kritičan) i množenje kao skor su uobičajena konvencija (u duhu ISO 31000), ne vrijednost propisana od strane DORA-e ili FBA, oba okvira ostavljaju pragove tolerancije na rizik samoj instituciji (FBA Odluka čl. 9 st. 2 tačka f). Uskladite opsege sa internom politikom tolerancije na rizik prije nego se oslonite na boje."},
+  about_scoring_b:{en:"Likelihood and impact (1-5 each) are optional fields for recording the outcome of your separate risk assessment, not for performing it here: the register still doesn't calculate anything. The 5x5 grid, the four bands (Low/Medium/High/Critical) and the multiplication scoring are a common convention (ISO 31000-style), not a value prescribed by DORA or FBA; both frameworks leave the risk tolerance thresholds to the institution itself (FBA Odluka Art. 9(2)(f)). The score boundaries between the four bands are editable in Settings, so you can align them with your own risk appetite policy instead of relying on a default someone else picked.",
+    bs:"Vjerovatnoća i uticaj (1-5) su opciona polja za bilježenje rezultata vaše posebne procjene rizika, ne za njeno rađenje ovdje, registar i dalje ništa ne računa. Mreža 5x5, četiri opsega (Nizak/Srednji/Visok/Kritičan) i množenje kao skor su uobičajena konvencija (u duhu ISO 31000), ne vrijednost propisana od strane DORA-e ili FBA, oba okvira ostavljaju pragove tolerancije na rizik samoj instituciji (FBA Odluka čl. 9 st. 2 tačka f). Granice skora između ta četiri opsega su podesive u Settings, tako da ih možete uskladiti sa vlastitom politikom tolerancije na rizik umjesto da se oslanjate na tuđi podrazumijevani izbor."},
   about_vendors_h:{en:"ICT third-party vendor register",bs:"Registar IKT dobavljača"},
-  about_vendors_b:{en:"A second register, next to risks, for ICT third-party contractual arrangements: provider identity, whether it supports a critical or important function, the sub-outsourcing chain, exit strategy status, audit rights and contract dates. Surveys consistently name this the hardest part of DORA in practice (Deloitte found 46% of firms rank the Register of Information as their toughest DORA requirement), and it directly satisfies FBA Odluka Art. 46. It doesn't replace the EU's technical xBRL-CSV submission format, but it gives you the clean, complete underlying data most firms actually struggle to have.",
-    bs:"Drugi registar, pored rizika, za ugovorne aranžmane sa IKT dobavljačima: identitet dobavljača, da li podržava kritičnu ili važnu funkciju, lanac podizvođača, status izlazne strategije, pravo revizije i datumi ugovora. Istraživanja dosljedno navode ovo kao najteži dio DORA prakse (Deloitte navodi da 46% firmi Registar informacija smatra svojim najtežim DORA zahtjevom), a ovaj registar direktno zadovoljava FBA Odluku čl. 46. Ne zamjenjuje zvanični EU xBRL-CSV format podneska, ali daje uredne i kompletne osnovne podatke koje većina firmi realno nema."},
+  about_vendors_b:{en:"A second register, next to risks, for ICT third-party contractual arrangements: provider identity and identifier (LEI or other), the specific arrangement, whether it supports a critical or important function, the sub-outsourcing chain, concentration and substitutability, exit strategy status, audit rights, governing law and contract dates. The field names deliberately mirror the shape of the EU's Register of Information (entity identifier, arrangement, function and criticality), so if you ever need the official xBRL-CSV submission, this is a mapping exercise rather than a re-collection. Surveys consistently name the underlying data collection the hardest part of DORA in practice (Deloitte found 46% of firms rank the Register of Information as their toughest DORA requirement), and this register directly satisfies FBA Odluka Art. 46. It doesn't replace the EU's technical submission format itself, but it gives you the clean, complete, correctly-shaped data most firms actually struggle to have.",
+    bs:"Drugi registar, pored rizika, za ugovorne aranžmane sa IKT dobavljačima: identitet i identifikator dobavljača (LEI ili drugi), konkretan aranžman, da li podržava kritičnu ili važnu funkciju, lanac podizvođača, koncentracija i zamjenjivost, status izlazne strategije, pravo revizije, mjerodavno pravo i datumi ugovora. Nazivi polja namjerno prate oblik EU Registra informacija (identifikator entiteta, aranžman, funkcija i kritičnost), tako da ako ikad zatreba zvaničan xBRL-CSV podnesak, to postaje mapiranje, ne ponovno prikupljanje. Istraživanja dosljedno navode samo prikupljanje ovih podataka kao najteži dio DORA prakse (Deloitte navodi da 46% firmi Registar informacija smatra svojim najtežim DORA zahtjevom), a ovaj registar direktno zadovoljava FBA Odluku čl. 46. Ne zamjenjuje sam zvanični format EU podneska, ali daje uredne, kompletne i ispravno oblikovane osnovne podatke koje većina firmi realno nema."},
   about_reports_h:{en:"Report generator",bs:"Generator izvještaja"},
   about_reports_b:{en:"Generates a report for any date range you choose and any audience (Supervisory Board, Management Board, Risk Committee, Regulator, Audit, or Other): risks identified and closed in that period, plus a snapshot of currently open risks with their risk level. Use it for the annual framework review (FBA Odluka Art. 19, 28), an ad hoc board request, or routine committee reporting. It doesn't need to wait for year-end; pull it whenever you need it.",
     bs:"Generiše izvještaj za bilo koji period i bilo koju publiku koju izabereš (Nadzorni odbor, Uprava, Odbor za rizike, Regulator, Revizija ili Drugo): identifikovani i zatvoreni rizici u tom periodu, plus presjek trenutno otvorenih rizika sa njihovim nivoom rizika. Koristi ga za godišnje preispitivanje okvira (FBA Odluka čl. 19, 28), vanredan zahtjev uprave, ili redovno izvještavanje komitetu. Ne mora čekati kraj godine, povuci ga kad god zatreba."},
@@ -757,6 +818,13 @@ const I18N = {
   vf_process:{en:"Business process supported",bs:"Poslovni proces koji se podržava"},
   vf_cif:{en:"Supports critical/important function *",bs:"Podržava kritičnu/važnu funkciju *"},
   vf_datalocation:{en:"Data location",bs:"Lokacija podataka"},
+  vf_criticalityassessdate:{en:"Criticality assessment date",bs:"Datum procjene kritičnosti"},
+  vf_providertype:{en:"Provider identifier type",bs:"Vrsta identifikatora dobavljača"},
+  vf_providercode:{en:"Provider identifier code (e.g. LEI)",bs:"Kod identifikatora dobavljača (npr. LEI)"},
+  vf_providercountry:{en:"Provider country (registration)",bs:"Zemlja dobavljača (registracija)"},
+  vf_arrangementid:{en:"Arrangement ID",bs:"ID aranžmana"},
+  vf_governinglaw:{en:"Governing law",bs:"Mjerodavno pravo"},
+  vf_substitutability:{en:"Substitutability",bs:"Zamjenjivost"},
   vf_contractstart:{en:"Contract start",bs:"Početak ugovora"},
   vf_contractend:{en:"Contract end / renewal",bs:"Kraj ugovora / obnova"},
   vf_status:{en:"Status *",bs:"Status *"},
@@ -783,13 +851,19 @@ const I18N = {
   vth_contractend:{en:"Contract end",bs:"Kraj ugovora"}, vth_owner:{en:"Owner",bs:"Vlasnik"}, vth_links:{en:"Linked risks",bs:"Povezani rizici"},
   vconfirm_delete:{en:"Permanently delete vendor {id}?",bs:"Trajno obrisati dobavljača {id}?"},
   vtoast_saved:{en:"Vendor saved",bs:"Dobavljač sačuvan"},
+  vendor_conflict_warning:{en:"This vendor record changed since you opened it (fields affected: {fields}). Save anyway and overwrite that change, or press Cancel and reopen the record to see the latest version first.",
+    bs:"Ovaj zapis dobavljača se promijenio otkako ste ga otvorili (polja pogođena: {fields}). Sačuvati ipak i prepisati tu izmjenu, ili pritisnite Cancel i ponovo otvorite zapis da prvo vidite najnoviju verziju."},
   vtoast_deleted:{en:"Vendor deleted",bs:"Dobavljač obrisan"},
   verr_required:{en:"Vendor ID and provider name are required.",bs:"ID dobavljača i naziv dobavljača su obavezni."},
   verr_dup_id:{en:"A vendor with ID '{id}' already exists.",bs:"Dobavljač sa ID '{id}' već postoji."},
   yes_opt:{en:"Yes",bs:"Da"}, no_opt:{en:"No",bs:"Ne"},
   btn_save:{en:"Save",bs:"Sačuvaj"}, btn_cancel:{en:"Cancel",bs:"Odustani"}, btn_close:{en:"Close",bs:"Zatvori"},
   btn_delete:{en:"Delete record",bs:"Obriši zapis"}, btn_review:{en:"Log review (today)",bs:"Evidentiraj pregled (danas)"}, btn_copy:{en:"Copy as new",bs:"Kopiraj kao novi"},
+  btn_edit:{en:"Edit",bs:"Uredi"},
   history_title:{en:"Change history",bs:"Istorija izmjena"},
+  integrity_ok:{en:"History integrity check passed (hash chain verified).",bs:"Provjera integriteta istorije prošla (hash lanac potvrđen)."},
+  integrity_broken:{en:"History integrity check FAILED at entry {n}: this record's trail may have been edited outside the app.",bs:"Provjera integriteta istorije NIJE PROŠLA na unosu {n}: trag ovog zapisa je možda mijenjan van aplikacije."},
+  integrity_unchained:{en:"This history predates integrity tracking (no hash chain recorded).",bs:"Ova istorija je starija od praćenja integriteta (nema zabilježen hash lanac)."},
   settings_title:{en:"Settings",bs:"Podešavanja"},
   settings_sub:{en:"Access control and local data for this register file.",bs:"Kontrola pristupa i lokalni podaci za ovaj fajl registra."},
   fs_data:{en:"Data & storage",bs:"Podaci i čuvanje"},
@@ -798,6 +872,16 @@ const I18N = {
   download_app_help:{en:"Saves this application as one HTML file, in any browser. Put it anywhere on your computer and double-click it to open, no install and no internet needed from then on (Chrome or Edge recommended once inside the app, for the live file-save feature).",
     bs:"Snima ovu aplikaciju kao jedan HTML fajl, u bilo kom pregledniku. Stavite ga bilo gdje na računaru i otvorite duplim klikom, bez instalacije i bez interneta od tog trenutka (Chrome ili Edge se preporučuju tek unutar alata, za direktno snimanje u fajl)."},
   toast_app_downloaded:{en:"Downloaded. Open the saved file directly, no server needed.",bs:"Preuzeto. Otvorite sačuvani fajl direktno, bez servera."},
+  fs_riskbands:{en:"Risk matrix thresholds",bs:"Pragovi risk matrice"},
+  riskbands_help:{en:"Score = Likelihood x Impact (1-25). These boundaries between Low, Medium, High and Critical are a common convention, not a regulatory value; set your own, aligned with your institution's risk tolerance policy.",
+    bs:"Skor = Vjerovatnoća x Uticaj (1-25). Ove granice između Nizak, Srednji, Visok i Kritičan su uobičajena konvencija, ne regulatorna vrijednost; postavite vlastite, usklađene sa politikom tolerancije na rizik vaše institucije."},
+  riskbands_low:{en:"Low, score up to",bs:"Nizak, skor do"},
+  riskbands_medium:{en:"Medium, score up to",bs:"Srednji, skor do"},
+  riskbands_high:{en:"High, score up to",bs:"Visok, skor do"},
+  riskbands_critical_note:{en:"Anything above the High boundary is Critical (up to the maximum score of 25).",bs:"Sve iznad granice za Visok je Kritičan (do maksimalnog skora 25)."},
+  btn_save_bands:{en:"Save thresholds",bs:"Sačuvaj pragove"},
+  err_bands_order:{en:"Thresholds must increase: Low < Medium < High, each between 1 and 24.",bs:"Pragovi moraju rasti: Nizak < Srednji < Visok, svaki između 1 i 24."},
+  toast_bands_saved:{en:"Risk matrix thresholds saved.",bs:"Pragovi risk matrice sačuvani."},
   settings_restricted_note:{en:"Sign-in is required for this register. Contact an administrator to change access settings.",bs:"Za ovaj registar je obavezna prijava. Za izmjenu podešavanja pristupa obratite se administratoru."},
   toggle_auth_label:{en:"Require sign-in to use this register",bs:"Zahtijevaj prijavu za korištenje registra"},
   auth_hint_off:{en:"Currently open: anyone with this file can view and edit, no sign-in needed. Checking this box locks the screen right away, including for you: you'll need to sign in immediately with the built-in account (username admin, password ChangeMe!2026), then change that password before doing anything else.",
@@ -869,14 +953,14 @@ const I18N = {
   warn_dec_no_date:{en:"A decision was made but the decision date is empty.",bs:"Odluka postoji, a datum odluke je prazan."},
   warn_accepted_not_acceptance:{en:"Status is 'Accepted' but the decision is not 'Acceptance'.",bs:"Status je 'Prihvaćen', a odluka nije 'Prihvatanje'."},
   warn_closed_future_review:{en:"Status is 'Closed' but the next review date is in the future.",bs:"Status je 'Zatvoren', a rok sljedećeg pregleda je u budućnosti."},
-  export_filtered_confirm:{en:"A filter is active ({f} of {d} records).\n\nOK = export filtered records only\nCancel = export all records",
-    bs:"Aktivan je filter ({f} od {d} zapisa).\n\nOK = izvezi samo filtrirane\nCancel = izvezi sve zapise"},
   print_title:{en:"ICT Risk Register: report",bs:"Registar IKT rizika: izvještaj"},
   print_meta:{en:"Generated: {dt} · User: {u} · Open risks: {n} (of {total} total) · CIF risks in red",bs:"Generisano: {dt} · Korisnik: {u} · Otvorenih rizika: {n} (od ukupno {total}) · CIF rizici crveno"},
   print_no_open:{en:"No open risks.",bs:"Nema otvorenih rizika."},
   print_footer:{en:"Template / demonstration ICT Risk Register, for internal use",bs:"Template / demonstracioni registar IKT rizika, za internu upotrebu"},
   print_classification:{en:"Confidential",bs:"Povjerljivo"},
   print_footer_generated:{en:"Generated on {dt}",bs:"Generisano {dt}"},
+  print_fingerprint_note:{en:"The short code under each risk ID is a hash-chain fingerprint of that record's change history at the time of this report; save this report to have a reference point for later checking whether the trail was altered.",
+    bs:"Kratki kod ispod svakog ID-a rizika je fingerprint hash lanca istorije izmjena tog zapisa u trenutku ovog izvještaja; sačuvajte ovaj izvještaj kao referentnu tačku za kasniju provjeru da li je trag mijenjan."},
   th_lastreview_date:{en:"Last review date",bs:"Datum posljednjeg pregleda"},
   th_lastreview_user:{en:"Last review user",bs:"Korisnik posljednjeg pregleda"},
   th_roi:{en:"Vendor register / ROI ref",bs:"Registar dobavljača / ROI ref"},
@@ -896,17 +980,23 @@ const LEGACY_KEYS = ["yes","no"];
 const VTYPE_KEYS = ["cloud","software","data_center","payment_processing","network_telecom","other"];
 const VSTATUS_KEYS = ["active","pending_renewal","terminated"];
 const EXIT_KEYS = ["not_started","drafted","tested","not_applicable"];
+const PROVIDERID_KEYS = ["lei","euid","national_id","other","none"];
+const SUBSTITUTABILITY_KEYS = ["easy","difficult","not_possible"];
 const YESNO_KEYS = ["yes","no"];
 const AUDIENCE_KEYS = ["supervisory_board","management_board","risk_committee","regulator","audit","other"];
 const SCORE_KEYS = ["1","2","3","4","5"];
-const RISK_BANDS = [
-  {max:4,  key:"low",      color:"#34D399"},
-  {max:9,  key:"medium",   color:"#E8C845"},
-  {max:14, key:"high",     color:"#F5A524"},
-  {max:25, key:"critical", color:"#F0555F"},
-];
+const DEFAULT_RISK_BANDS = {low:4, medium:9, high:14};
+const RISK_BAND_COLORS = {low:"#1F9D63", medium:"#B5820F", high:"#D2691E", critical:"#C62E3D"};
+function getBandThresholds(){ return Object.assign({}, DEFAULT_RISK_BANDS, settings.riskBands || {}); }
 function riskScore(l, i){ l = parseInt(l,10); i = parseInt(i,10); if(!l || !i) return null; return l*i; }
-function riskBand(score){ if(score == null) return null; return RISK_BANDS.find(b => score <= b.max); }
+function riskBand(score){
+  if(score == null) return null;
+  const th = getBandThresholds();
+  if(score <= th.low) return {key:"low", color:RISK_BAND_COLORS.low};
+  if(score <= th.medium) return {key:"medium", color:RISK_BAND_COLORS.medium};
+  if(score <= th.high) return {key:"high", color:RISK_BAND_COLORS.high};
+  return {key:"critical", color:RISK_BAND_COLORS.critical};
+}
 const ENUM_LABELS = {
   status:{active:{en:"Active",bs:"Aktivan"},in_treatment:{en:"In treatment",bs:"U tretmanu"},accepted:{en:"Accepted",bs:"Prihvaćen"},closed:{en:"Closed",bs:"Zatvoren"}},
   category:{cyber:{en:"Cyber",bs:"Cyber"},operational_ict:{en:"Operational ICT",bs:"Operativni IKT"},third_party:{en:"Third party",bs:"Treća strana"},
@@ -930,6 +1020,8 @@ const ENUM_LABELS = {
     payment_processing:{en:"Payment processing",bs:"Procesiranje plaćanja"},network_telecom:{en:"Network / telecom",bs:"Mreža / telekom"},other:{en:"Other",bs:"Ostalo"}},
   vstatus:{active:{en:"Active",bs:"Aktivan"},pending_renewal:{en:"Pending renewal",bs:"Čeka obnovu"},terminated:{en:"Terminated",bs:"Raskinut"}},
   exit:{not_started:{en:"Not started",bs:"Nije počeo"},drafted:{en:"Drafted",bs:"Izrađen nacrt"},tested:{en:"Tested",bs:"Testiran"},not_applicable:{en:"Not applicable",bs:"Nije primjenjivo"}},
+  providertype:{lei:{en:"LEI",bs:"LEI"},euid:{en:"EUID",bs:"EUID"},national_id:{en:"National ID",bs:"Nacionalni ID"},other:{en:"Other identifier",bs:"Drugi identifikator"},none:{en:"None available",bs:"Nema dostupnog"}},
+  substitutability:{easy:{en:"Easily substitutable",bs:"Lako zamjenjiv"},difficult:{en:"Substitutable with difficulty",bs:"Zamjenjiv uz poteškoće"},not_possible:{en:"Not substitutable",bs:"Nezamjenjiv"}},
   likelihood:{"1":{en:"1 - Rare",bs:"1 - Rijetko"},"2":{en:"2 - Unlikely",bs:"2 - Malo vjerovatno"},"3":{en:"3 - Possible",bs:"3 - Moguće"},
     "4":{en:"4 - Likely",bs:"4 - Vjerovatno"},"5":{en:"5 - Almost certain",bs:"5 - Skoro sigurno"}},
   impact:{"1":{en:"1 - Negligible",bs:"1 - Zanemarljiv"},"2":{en:"2 - Minor",bs:"2 - Manji"},"3":{en:"3 - Moderate",bs:"3 - Umjeren"},
@@ -949,24 +1041,13 @@ const FIELDS = ["id","naziv","kat","opis","proces","cif","legacy","resurs","doba
   "likelihood","impact",
   "odluka","datodluka","declevel","acceptuntil","acceptjust","treatmeasures","treatdue",
   "status","datpregled","datclosed","incident","preporuka","procjena","roi","napomena"];
-const CSV_KEYS = ["id","naziv","kat","opis","proces","cif","legacy","resurs","dobavljac","vlasnik","datident","izvor",
-  "likelihood","impact",
-  "odluka","datodluka","declevel","acceptuntil","acceptjust","treatmeasures","treatdue",
-  "status","datpregled","datclosed","pregledD","pregledU","incident","preporuka","procjena","roi","napomena"];
-const CSV_LBLKEYS = ["f_id","f_name","f_category","f_desc","f_process","f_cif","f_legacy","f_asset","f_vendor","f_owner","f_dateid","f_source",
-  "f_likelihood","f_impact",
-  "f_decision","f_decdate","f_declevel","f_acceptuntil","f_acceptjust","f_treatmeasures","f_treatdue",
-  "f_status","f_nextreview","f_closeddate","th_lastreview_date","th_lastreview_user","f_incident","f_finding","f_assessment","th_roi","f_note"];
-const VFIELDS = ["id","name","type","desc","process","cif","datalocation","contractstart","contractend","status","nextreview",
-  "subcontractor","subcontractorname","concentration","auditrights","exitstrategy","owner","linkedrisks","notes"];
-const VCSV_KEYS = ["id","name","type","desc","process","cif","datalocation","contractstart","contractend","status","nextreview",
-  "subcontractor","subcontractorname","concentration","auditrights","exitstrategy","owner","linkedrisks","notes"];
-const VCSV_LBLKEYS = ["vf_id","vf_name","vf_type","vf_desc","vf_process","vf_cif","vf_datalocation","vf_contractstart","vf_contractend","vf_status","vf_nextreview",
-  "vf_subcontractor","vf_subcontractorname","vf_concentration","vf_auditrights","vf_exitstrategy","vf_owner","vf_linkedrisks","vf_notes"];
+const VFIELDS = ["id","name","type","desc","process","cif","criticalityassessdate","providertype","providercode","providercountry","datalocation",
+  "arrangementid","contractstart","contractend","governinglaw","status","nextreview",
+  "subcontractor","subcontractorname","concentration","substitutability","auditrights","exitstrategy","owner","linkedrisks","notes"];
 const RISK_REQUIRED = ["id","naziv","kat","opis","vlasnik","datident","izvor"];
 const VENDOR_REQUIRED = ["id","name","type","cif","status","subcontractor","concentration","auditrights","exitstrategy","owner"];
 const RISK_TEXT_FIELDS = ["id","naziv","opis","proces","resurs","dobavljac","vlasnik","treatmeasures","acceptjust","incident","preporuka","procjena","roi","napomena"];
-const VENDOR_TEXT_FIELDS = ["id","name","desc","process","datalocation","subcontractorname","owner","linkedrisks","notes"];
+const VENDOR_TEXT_FIELDS = ["id","name","desc","process","providercode","providercountry","datalocation","arrangementid","governinglaw","subcontractorname","owner","linkedrisks","notes"];
 function looksLikeSpam(v){
   if(!v) return false;
   const s = v.trim();
@@ -981,14 +1062,15 @@ function looksLikeSpam(v){
   }
   return false;
 }
-const STATUS_COLORS = {active:"#F5A524",in_treatment:"#E8C845",accepted:"#5B93F0",closed:"#34D399"};
-const PALETTE = ["#5B93F0","#D4AF37","#34D399","#F5A524","#F0555F","#9B8CFF","#4FD1C5","#E8C845","#98A1BD"];
+const STATUS_COLORS = {active:"#D2691E",in_treatment:"#B5820F",accepted:"#2953D6",closed:"#1F9D63"};
+const PALETTE = ["#2953D6","#C99A3B","#1F9D63","#D2691E","#C62E3D","#6E5AC4","#1B8F8F","#B5820F","#7A87A0"];
 const BUILTIN_USER = "admin";
 const DEFAULT_PWD = "ChangeMe!2026";
 
 let curLang = "en";
 let data = [], vendors = [], users = [], settings = { authEnabled:false };
 let currentUser = null, editingId = null, editingVendorId = null, readOnlyForm = false, storageOk = true;
+let vendorEditSnapshot = null;
 let currentView = "register";
 let sortKey = "id", sortDir = 1, quickFilter = null;
 let vSortKey = "id", vSortDir = 1;
@@ -1030,26 +1112,29 @@ const SAMPLE_RECORDS = [
 const SAMPLE_VENDORS = [
   {id:"VEND-2026-001",name:"[SAMPLE] Primary ICT vendor",type:"cloud",
    desc:"Cloud hosting and managed infrastructure services supporting core banking applications.",
-   process:"Digital banking",cif:"yes",datalocation:"EU (Frankfurt, Dublin)",
-   contractstart:"2024-01-01",contractend:"2027-01-01",status:"active",nextreview:"2026-12-01",
+   process:"Digital banking",cif:"yes",criticalityassessdate:"2026-01-15",
+   providertype:"lei",providercode:"5493001KJTIIGC8Y1R12",providercountry:"Ireland",datalocation:"EU (Frankfurt, Dublin)",
+   arrangementid:"ARR-2024-0113",contractstart:"2024-01-01",contractend:"2027-01-01",governinglaw:"Irish law",status:"active",nextreview:"2026-12-01",
    subcontractor:"yes",subcontractorname:"Regional data center operator (undisclosed)",
-   concentration:"yes",auditrights:"yes",exitstrategy:"not_started",owner:"IT Development",
+   concentration:"yes",substitutability:"difficult",auditrights:"yes",exitstrategy:"not_started",owner:"IT Development",
    linkedrisks:"RISK-2026-002",notes:"Sample record for demonstration. Exit strategy work not yet started despite CIF and concentration flags, a gap worth tracking.",
    history:[{t:"2026-06-03T10:00:00.000Z",u:"system",a:"Record created (sample)",ch:[]}]},
   {id:"VEND-2026-002",name:"[SAMPLE] HR payroll software provider",type:"software",
    desc:"SaaS payroll and HR administration platform.",
-   process:"Human resources",cif:"no",datalocation:"EU (Amsterdam)",
-   contractstart:"2023-05-01",contractend:"2026-05-01",status:"pending_renewal",nextreview:"2027-01-15",
+   process:"Human resources",cif:"no",criticalityassessdate:"2025-05-01",
+   providertype:"none",providercode:"",providercountry:"Netherlands",datalocation:"EU (Amsterdam)",
+   arrangementid:"ARR-2023-0047",contractstart:"2023-05-01",contractend:"2026-05-01",governinglaw:"Dutch law",status:"pending_renewal",nextreview:"2027-01-15",
    subcontractor:"no",subcontractorname:"",
-   concentration:"no",auditrights:"yes",exitstrategy:"not_applicable",owner:"HR / IT Infrastructure",
+   concentration:"no",substitutability:"easy",auditrights:"yes",exitstrategy:"not_applicable",owner:"HR / IT Infrastructure",
    linkedrisks:"",notes:"Sample record for demonstration. Non-critical function, renewal due soon.",
    history:[{t:"2025-05-01T09:00:00.000Z",u:"system",a:"Record created (sample)",ch:[]}]},
   {id:"VEND-2026-003",name:"[SAMPLE] Secondary site DR provider",type:"data_center",
    desc:"Managed secondary data center used as the failover site for disaster recovery.",
-   process:"Business continuity",cif:"no",datalocation:"BiH (Sarajevo region)",
-   contractstart:"2022-09-01",contractend:"2027-09-01",status:"active",nextreview:"2027-03-01",
+   process:"Business continuity",cif:"no",criticalityassessdate:"2022-08-20",
+   providertype:"national_id",providercode:"BiH company reg. 65-01-0234-22",providercountry:"Bosnia and Herzegovina",datalocation:"BiH (Sarajevo region)",
+   arrangementid:"ARR-2022-0009",contractstart:"2022-09-01",contractend:"2027-09-01",governinglaw:"Law of Bosnia and Herzegovina",status:"active",nextreview:"2027-03-01",
    subcontractor:"no",subcontractorname:"",
-   concentration:"no",auditrights:"yes",exitstrategy:"tested",owner:"IT Infrastructure",
+   concentration:"no",substitutability:"not_possible",auditrights:"yes",exitstrategy:"tested",owner:"IT Infrastructure",
    linkedrisks:"RISK-2026-003",notes:"Sample record for demonstration. Exit strategy already tested, shown here for contrast with VEND-2026-001.",
    history:[{t:"2022-09-01T09:00:00.000Z",u:"system",a:"Record created (sample)",ch:[]}]}
 ];
@@ -1108,6 +1193,35 @@ async function hashPwd(salt, pwd){
     return "fnv" + h.toString(16);
   }
 }
+async function sha256Hex(s){
+  try{
+    const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(s));
+    return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2,"0")).join("");
+  }catch(e){
+    let h = 2166136261;
+    for(let i = 0; i < s.length; i++){ h ^= s.charCodeAt(i); h = Math.imul(h, 16777619) >>> 0; }
+    return "fnv" + h.toString(16);
+  }
+}
+function historyEntryPayload(e){ return JSON.stringify({t:e.t, u:e.u, a:e.a, ch:e.ch||[]}); }
+async function appendHistoryHashed(historyArr, entry, recordId){
+  const prevHash = historyArr.length ? historyArr[historyArr.length - 1].hash : await sha256Hex("genesis::" + recordId);
+  entry.hash = await sha256Hex(prevHash + "::" + historyEntryPayload(entry));
+  historyArr.push(entry);
+  return historyArr;
+}
+async function verifyHistoryChain(record){
+  const h = record.history || [];
+  if(!h.length) return {status:"empty"};
+  if(h.some(e => !e.hash)) return {status:"unchained"};
+  let prevHash = await sha256Hex("genesis::" + record.id);
+  for(let i = 0; i < h.length; i++){
+    const expected = await sha256Hex(prevHash + "::" + historyEntryPayload(h[i]));
+    if(expected !== h[i].hash) return {status:"broken", at:i};
+    prevHash = h[i].hash;
+  }
+  return {status:"ok", tip:prevHash};
+}
 function newSalt(){ return Math.random().toString(36).slice(2) + Date.now().toString(36); }
 
 /* ===================== language ===================== */
@@ -1119,7 +1233,7 @@ function setLang(l){
   $("langBs").className = l === "bs" ? "active" : "";
   document.querySelectorAll("[data-i18n]").forEach(el => { el.textContent = t(el.dataset.i18n); });
   document.querySelectorAll("[data-i18n-ph]").forEach(el => { el.placeholder = t(el.dataset.i18nPh); });
-  $("helpBody").innerHTML = ["what","how","features","scoring","vendors","reports","offline","reg"].map(k =>
+  $("helpBody").innerHTML = ["what","how","features","integrity","scoring","vendors","reports","offline","reg"].map(k =>
     `<h4>${esc(t("about_"+k+"_h"))}</h4><p>${esc(t("about_"+k+"_b"))}</p>`).join("");
   rebuildEnumSelects();
   applyPerms();
@@ -1156,9 +1270,11 @@ function rebuildEnumSelects(){
   fillEnumSelect($("v_concentration"), "yesno", YESNO_KEYS, true);
   fillEnumSelect($("v_auditrights"), "yesno", YESNO_KEYS, true);
   fillEnumSelect($("v_exitstrategy"), "exit", EXIT_KEYS, true);
+  fillEnumSelect($("v_providertype"), "providertype", PROVIDERID_KEYS, true);
+  fillEnumSelect($("v_substitutability"), "substitutability", SUBSTITUTABILITY_KEYS, true);
   // restore previous selections where possible (values are canonical keys, safe across reload)
   ["fStatus","fKat","fIzvor","fOdluka","f_kat","f_izvor","f_odluka","f_status","f_declevel","f_cif","f_legacy","f_likelihood","f_impact",
-   "vfType","vfCif","vfStatus","vfExit","v_type","v_cif","v_status","v_subcontractor","v_concentration","v_auditrights","v_exitstrategy","repAudience"
+   "vfType","vfCif","vfStatus","vfExit","v_type","v_cif","v_status","v_subcontractor","v_concentration","v_auditrights","v_exitstrategy","v_providertype","v_substitutability","repAudience"
   ].forEach(id => { const v = cur(id); if(v) $(id).value = v; });
 }
 ENUM_LABELS.role = { viewer:{en:"Viewer",bs:"Korisnik"}, administrator:{en:"Administrator",bs:"Administrator"} };
@@ -1382,11 +1498,29 @@ function openSettings(){
     renderUsers();
   }
   $("nuErr").style.display = "none";
+  const bt = getBandThresholds();
+  $("rb_low").value = bt.low; $("rb_medium").value = bt.medium; $("rb_high").value = bt.high;
+  ["rb_low","rb_medium","rb_high"].forEach(id => $(id).disabled = !canManage);
+  $("btnSaveBands").style.display = canManage ? "inline-block" : "none";
+  $("rbFormErr").style.display = "none";
   updateDbUi();
   $("settingsOv").classList.add("open");
 }
 $("btnSettings").addEventListener("click", openSettings);
 $("btnSettingsClose").addEventListener("click", () => $("settingsOv").classList.remove("open"));
+$("btnSaveBands").addEventListener("click", () => {
+  if(!isAdmin()) return;
+  const low = parseInt($("rb_low").value,10), medium = parseInt($("rb_medium").value,10), high = parseInt($("rb_high").value,10);
+  const err = $("rbFormErr");
+  if(!(low >= 1 && low < medium && medium < high && high <= 24)){ err.textContent = t("err_bands_order"); err.style.display = "block"; return; }
+  err.style.display = "none";
+  settings.riskBands = {low, medium, high};
+  saveData();
+  refreshMatrixMini();
+  if(currentView === "dashboard") renderDashboard();
+  if(currentView === "register") render();
+  showToast(t("toast_bands_saved"));
+});
 $("btnHelp").addEventListener("click", () => { $("helpOv").classList.add("open"); });
 $("btnHelpClose").addEventListener("click", () => $("helpOv").classList.remove("open"));
 $("authToggle").addEventListener("change", () => {
@@ -1578,7 +1712,7 @@ function donutSVG(items, dtype){
   });
   const legend = items.map(i => `<span class="dleg" data-dtype="${dtype}" data-key="${esc(i.key)}"><span class="sw" style="background:${i.color}"></span>${esc(i.label)}: <b>${i.value}</b> (${Math.round(i.value/total*100)}%)</span>`).join("");
   return `<svg viewBox="0 0 180 180" style="max-width:150px;margin:0 auto">${segs}
-    <text x="90" y="86" text-anchor="middle" font-size="26" font-weight="700" fill="#5B93F0">${total}</text></svg>
+    <text x="90" y="86" text-anchor="middle" font-size="26" font-weight="700" fill="#2953D6">${total}</text></svg>
     <div class="legend">${legend}</div>`;
 }
 function hbarSVG(rows, stacked, dtype){
@@ -1589,16 +1723,16 @@ function hbarSVG(rows, stacked, dtype){
   let out = `<svg viewBox="0 0 ${W} ${H}">`;
   rows.forEach((r,i) => {
     const y = i * RH + 3;
-    out += `<text class="blabel" data-dtype="${dtype}" data-key="${esc(r.key)}" x="${LBLW - 8}" y="${y + 13}" text-anchor="end" font-size="11" fill="#C7CEE4"><title>${esc(r.label)}: ${r.total}</title>${esc(r.label)}</text>`;
+    out += `<text class="blabel" data-dtype="${dtype}" data-key="${esc(r.key)}" x="${LBLW - 8}" y="${y + 13}" text-anchor="end" font-size="11" fill="#16203D"><title>${esc(r.label)}: ${r.total}</title>${esc(r.label)}</text>`;
     let x = LBLW;
-    (stacked ? r.parts : [{value:r.total, color:"#5B93F0", key:null}]).forEach(p => {
+    (stacked ? r.parts : [{value:r.total, color:"#2953D6", key:null}]).forEach(p => {
       if(!p.value) return;
       const w = p.value / max * BARW;
       const statusAttr = p.key ? ` data-status="${esc(p.key)}"` : "";
       out += `<rect class="bseg" data-dtype="${dtype}" data-key="${esc(r.key)}"${statusAttr} x="${x}" y="${y}" width="${Math.max(w,1)}" height="15" rx="3" fill="${p.color}"><title>${esc(r.label)}${p.key ? " · " + esc(elabel("status",p.key)) : ""}: ${p.value}</title></rect>`;
       x += w;
     });
-    out += `<text class="blabel" data-dtype="${dtype}" data-key="${esc(r.key)}" x="${x + 6}" y="${y + 13}" font-size="11" font-weight="700" fill="#5B93F0">${r.total}</text>`;
+    out += `<text class="blabel" data-dtype="${dtype}" data-key="${esc(r.key)}" x="${x + 6}" y="${y + 13}" font-size="11" font-weight="700" fill="#2953D6">${r.total}</text>`;
   });
   return out + "</svg>";
 }
@@ -1612,15 +1746,15 @@ function lineSVG(months, sIdent, sZatv){
   const pts = s => s.map((v,i) => X(i) + "," + Y(v)).join(" ");
   let grid = "";
   for(let g = 0; g <= maxV; g += Math.max(1, Math.ceil(maxV / 4))){
-    grid += `<line x1="${PL}" y1="${Y(g)}" x2="${W-PR}" y2="${Y(g)}" stroke="#242C48"/><text x="${PL-6}" y="${Y(g)+3}" text-anchor="end" font-size="9" fill="#98A1BD">${g}</text>`;
+    grid += `<line x1="${PL}" y1="${Y(g)}" x2="${W-PR}" y2="${Y(g)}" stroke="#D8DEEA"/><text x="${PL-6}" y="${Y(g)+3}" text-anchor="end" font-size="9" fill="#566178">${g}</text>`;
   }
   let labels = "";
-  months.forEach((m,i) => { if(months.length <= 8 || i % 2 === 0 || i === months.length - 1) labels += `<text x="${X(i)}" y="${H-8}" text-anchor="middle" font-size="9" fill="#98A1BD">${m.slice(5)}.${m.slice(2,4)}</text>`; });
+  months.forEach((m,i) => { if(months.length <= 8 || i % 2 === 0 || i === months.length - 1) labels += `<text x="${X(i)}" y="${H-8}" text-anchor="middle" font-size="9" fill="#566178">${m.slice(5)}.${m.slice(2,4)}</text>`; });
   const dots = (s,color,series) => s.map((v,i) => `<circle class="tpoint" data-dtype="month" data-series="${series}" data-key="${months[i]}" cx="${X(i)}" cy="${Y(v)}" r="4" fill="${color}"><title>${months[i]}: ${v}</title></circle>`).join("");
   return `<svg viewBox="0 0 ${W} ${H}">${grid}${labels}
-    <polyline points="${pts(sIdent)}" fill="none" stroke="#5B93F0" stroke-width="2.5"/>${dots(sIdent,"#5B93F0","identified")}
-    <polyline points="${pts(sZatv)}" fill="none" stroke="#34D399" stroke-width="2.5"/>${dots(sZatv,"#34D399","closed")}</svg>
-    <div class="legend"><span><span class="sw" style="background:#5B93F0"></span>${esc(t("trend_identified"))}</span><span><span class="sw" style="background:#34D399"></span>${esc(t("trend_closed"))}</span></div>`;
+    <polyline points="${pts(sIdent)}" fill="none" stroke="#2953D6" stroke-width="2.5"/>${dots(sIdent,"#2953D6","identified")}
+    <polyline points="${pts(sZatv)}" fill="none" stroke="#1F9D63" stroke-width="2.5"/>${dots(sZatv,"#1F9D63","closed")}</svg>
+    <div class="legend"><span><span class="sw" style="background:#2953D6"></span>${esc(t("trend_identified"))}</span><span><span class="sw" style="background:#1F9D63"></span>${esc(t("trend_closed"))}</span></div>`;
 }
 function matrixMiniSVG(l, i){
   const selL = parseInt(l,10) || 0, selI = parseInt(i,10) || 0;
@@ -1635,10 +1769,10 @@ function matrixMiniSVG(l, i){
       const isSel = (row === selL && col === selI);
       out += `<rect x="${x}" y="${y}" width="${cell}" height="${cell}" rx="4" fill="${band.color}" opacity="${isSel ? 1 : 0.28}" stroke="${isSel ? '#fff' : 'none'}" stroke-width="${isSel?2.5:0}"/>`;
     }
-    out += `<text x="${pl-6}" y="${(5-row)*(cell+gap)+cell/2+4}" text-anchor="end" font-size="9" fill="#98A1BD">${row}</text>`;
+    out += `<text x="${pl-6}" y="${(5-row)*(cell+gap)+cell/2+4}" text-anchor="end" font-size="9" fill="#566178">${row}</text>`;
   }
   for(let col = 1; col <= 5; col++){
-    out += `<text x="${pl+(col-1)*(cell+gap)+cell/2}" y="${size+13}" text-anchor="middle" font-size="9" fill="#98A1BD">${col}</text>`;
+    out += `<text x="${pl+(col-1)*(cell+gap)+cell/2}" y="${size+13}" text-anchor="middle" font-size="9" fill="#566178">${col}</text>`;
   }
   out += `</svg>`;
   const score = riskScore(l, i);
@@ -1658,15 +1792,15 @@ function heatmapSVG(){
       const n = counts[row+"-"+col] || 0;
       const x = pl + (col-1)*(cell+gap), y = pt + (5-row)*(cell+gap);
       out += `<rect class="hseg" data-dtype="matrix" data-l="${row}" data-i="${col}" x="${x}" y="${y}" width="${cell}" height="${cell}" rx="5" fill="${band.color}" opacity="${n?0.85:0.18}"><title>${elabel("likelihood",String(row))} × ${elabel("impact",String(col))}: ${n}</title></rect>`;
-      if(n) out += `<text x="${x+cell/2}" y="${y+cell/2+5}" text-anchor="middle" font-size="15" font-weight="700" fill="#14110A" style="pointer-events:none">${n}</text>`;
+      if(n) out += `<text x="${x+cell/2}" y="${y+cell/2+5}" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF" style="pointer-events:none">${n}</text>`;
     }
-    out += `<text x="${pl-8}" y="${pt+(5-row)*(cell+gap)+cell/2+4}" text-anchor="end" font-size="10" fill="#98A1BD">${row}</text>`;
+    out += `<text x="${pl-8}" y="${pt+(5-row)*(cell+gap)+cell/2+4}" text-anchor="end" font-size="10" fill="#566178">${row}</text>`;
   }
   for(let col = 1; col <= 5; col++){
-    out += `<text x="${pl+(col-1)*(cell+gap)+cell/2}" y="${pt+size+16}" text-anchor="middle" font-size="10" fill="#98A1BD">${col}</text>`;
+    out += `<text x="${pl+(col-1)*(cell+gap)+cell/2}" y="${pt+size+16}" text-anchor="middle" font-size="10" fill="#566178">${col}</text>`;
   }
-  out += `<text x="${pl-8}" y="${pt-8}" font-size="9" fill="#98A1BD" text-anchor="start">${esc(t("heatmap_axis_likelihood"))} ↑</text>`;
-  out += `<text x="${pl+size/2}" y="${pt+size+pb+2}" font-size="9" fill="#98A1BD" text-anchor="middle">${esc(t("heatmap_axis_impact"))} →</text>`;
+  out += `<text x="${pl-8}" y="${pt-8}" font-size="9" fill="#566178" text-anchor="start">${esc(t("heatmap_axis_likelihood"))} ↑</text>`;
+  out += `<text x="${pl+size/2}" y="${pt+size+pb+2}" font-size="9" fill="#566178" text-anchor="middle">${esc(t("heatmap_axis_impact"))} →</text>`;
   out += `</svg>`;
   $("heatmapNote").textContent = tf("heatmap_scored_note", {n:scored, total:data.length});
   return out;
@@ -1695,7 +1829,7 @@ function renderDashboard(){
     <div class="stat clickable" data-dqf="open"><div class="num">${avgAge}</div><div class="lbl">${esc(t("dash_kpi_avgage"))}</div></div>`;
 
   $("chStatus").innerHTML = donutSVG(STATUS_KEYS.map(s => ({ label:elabel("status",s), value:data.filter(r => r.status === s).length, color:STATUS_COLORS[s], key:s })), "status");
-  $("chOdluka").innerHTML = donutSVG(DECISION_KEYS.map((o,i) => ({ label:elabel("decision",o), value:data.filter(r => r.odluka === o).length, color:PALETTE[i], key:o })).concat([{label:(curLang==="en"?"No decision":"Bez odluke"), value:data.filter(r => !r.odluka).length, color:"#3A4568", key:""}]), "decision");
+  $("chOdluka").innerHTML = donutSVG(DECISION_KEYS.map((o,i) => ({ label:elabel("decision",o), value:data.filter(r => r.odluka === o).length, color:PALETTE[i], key:o })).concat([{label:(curLang==="en"?"No decision":"Bez odluke"), value:data.filter(r => !r.odluka).length, color:"#C3CADB", key:""}]), "decision");
   $("chKat").innerHTML = hbarSVG(
     CATEGORY_KEYS.map(k => { const rs = data.filter(r => r.kat === k); return { label:elabel("category",k), key:k, total:rs.length, parts:STATUS_KEYS.map(s => ({ value:rs.filter(r => r.status === s).length, color:STATUS_COLORS[s], key:s })) }; }).filter(r => r.total > 0), true, "category") +
     `<div class="legend">${STATUS_KEYS.map(s => `<span><span class="sw" style="background:${STATUS_COLORS[s]}"></span>${esc(elabel("status",s))}</span>`).join("")}</div>`;
@@ -1711,7 +1845,7 @@ function renderDashboard(){
   $("chLevel").innerHTML = donutSVG(["low","medium","high","critical"].map(k => ({
     label: elabel("band", k),
     value: data.filter(r => { const b = riskBand(riskScore(r.likelihood, r.impact)); return b && b.key === k; }).length,
-    color: RISK_BANDS.find(b => b.key === k).color,
+    color: RISK_BAND_COLORS[k],
     key: k
   })), "level");
 }
@@ -1769,14 +1903,25 @@ function renderHistory(r, boxId, rowsId){
     <div class="histrow"><span class="when">${fmtDT(h.t)}</span> · <span class="who">${esc(h.u)}</span> · ${esc(h.a)}
     ${(h.ch && h.ch.length) ? "<ul>" + h.ch.map(c => "<li>" + esc(c) + "</li>").join("") + "</ul>" : ""}</div>`).join("");
 }
+async function showIntegrityStatus(r, elId){
+  const el = $(elId);
+  if(!r || !r.history || !r.history.length){ el.textContent = ""; el.className = "integrity"; return; }
+  const res = await verifyHistoryChain(r);
+  if(res.status === "ok"){ el.textContent = t("integrity_ok"); el.className = "integrity ok"; }
+  else if(res.status === "broken"){ el.textContent = tf("integrity_broken", {n: res.at}); el.className = "integrity broken"; }
+  else if(res.status === "unchained"){ el.textContent = t("integrity_unchained"); el.className = "integrity unchained"; }
+  else{ el.textContent = ""; el.className = "integrity"; }
+}
 function openForm(id){
   editingId = id || null;
-  readOnlyForm = !isAdmin();
+  const admin = isAdmin();
+  readOnlyForm = !admin || !!id;
   const r = id ? data.find(x => x.id === id) : null;
   $("mTitle").textContent = id ? (readOnlyForm ? (curLang==="en"?"View risk ":"Pregled rizika ") + id : (curLang==="en"?"Edit risk ":"Uredi rizik ") + id) : t("nav_new_risk").replace("+ ","");
+  $("btnEditRisk").style.display = (id && admin && readOnlyForm) ? "inline-block" : "none";
   $("btnDelete").style.display = (id && !readOnlyForm) ? "inline-block" : "none";
   $("btnReview").style.display = (id && !readOnlyForm) ? "inline-block" : "none";
-  $("btnCopy").style.display = (id && !readOnlyForm) ? "inline-block" : "none";
+  $("btnCopy").style.display = (id && admin) ? "inline-block" : "none";
   $("btnSave").style.display = readOnlyForm ? "none" : "inline-block";
   $("formErr").style.display = "none";
   FIELDS.forEach(f => { const el = $("f_" + f); if(el){ el.value = r ? (r[f] || "") : ""; el.disabled = readOnlyForm; } });
@@ -1786,12 +1931,25 @@ function openForm(id){
   else if(r){ rl.style.display = "flex"; rl.innerHTML = curLang==="en" ? "2nd-line review not yet logged for this record." : "Pregled 2LoD još nije evidentiran za ovaj zapis."; }
   else rl.style.display = "none";
   renderHistory(r);
+  showIntegrityStatus(r, "histIntegrity");
   refreshMatrixMini();
   $("overlay").classList.add("open");
   if(!readOnlyForm) $("f_naziv").focus();
 }
+function switchRiskToEdit(){
+  if(!isAdmin() || !editingId) return;
+  readOnlyForm = false;
+  FIELDS.forEach(f => { const el = $("f_"+f); if(el) el.disabled = false; });
+  $("mTitle").textContent = (curLang==="en"?"Edit risk ":"Uredi rizik ") + editingId;
+  $("btnEditRisk").style.display = "none";
+  $("btnDelete").style.display = "inline-block";
+  $("btnReview").style.display = "inline-block";
+  $("btnSave").style.display = "inline-block";
+  $("f_naziv").focus();
+}
 function closeForm(){ $("overlay").classList.remove("open"); editingId = null; }
 $("btnCancel").addEventListener("click", closeForm);
+$("btnEditRisk").addEventListener("click", switchRiskToEdit);
 $("btnNew").addEventListener("click", () => { if(!isAdmin()) return; if(currentView === "vendors") openVendorForm(); else openForm(); });
 $("btnEmptyNew").addEventListener("click", () => { if(isAdmin()) openForm(); });
 
@@ -1818,20 +1976,23 @@ $("f_datodluka").addEventListener("change", maybeSuggestAcceptUntil);
 $("btnCopy").addEventListener("click", () => {
   if(!isAdmin() || !editingId) return;
   editingId = null;
+  readOnlyForm = false;
+  FIELDS.forEach(f => { const el = $("f_"+f); if(el) el.disabled = false; });
   $("f_id").value = nextId();
   $("f_datident").value = todayISO();
   $("f_status").value = "active";
   $("f_odluka").value = ""; $("f_datodluka").value = ""; $("f_declevel").value = ""; $("f_acceptuntil").value = ""; $("f_acceptjust").value = "";
   $("f_treatmeasures").value = ""; $("f_treatdue").value = ""; $("f_datpregled").value = ""; $("f_datclosed").value = "";
   $("mTitle").textContent = (curLang==="en"?"New risk (copy)":"Novi rizik (kopija)");
-  $("btnDelete").style.display = "none"; $("btnReview").style.display = "none"; $("btnCopy").style.display = "none";
+  $("btnDelete").style.display = "none"; $("btnReview").style.display = "none"; $("btnCopy").style.display = "none"; $("btnEditRisk").style.display = "none";
+  $("btnSave").style.display = "inline-block";
   $("histBox").style.display = "none"; $("reviewLine").style.display = "none";
   maybeSuggestReview();
   refreshMatrixMini();
   $("f_naziv").focus();
 });
 
-$("btnSave").addEventListener("click", () => {
+$("btnSave").addEventListener("click", async () => {
   if(!isAdmin()) return;
   const rec = {};
   FIELDS.forEach(f => { const el = $("f_" + f); rec[f] = el ? el.value.trim() : ""; });
@@ -1849,7 +2010,7 @@ $("btnSave").addEventListener("click", () => {
   if(rec.status === "accepted" && rec.odluka !== "acceptance") warns.push(t("warn_accepted_not_acceptance"));
   if(rec.status === "closed" && rec.datpregled && rec.datpregled > todayISO()) warns.push(t("warn_closed_future_review"));
   if(warns.length && !confirm(t("warn_header") + "\n\n- " + warns.join("\n- ") + "\n\n" + t("warn_confirm"))) return;
-  if(rec.dobavljac) rec.roi = resolveOrCreateVendor(rec.dobavljac, rec.id);
+  if(rec.dobavljac) rec.roi = await resolveOrCreateVendor(rec.dobavljac, rec.id);
   const now = new Date().toISOString();
   if(editingId){
     const i = data.findIndex(x => x.id === editingId);
@@ -1867,17 +2028,18 @@ $("btnSave").addEventListener("click", () => {
     });
     rec.pregledD = old.pregledD; rec.pregledU = old.pregledU;
     rec.history = old.history || [];
-    if(ch.length) rec.history.push({ t:now, u:(currentUser?currentUser.u:"guest"), a:(curLang==="en"?"Record updated":"Izmjena zapisa"), ch });
+    if(ch.length) await appendHistoryHashed(rec.history, { t:now, u:(currentUser?currentUser.u:"guest"), a:(curLang==="en"?"Record updated":"Izmjena zapisa"), ch }, rec.id);
     data[i] = rec;
   }else{
-    rec.history = [{ t:now, u:(currentUser?currentUser.u:"guest"), a:(curLang==="en"?"Record created":"Kreiran zapis"), ch:[] }];
+    rec.history = [];
+    await appendHistoryHashed(rec.history, { t:now, u:(currentUser?currentUser.u:"guest"), a:(curLang==="en"?"Record created":"Kreiran zapis"), ch:[] }, rec.id);
     data.push(rec);
   }
   saveData(); render(); closeForm();
   showToast(t("toast_saved"));
 });
 
-$("btnReview").addEventListener("click", () => {
+$("btnReview").addEventListener("click", async () => {
   if(!isAdmin() || !editingId) return;
   const r = data.find(x => x.id === editingId);
   if(!r) return;
@@ -1885,7 +2047,7 @@ $("btnReview").addEventListener("click", () => {
   const next = suggestNextReview(r);
   r.datpregled = next;
   r.history = r.history || [];
-  r.history.push({ t:new Date().toISOString(), u:r.pregledU, a:(curLang==="en"?"2nd-line review logged":"Evidentiran pregled 2LoD"), ch:[(curLang==="en"?"Next review: ":"Sljedeći pregled: ")+fmtD(next)] });
+  await appendHistoryHashed(r.history, { t:new Date().toISOString(), u:r.pregledU, a:(curLang==="en"?"2nd-line review logged":"Evidentiran pregled 2LoD"), ch:[(curLang==="en"?"Next review: ":"Sljedeći pregled: ")+fmtD(next)] }, r.id);
   saveData(); render();
   showToast(t("toast_review_logged"));
   openForm(editingId);
@@ -1967,13 +2129,13 @@ function renderVendors(){
 function fillVendorDatalist(){
   $("vendorNamesList").innerHTML = vendors.map(v => `<option value="${esc(v.name)}">`).join("");
 }
-function resolveOrCreateVendor(name, riskId){
+async function resolveOrCreateVendor(name, riskId){
   if(!name) return "";
   let v = vendors.find(x => x.name.trim().toLowerCase() === name.trim().toLowerCase());
   if(!v){
-    v = { id: nextVendorId(), name: name.trim(), type:"", desc:"", process:"", cif:"", datalocation:"", contractstart:"", contractend:"",
-      status:"", nextreview:"", subcontractor:"", subcontractorname:"", concentration:"", auditrights:"", exitstrategy:"", owner:"", linkedrisks:"", notes:"",
-      history:[{ t:new Date().toISOString(), u:(currentUser?currentUser.u:"guest"), a:(curLang==="en"?"Auto-created from risk record":"Automatski kreiran iz zapisa rizika"), ch:[] }] };
+    v = { id: nextVendorId(), name: name.trim(), type:"", desc:"", process:"", cif:"", criticalityassessdate:"", providertype:"", providercode:"", providercountry:"", datalocation:"",
+      arrangementid:"", contractstart:"", contractend:"", governinglaw:"", status:"", nextreview:"", subcontractor:"", subcontractorname:"", concentration:"", substitutability:"", auditrights:"", exitstrategy:"", owner:"", linkedrisks:"", notes:"", history:[] };
+    await appendHistoryHashed(v.history, { t:new Date().toISOString(), u:(currentUser?currentUser.u:"guest"), a:(curLang==="en"?"Auto-created from risk record":"Automatski kreiran iz zapisa rizika"), ch:[] }, v.id);
     vendors.push(v);
     showToast(t("toast_vendor_autocreated"));
   }
@@ -1995,22 +2157,37 @@ $("btnVClear").addEventListener("click", () => { ["vq","vfType","vfCif","vfStatu
 
 function openVendorForm(id){
   editingVendorId = id || null;
-  readOnlyForm = !isAdmin();
+  const admin = isAdmin();
+  readOnlyForm = !admin || !!id;
   const r = id ? vendors.find(x => x.id === id) : null;
+  vendorEditSnapshot = r ? JSON.stringify(r) : null;
   $("vTitle").textContent = id ? (readOnlyForm ? (curLang==="en"?"View vendor ":"Pregled dobavljača ") + id : (curLang==="en"?"Edit vendor ":"Uredi dobavljača ") + id) : t("nav_new_vendor").replace("+ ","");
+  $("btnEditVendor").style.display = (id && admin && readOnlyForm) ? "inline-block" : "none";
   $("btnVDelete").style.display = (id && !readOnlyForm) ? "inline-block" : "none";
   $("btnVSave").style.display = readOnlyForm ? "none" : "inline-block";
   $("vFormErr").style.display = "none";
   VFIELDS.forEach(f => { const el = $("v_" + f); if(el){ el.value = r ? (r[f] || "") : ""; el.disabled = readOnlyForm; } });
   if(!r && !readOnlyForm){ $("v_id").value = nextVendorId(); $("v_status").value = "active"; }
   renderHistory(r, "vHistBox", "vHistRows");
+  showIntegrityStatus(r, "vHistIntegrity");
   $("vendorOv").classList.add("open");
   if(!readOnlyForm) $("v_name").focus();
 }
-function closeVendorForm(){ $("vendorOv").classList.remove("open"); editingVendorId = null; }
+function switchVendorToEdit(){
+  if(!isAdmin() || !editingVendorId) return;
+  readOnlyForm = false;
+  VFIELDS.forEach(f => { const el = $("v_"+f); if(el) el.disabled = false; });
+  $("vTitle").textContent = (curLang==="en"?"Edit vendor ":"Uredi dobavljača ") + editingVendorId;
+  $("btnEditVendor").style.display = "none";
+  $("btnVDelete").style.display = "inline-block";
+  $("btnVSave").style.display = "inline-block";
+  $("v_name").focus();
+}
+function closeVendorForm(){ $("vendorOv").classList.remove("open"); editingVendorId = null; vendorEditSnapshot = null; }
 $("btnVCancel").addEventListener("click", closeVendorForm);
+$("btnEditVendor").addEventListener("click", switchVendorToEdit);
 $("btnVEmptyNew").addEventListener("click", () => { if(isAdmin()) openVendorForm(); });
-$("btnVSave").addEventListener("click", () => {
+$("btnVSave").addEventListener("click", async () => {
   if(!isAdmin()) return;
   const rec = {};
   VFIELDS.forEach(f => { const el = $("v_" + f); rec[f] = el ? el.value.trim() : ""; });
@@ -2021,6 +2198,15 @@ $("btnVSave").addEventListener("click", () => {
   if(spamField){ err.textContent = tf("err_spam", {field: t("vf_"+spamField).replace(" *",""), value: rec[spamField].slice(0,24)}); err.style.display = "block"; return; }
   const dup = vendors.find(x => x.id === rec.id && x.id !== editingVendorId);
   if(dup){ err.textContent = tf("verr_dup_id", {id:rec.id}); err.style.display = "block"; return; }
+  if(editingVendorId && vendorEditSnapshot){
+    const current = vendors.find(x => x.id === editingVendorId);
+    if(current && JSON.stringify(current) !== vendorEditSnapshot){
+      const before = JSON.parse(vendorEditSnapshot);
+      const changedFields = VFIELDS.filter(f => JSON.stringify(before[f]) !== JSON.stringify(current[f]));
+      const fieldNames = changedFields.map(f => t("vf_"+f).replace(" *","")).join(", ");
+      if(!confirm(tf("vendor_conflict_warning", {fields: fieldNames || t("history_title")}))) return;
+    }
+  }
   const now = new Date().toISOString();
   if(editingVendorId){
     const i = vendors.findIndex(x => x.id === editingVendorId);
@@ -2028,19 +2214,20 @@ $("btnVSave").addEventListener("click", () => {
     const ch = [];
     VFIELDS.forEach(f => {
       if((old[f] || "") !== (rec[f] || "")){
-        const isDate = f === "contractstart" || f === "contractend" || f === "nextreview";
-        const isEnum = ["type","cif","status","subcontractor","concentration","auditrights","exitstrategy"].includes(f);
-        const etype = {type:"vtype",cif:"yesno",status:"vstatus",subcontractor:"yesno",concentration:"yesno",auditrights:"yesno",exitstrategy:"exit"}[f];
+        const isDate = f === "contractstart" || f === "contractend" || f === "nextreview" || f === "criticalityassessdate";
+        const isEnum = ["type","cif","status","subcontractor","concentration","auditrights","exitstrategy","providertype","substitutability"].includes(f);
+        const etype = {type:"vtype",cif:"yesno",status:"vstatus",subcontractor:"yesno",concentration:"yesno",auditrights:"yesno",exitstrategy:"exit",providertype:"providertype",substitutability:"substitutability"}[f];
         const ov = isDate ? fmtD(old[f]) : isEnum ? elabel(etype, old[f]) : (old[f] || "-");
         const nv = isDate ? fmtD(rec[f]) : isEnum ? elabel(etype, rec[f]) : (rec[f] || "-");
         ch.push(t("vf_"+f) + ": " + (ov || "-") + " -> " + (nv || "-"));
       }
     });
     rec.history = old.history || [];
-    if(ch.length) rec.history.push({ t:now, u:(currentUser?currentUser.u:"guest"), a:(curLang==="en"?"Record updated":"Izmjena zapisa"), ch });
+    if(ch.length) await appendHistoryHashed(rec.history, { t:now, u:(currentUser?currentUser.u:"guest"), a:(curLang==="en"?"Record updated":"Izmjena zapisa"), ch }, rec.id);
     vendors[i] = rec;
   }else{
-    rec.history = [{ t:now, u:(currentUser?currentUser.u:"guest"), a:(curLang==="en"?"Record created":"Kreiran zapis"), ch:[] }];
+    rec.history = [];
+    await appendHistoryHashed(rec.history, { t:now, u:(currentUser?currentUser.u:"guest"), a:(curLang==="en"?"Record created":"Kreiran zapis"), ch:[] }, rec.id);
     vendors.push(rec);
   }
   saveData(); renderVendors(); closeVendorForm();
@@ -2073,52 +2260,6 @@ function downloadStandaloneCopy(){
 }
 $("btnDownloadApp").addEventListener("click", downloadStandaloneCopy);
 $("btnExportJson").addEventListener("click", () => { download("ict_risk_register_backup_" + todayISO() + ".json", JSON.stringify(currentPayload(), null, 2), "application/json"); });
-function exportRisksCsv(){
-  const csvCell = v => { v = String(v ?? ""); return /[;"\n\r]/.test(v) ? '"' + v.replace(/"/g,'""') + '"' : v; };
-  const headers = CSV_LBLKEYS.map(k => t(k) === k ? k : t(k));
-  const lines = [headers.join(";")];
-  const filt = getFiltered();
-  let rows = data.slice().sort((a,b) => (a.id||"").localeCompare(b.id||"", undefined, {numeric:true}));
-  if(filt.length && filt.length !== data.length && confirm(tf("export_filtered_confirm", {f:filt.length, d:data.length}))) rows = filt;
-  rows.forEach(r => {
-    const rowVals = CSV_KEYS.map(k => {
-      if(["datident","datodluka","acceptuntil","treatdue","datpregled","datclosed","pregledD"].includes(k)) return fmtD(r[k]);
-      if(k === "kat") return elabel("category", r.kat);
-      if(k === "izvor") return elabel("source", r.izvor);
-      if(k === "odluka") return elabel("decision", r.odluka);
-      if(k === "status") return elabel("status", r.status);
-      if(k === "declevel") return elabel("declevel", r.declevel);
-      if(k === "cif") return elabel("cif", r.cif);
-      if(k === "legacy") return elabel("legacy", r.legacy);
-      if(k === "likelihood") return elabel("likelihood", r.likelihood);
-      if(k === "impact") return elabel("impact", r.impact);
-      return r[k];
-    });
-    lines.push(rowVals.map(csvCell).join(";"));
-  });
-  download("ict_risk_register_" + todayISO() + ".csv", "\uFEFF" + lines.join("\r\n"), "text/csv;charset=utf-8");
-}
-function exportVendorsCsv(){
-  const csvCell = v => { v = String(v ?? ""); return /[;"\n\r]/.test(v) ? '"' + v.replace(/"/g,'""') + '"' : v; };
-  const headers = VCSV_LBLKEYS.map(k => t(k) === k ? k : t(k));
-  const lines = [headers.join(";")];
-  const filt = getFilteredVendors();
-  let rows = vendors.slice().sort((a,b) => (a.id||"").localeCompare(b.id||"", undefined, {numeric:true}));
-  if(filt.length && filt.length !== vendors.length && confirm(tf("export_filtered_confirm", {f:filt.length, d:vendors.length}))) rows = filt;
-  rows.forEach(r => {
-    const rowVals = VCSV_KEYS.map(k => {
-      if(["contractstart","contractend","nextreview"].includes(k)) return fmtD(r[k]);
-      if(k === "type") return elabel("vtype", r.type);
-      if(k === "cif" || k === "subcontractor" || k === "concentration" || k === "auditrights") return elabel("yesno", r[k]);
-      if(k === "status") return elabel("vstatus", r.status);
-      if(k === "exitstrategy") return elabel("exit", r.exitstrategy);
-      return r[k];
-    });
-    lines.push(rowVals.map(csvCell).join(";"));
-  });
-  download("ict_vendor_register_" + todayISO() + ".csv", "\uFEFF" + lines.join("\r\n"), "text/csv;charset=utf-8");
-}
-$("btnExportCsv").addEventListener("click", () => { if(currentView === "vendors") exportVendorsCsv(); else exportRisksCsv(); });
 $("btnImport").addEventListener("click", () => { if(isAdmin()) $("fileImport").click(); });
 $("fileImport").addEventListener("change", e => {
   const file = e.target.files[0]; if(!file) return;
@@ -2183,7 +2324,7 @@ $("btnPrint").addEventListener("click", () => {
   $("reportOv").classList.add("open");
 });
 $("btnReportCancel").addEventListener("click", () => $("reportOv").classList.remove("open"));
-$("btnReportGenerate").addEventListener("click", () => {
+$("btnReportGenerate").addEventListener("click", async () => {
   const from = $("repFrom").value, to = $("repTo").value, audience = $("repAudience").value;
   $("reportOv").classList.remove("open");
   const open = data.filter(r => r.status !== "closed").sort((a,b) => (b.cif === "yes") - (a.cif === "yes") || (a.id||"").localeCompare(b.id||"", undefined, {numeric:true}));
@@ -2197,16 +2338,18 @@ $("btnReportGenerate").addEventListener("click", () => {
   data.forEach(r => { const b = riskBand(riskScore(r.likelihood, r.impact)); if(b) levelCounts[b.key]++; else levelCounts.unscored++; });
   const levelLine = ["critical","high","medium","low"].map(k => `<span><b>${levelCounts[k]}</b> ${esc(elabel("band",k))}</span>`).join("")
     + `<span><b>${levelCounts.unscored}</b> ${esc(t("print_level_unscored"))}</span>`;
-  const rows = open.map(r => {
+  const rows = (await Promise.all(open.map(async r => {
     const score = riskScore(r.likelihood, r.impact);
     const band = riskBand(score);
+    const chain = await verifyHistoryChain(r);
+    const fp = chain.status === "ok" ? chain.tip.slice(0,10) : "-";
     return `
-    <tr><td>${esc(r.id)}</td><td>${esc(r.naziv)}</td><td>${band ? esc(elabel("band", band.key)) : "-"}</td><td>${esc(elabel("category",r.kat))}</td>
+    <tr><td>${esc(r.id)}<span class="pfp">${esc(fp)}</span></td><td>${esc(r.naziv)}</td><td>${band ? esc(elabel("band", band.key)) : "-"}</td><td>${esc(elabel("category",r.kat))}</td>
     <td class="${r.cif === "yes" ? "pcif" : ""}">${esc(elabel("cif",r.cif))}</td><td>${esc(r.vlasnik)}</td>
     <td>${esc(elabel("source",r.izvor))}</td><td>${esc(elabel("decision",r.odluka)) || "-"}</td><td>${esc(elabel("declevel",r.declevel))||"-"}</td>
     <td>${esc(elabel("status",r.status))}</td><td>${fmtD(r.datpregled)}</td>
     <td>${[r.incident,r.preporuka,r.procjena,r.roi].filter(Boolean).map(esc).join("; ")}</td></tr>`;
-  }).join("");
+  }))).join("");
   const genDt = new Date().toISOString();
   $("printArea").innerHTML = `
     <div class="phead"><svg width="30" height="30"><use href="#brandmark"/></svg><h1>${esc(t("print_title"))}</h1><div class="spacer"></div><div class="pclass">${esc(t("print_classification"))}</div></div>
@@ -2223,7 +2366,7 @@ $("btnReportGenerate").addEventListener("click", () => {
     <div class="plevels">${esc(t("print_levels_line"))} ${levelLine}</div>
     <table><thead><tr><th>${esc(t("th_id"))}</th><th>${esc(t("th_name"))}</th><th>${esc(t("print_level"))}</th><th>${esc(t("th_category"))}</th><th>${esc(t("th_cif"))}</th><th>${esc(t("th_owner"))}</th><th>${esc(t("th_source"))}</th><th>${esc(t("th_decision"))}</th><th>${esc(t("f_declevel"))}</th><th>${esc(t("th_status"))}</th><th>${esc(t("th_nextreview"))}</th><th>${esc(t("th_links"))}</th></tr></thead>
     <tbody>${rows || `<tr><td colspan="12">${esc(t("print_no_open"))}</td></tr>`}</tbody></table>
-    <div class="pfoot"><span class="pclass-inline">${esc(t("print_classification"))}</span> &middot; ${esc(tf("print_footer_generated", {dt: fmtDT(genDt)}))} &middot; ${esc(t("print_footer"))}</div>`;
+    <div class="pfoot"><span class="pclass-inline">${esc(t("print_classification"))}</span> &middot; ${esc(tf("print_footer_generated", {dt: fmtDT(genDt)}))} &middot; ${esc(t("print_footer"))}<br>${esc(t("print_fingerprint_note"))}</div>`;
   document.body.classList.add("printing");
   window.print();
 });
